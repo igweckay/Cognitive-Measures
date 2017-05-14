@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manu.cogmeasures">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VO11_Activity"
+            android:label="@string/title_activity_vo11_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO12_Activity"
+            android:label="@string/title_activity_vo12_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO13_Activity"
+            android:label="@string/title_activity_vo13_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO21_Activity"
+            android:label="@string/title_activity_vo21_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO22_Activity"
+            android:label="@string/title_activity_vo22_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO23_Activity"
+            android:label="@string/title_activity_vo23_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO31_Activity"
+            android:label="@string/title_activity_vo31_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO32_Activity"
+            android:label="@string/title_activity_vo32_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO33_Activity"
+            android:label="@string/title_activity_vo33_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO41_Activity"
+            android:label="@string/title_activity_vo41_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO42_Activity"
+            android:label="@string/title_activity_vo42_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO43_Activity"
+            android:label="@string/title_activity_vo43_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO51_Activity"
+            android:label="@string/title_activity_vo51_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO52_Activity"
+            android:label="@string/title_activity_vo52_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VO53_Activity"
+            android:label="@string/title_activity_vo53_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".FinishActivity"
+            android:label="@string/title_activity_finish"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SecNS_Activity"
+            android:label="@string/title_activity_sec_ns_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SecNSEx2_Activity"
+            android:label="@string/title_activity_sec_nsex2_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SecNSEx1AActivity"
+            android:label="@string/title_activity_sec_nsex1_a"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SecNSEx2A_Activity"
+            android:label="@string/title_activity_sec_nsex2_a_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SecNSIntro_Activity"
+            android:label="@string/title_activity_sec_nsintro_" />
+        <activity
+            android:name=".Set3Item1Activity"
+            android:label="@string/title_activity_set3_item1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set3Item2_Activity"
+            android:label="@string/title_activity_set3_item2_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set3Item3_Activity"
+            android:label="@string/title_activity_set3_item3_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set1Item1_Activity"
+            android:label="@string/title_activity_set1_item1_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set1Item2_Activity"
+            android:label="@string/title_activity_set1_item2_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set1Item3_Activity"
+            android:label="@string/title_activity_set1_item3_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set2Item1_Activity"
+            android:label="@string/title_activity_set2_item1_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set2Item2_Activity"
+            android:label="@string/title_activity_set2_item2_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set2Item3_Activity"
+            android:label="@string/title_activity_set2_item3_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set4Item1_Activity"
+            android:label="@string/title_activity_set4_item1_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set5Item1_Activity"
+            android:label="@string/title_activity_set5_item1_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set4Item2_Activity"
+            android:label="@string/title_activity_set4_item2_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set4Item3_Activity"
+            android:label="@string/title_activity_set4_item3_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set5Item2_Activity"
+            android:label="@string/title_activity_set5_item2_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Set5Item3_Activity"
+            android:label="@string/title_activity_set5_item3_"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".SecAR_Activity"
+            android:label="@string/title_activity_sec_ar_" />
+        <activity
+            android:name=".ARans1_Activity"
+            android:label="@string/title_activity_arans1_" />
+        <activity
+            android:name=".ARpractice1_Activity"
+            android:label="@string/title_activity_arpractice1_" />
+        <activity
+            android:name=".ARpracticeCorrect_Activity"
+            android:label="@string/title_activity_arpractice_correct_" />
+        <activity
+            android:name=".ARpracticeWrong_Activity"
+            android:label="@string/title_activity_arpractice_wrong_" />
+        <activity
+            android:name=".ARpractice2_Activity"
+            android:label="@string/title_activity_arpractice2_" />
+        <activity
+            android:name=".ARpractice2ans_Activity"
+            android:label="@string/title_activity_arpractice2ans_" />
+        <activity
+            android:name=".ARIntro_Activity"
+            android:label="@string/title_activity_arintro_" />
+        <activity
+            android:name=".AR31_Activity"
+            android:label="@string/title_activity_ar31_" />
+        <activity
+            android:name=".AR32_Activity"
+            android:label="@string/title_activity_ar32_" />
+        <activity
+            android:name=".AR33_Activity"
+            android:label="@string/title_activity_ar33_" />
+        <activity
+            android:name=".AR11_Activity"
+            android:label="@string/title_activity_ar11_" />
+        <activity
+            android:name=".AR12_Activity"
+            android:label="@string/title_activity_ar12_" />
+        <activity
+            android:name=".AR13_Activity"
+            android:label="@string/title_activity_ar13_" />
+        <activity
+            android:name=".AR21_Activity"
+            android:label="@string/title_activity_ar21_" />
+        <activity
+            android:name=".AR22_Activity"
+            android:label="@string/title_activity_ar22_" />
+        <activity
+            android:name=".AR23_Activity"
+            android:label="@string/title_activity_ar23_" />
+        <activity
+            android:name=".AR41_Activity"
+            android:label="@string/title_activity_ar41_" />
+        <activity
+            android:name=".AR42_Activity"
+            android:label="@string/title_activity_ar42_" />
+        <activity
+            android:name=".AR43_Activity"
+            android:label="@string/title_activity_ar43_" />
+        <activity
+            android:name=".AR51_Activity"
+            android:label="@string/title_activity_ar51_" />
+        <activity
+            android:name=".AR52_Activity"
+            android:label="@string/title_activity_ar52_" />
+        <activity
+            android:name=".AR53_Activity"
+            android:label="@string/title_activity_ar53_" />
+    </application>
+
+</manifest>

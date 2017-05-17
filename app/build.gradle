@@ -4,8 +4,8 @@ android {
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "com.example.manu.cogmeasures"
-        minSdkVersion 21
+        applicationId "edu.usc.cognitive"
+        minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cogusa.SecSWexample_Activity" >
+    tools:context=".switching.SecSWexample_Activity" >
 
     <TextView
         android:id="@+id/textView1"
@@ -26,7 +26,7 @@
         android:text="@string/stop"
         android:textColor="#FFFFFF"
         android:textSize="26sp" />
-    
+
     <Button
         android:id="@+id/go"
         android:layout_width="100dp"

@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cogusa.SecSWMixedIntro_Activity" >
+    tools:context=".switching.SecSWMixedIntro_Activity" >
 
      <TextView
         android:layout_width="fill_parent"
@@ -14,7 +14,7 @@
         android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:text="@string/mix_intro" />
-    
+
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"

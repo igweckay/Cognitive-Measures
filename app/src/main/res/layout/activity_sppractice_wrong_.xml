@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cogusa.SPpracticeWrong_Activity" >
+    tools:context=".spatial.SPpracticeWrong_Activity" >
 
     <TextView
        android:id="@+id/question_txt"
@@ -38,7 +38,7 @@
         android:layout_alignBaseline="@+id/imageView3"
         android:layout_alignBottom="@+id/imageView3"
         android:contentDescription="@string/opt2" />
-     
+
      <ImageView
         android:id="@+id/imageView4"
         android:layout_width="150dp"
@@ -48,7 +48,7 @@
         android:layout_alignBaseline="@+id/imageView3"
         android:layout_alignBottom="@+id/imageView3"
         android:contentDescription="@string/opt4" />
-     
+
      <ImageView
         android:id="@+id/imageView5"
         android:layout_width="150dp"

@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cogusa.SWsetNorm1_Activity" >
+    tools:context=".switching.SWsetNorm1_Activity" >
 
    <TextView
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:text="@string/normal" />
-    
+
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"

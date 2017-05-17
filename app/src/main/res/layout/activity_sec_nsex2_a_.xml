@@ -6,19 +6,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.manu.cogmeasures.SecNSEx2A_Activity" >
+    tools:context="edu.usc.cognitive.numbers.SecNSEx2A_Activity" >
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
 	    android:gravity="center"
 	    android:layout_alignParentTop="true"
 	    android:textSize="30sp"
         android:text="@string/ns903"
         android:labelFor="@+id/editText1" />
-    
-    
+
+
     <Button
         android:id="@+id/button3"
         android:layout_width="100dp"

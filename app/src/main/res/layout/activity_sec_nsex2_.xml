@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.usc.cognitive.numbers.SecNSEx2_Activity" >
+    tools:context="edu.usc.projecttalent.cognitive.numbers.SecNSEx2_Activity" >
 
     <TextView
         android:id="@+id/question"

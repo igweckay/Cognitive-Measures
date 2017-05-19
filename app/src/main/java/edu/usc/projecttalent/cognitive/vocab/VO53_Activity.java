@@ -1,72 +1,66 @@
 package edu.usc.projecttalent.cognitive.vocab;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.os.CountDownTimer;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Date;
 
 import edu.usc.projecttalent.cognitive.FinishActivity;
 import edu.usc.projecttalent.cognitive.MyGlobalVariables;
+import edu.usc.projecttalent.cognitive.QuestionTimer;
 import edu.usc.projecttalent.cognitive.R;
+import edu.usc.projecttalent.cognitive.databinding.ActivityVocabBinding;
 import edu.usc.projecttalent.cognitive.numbers.SecNS_Activity;
 
 public class VO53_Activity extends AppCompatActivity {
-    long ms;
     boolean click = false;
     boolean empty = false;
     int count = 0;
-    RadioGroup radioGroup;
-    RadioButton radioButton;
+    Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vo53_);
+        setContentView(R.layout.activity_vocab);
 
         Date start = new Date();
         String s = MyGlobalVariables.getTime();
         s += "vo53_start:" + start.toString() + ";";
         MyGlobalVariables.setTime(s);
+        mContext = this;
 
-        runCountDownTimer();
-        Button resumeButton = (Button) findViewById(R.id.resume);
-        resumeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                RelativeLayout questionArea = (RelativeLayout) findViewById(R.id.main_layout);
-                questionArea.setVisibility(View.VISIBLE);
-                RelativeLayout quitResumeArea = (RelativeLayout) findViewById(R.id.quit_resume_layout);
-                quitResumeArea.setVisibility(View.INVISIBLE);
-                runCountDownTimer();
-            }
-        });
+        VocabItem item  = new VocabItem(getString(R.string.vo53), getResources().getStringArray(R.array.vo53a));
+        ActivityVocabBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_vocab);
+        binding.setItem(item);
 
-        Button quitButton = (Button) findViewById(R.id.quit);
-        quitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                recordEndTime();
-                Intent intent = new Intent(VO53_Activity.this, FinishActivity.class);
-                startActivityForResult(intent, 1);
-            }
-        });
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(QuestionTimer.WARNING);
+        filter.addAction(QuestionTimer.QUIT);
+        filter.addAction(QuestionTimer.RESUME);
+        registerReceiver(mReceiver, filter);
+        final LinearLayout layout = (LinearLayout) findViewById(R.id.vocab_layout);
+        QuestionTimer.startTimer(mContext);
 
-        Button button = (Button) findViewById(R.id.button2);
+        Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 click = true;
                 count++;
-                radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+                RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 String s = MyGlobalVariables.getData();
                 int p;
@@ -86,78 +80,60 @@ public class VO53_Activity extends AppCompatActivity {
                 if (selectedId == -1) {
                     s += "vo53:0" + ";";
                     MyGlobalVariables.q31 = 0;
-                    s += "vo53_score:" + Integer.toString(MyGlobalVariables.qx3) + ";";
+                    s += "vo53_score:" + MyGlobalVariables.qx3 + ";";
                     s += "vo53_ans:3;";
 
-                    TextView tv = (TextView) findViewById(R.id.message);
-                    String t = getResources().getString(R.string.msg3);
-                    tv.setText(t);
-                    tv.setVisibility(View.VISIBLE);
-                    empty = true;
+                    Snackbar snackbar = Snackbar.make(layout, R.string.msg2, Snackbar.LENGTH_LONG);
+                    TextView tv = (TextView) snackbar.getView().findViewById(android.support.design.R.id.snackbar_text);
+                    tv.setMaxLines(3);
+                    snackbar.show();
                 } else {
-                    radioButton = (RadioButton) findViewById(selectedId);
+                    RadioButton radioButton = (RadioButton) findViewById(selectedId);
                     int idx = radioGroup.indexOfChild(radioButton);
                     if (idx == 3)
                         MyGlobalVariables.qx3 = 1;
-                    s += "vo53:" + Integer.toString(idx) + ";";
-                    s += "vo53_score:" + Integer.toString(MyGlobalVariables.qx3) + ";";
+                    s += "vo53:" + idx + ";";
+                    s += "vo53_score:" + MyGlobalVariables.qx3 + ";";
                     s += "vo53_ans:3;";
                     empty = false;
                 }
                 MyGlobalVariables.setData(s);
-                if ((click && count >= 2)) {
+                if (click && count >= 2) {
                     click = false;
-                    TextView tv = (TextView) findViewById(R.id.message);
-                    tv.setVisibility(View.INVISIBLE);
                     recordEndTime();
-                    Intent intent = null;
-                    intent = new Intent(VO53_Activity.this, SecNS_Activity.class);
+                    Intent intent = new Intent(mContext, SecNS_Activity.class);
                     startActivityForResult(intent, 1);
                 }
             }
         });
     }
 
-    public void runCountDownTimer() {
-
-        new CountDownTimer(120000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                ms = millisUntilFinished;
-                if (!click && millisUntilFinished <= 60000) {
-                    //We should display a new message and arrange everything for just one click to enter the next activity.
-                    TextView tv = (TextView) findViewById(R.id.message);
-                    String t = getResources().getString(R.string.msg2);
-                    tv.setText(t);
-                    tv.setVisibility(View.VISIBLE);
-                    count++;
-                } else if (click && !empty) {
-                    click = false;
-                    TextView tv = (TextView) findViewById(R.id.message);
-                    tv.setVisibility(View.INVISIBLE);
+    BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if(action.equals(QuestionTimer.WARNING)) {
+                count++;
+                QuestionTimer.updateContext(mContext);
+            } else {
+                if(action.equals(QuestionTimer.QUIT)) {
                     recordEndTime();
-                    Intent intent = new Intent(VO53_Activity.this, FinishActivity.class);
-                    startActivityForResult(intent, 1);
+                    Intent next = new Intent(mContext, FinishActivity.class);
+                    startActivityForResult(next, 1);
                 }
+                QuestionTimer.startTimer(mContext);
             }
+        }
+    };
 
-            public void onFinish() {
-                if (!click) {
-                    //On finishing the 120 seconds, take the user to Quit/Resume activity.
-                    TextView tv = (TextView) findViewById(R.id.message);
-                    tv.setVisibility(View.INVISIBLE);
-                    RelativeLayout questionArea = (RelativeLayout) findViewById(R.id.main_layout);
-                    questionArea.setVisibility(View.INVISIBLE);
-                    RelativeLayout quitResumeArea = (RelativeLayout) findViewById(R.id.quit_resume_layout);
-                    quitResumeArea.setVisibility(View.VISIBLE);
-                } else {
-                    recordEndTime();
-                    Intent intent = new Intent(VO53_Activity.this, FinishActivity.class);
-                    startActivityForResult(intent, 1);
-                }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                setResult(Activity.RESULT_OK, data);
+                super.finish();
             }
-        }.start();
-        return;
+        }
     }
 
     @Override
@@ -173,15 +149,4 @@ public class VO53_Activity extends AppCompatActivity {
         MyGlobalVariables.setData(t);
         MyGlobalVariables.setTime("");
     }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 1) {
-            if (resultCode == RESULT_OK) {
-                setResult(Activity.RESULT_OK, data);
-                super.finish();
-            }
-        }
-    }
 }
-

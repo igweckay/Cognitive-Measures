@@ -20,10 +20,10 @@
     <string name="nine">9</string>
     <string name="ten">10</string>
     <string name="agreement">The following are a series of cognitive tasks, several of which are the versions of the tasks you completed in the original Project Talent study.\n\n
-        \t â€¢ Read the instructions for each task carefully.\n
-        \t â€¢ Do the best you can. If you are unsure of the right answer, pick the one you think is the best.\n
-        \t â€¢ If a task includes multiple-choice questions, select only one answer.\n
-        \t â€¢ There is only one right answer for each question.\n\n
+        \t&#8226; Read the instructions for each task carefully.\n
+        \t&#8226; Do the best you can. If you are unsure of the right answer, pick the one you think is the best.\n
+        \t&#8226; If a task includes multiple-choice questions, select only one answer.\n
+        \t&#8226; There is only one right answer for each question.\n\n
         Press the NEXT button to begin the first task.</string>
     <string name="finsih_message">Please click "Finish" to proceed into next section.</string>
     <string name="title_activity_agreement"></string>
@@ -175,7 +175,7 @@
     <string name="a099a2">SELF-EMPLOYED</string>
     <string name="a100">On your current (main) job, approximately how many hours do you work each week?</string>
     <string name="a100label">HOURS PER WEEK</string>
-    <string name="a101">Thinking about work in general and not just your present situation, what do you think the chances are that you will be doing any work for pay after you reach age 62? Please answer on a scale of 0 to 10, where 0 means \'surely won\'t happen\' and 10 means \'surely will happen.\'</string>
+    <string name="a101">Thinking about work in general and not just your present situation, what do you think the chances are that you will be doing any work for pay after you reach age 62? Please answer on a scale of 0 to 10, where 0 means \Wosurely won\'t happen\' and 10 means \'surely will happen.\'</string>
     <string name="a101a1">SURELY WONT HAPPEN</string>
     <string name="a101a2">SURELY WILL HAPPEN</string>
     <string name="a102">Thinking about work in general and not just your present situation, what do you think the chances are that you will be doing any work for pay after you reach age 65? Please answer on a scale of 0 to 10, where 0 means \'surely won\'t happen\' and 10 means \'surely will happen.\'</string>
@@ -304,15 +304,15 @@
     <string name="title_activity_sec_nsex2_a_">Example 2 Answer</string>
     <string name="ns_intro">You will now see six more questions like the ones you just did.\n\n
 		Instructions:\n
-		â€¢	Please enter the number that belongs in each empty box.\n
-		â€¢	An empty box could be at the end of a series or it could be in the middle.\n
-		â€¢	You may be asked a question with more than one empty box in the sequence.\n
-		â€¢	The numbers might increase, like 2, 4, 6, or decrease, like 6, 4, 2.\n
-		â€¢	Some of the items may be easy but others may be hard. Just do the best you can.\n
-		â€¢	It is more important to answer the item correctly than to answer quickly, so take a little time to think before answering.\n
-		â€¢	In a few cases, more than one number may be correct. Please give only one answer per box. If your answer is one of the correct answers, you will receive credit.\n
-		â€¢	You can go on to the next item at any time by clicking â€œNext.â€\n\n
-		If you are ready to begin, please click â€œNext.â€
+		&#8226; Please enter the number that belongs in each empty box.\n
+		&#8226; An empty box could be at the end of a series or it could be in the middle.\n
+		&#8226; You may be asked a question with more than one empty box in the sequence.\n
+		&#8226; The numbers might increase, like 2, 4, 6, or decrease, like 6, 4, 2.\n
+		&#8226; Some of the items may be easy but others may be hard. Just do the best you can.\n
+		&#8226; It is more important to answer the item correctly than to answer quickly, so take a little time to think before answering.\n
+		&#8226; In a few cases, more than one number may be correct. Please give only one answer per box. If your answer is one of the correct answers, you will receive credit.\n
+		&#8226; You can go on to the next item at any time by clicking \'Next\'.\n\n
+		If you are ready to begin, please click \'Next\'.
 	</string>
     <string name="nsq">Please enter the number that belongs in each empty box.</string>
     <string name="title_activity_sec_nsintro_">Section NS Introduction</string>
@@ -369,7 +369,7 @@
 	</string>
     <string name="record">RECORD ANSWER</string>
     <string name="msg1">Please take your time to answer.</string>
-    <string name="msg2">You have not submitted a response yet. Your answers are important to us. Please try to answer as best you can. If you are not willing to provide an answer, please press NEXT to continue.</string>
+    <string name="msg2">You have not submitted a response yet.Your answers are important to us.\nPlease try to answer as best you can. If you are not willing to provide an answer, please press NEXT to continue.</string>
     <string name="msg3">You did not complete the question. Your answers are important to us. Please try to answer as best you can. If you are not willing to provide an answer, please press NEXT to continue.</string>
     <string name="quit_resume">Would you like to quit? Or go back to where you left off?</string>
 
@@ -407,10 +407,10 @@
 	</string>
     <string name="pr_explain">What is the missing figure here? If you study the pattern you will see that going from left to right there is one more line in each figure than in the one to the left of it. Going from top to bottom, the number of lines in any figure is one less than in the figure just above it. Therefore, the missing figure should have three lines. The correct answer has been selected (the three lines, slanting in the proper direction).</string>
     <string name="ar_intro">INSTRUCTIONS\n\n
-		â€¢	You will now be asked six more questions like the ones you just did. \n
-		â€¢	For each problem, decide what rules the pattern follows. Choose the answer that belongs in the question mark (?) by pressing the response option.\n
-		â€¢	Each problem has a different rule, so the patterns may seem quite different from the ones in the example items. \n
-		â€¢	Do not spend too much time on any one problem. \n\n
+		&#8226; You will now be asked six more questions like the ones you just did. \n
+		&#8226; For each problem, decide what rules the pattern follows. Choose the answer that belongs in the question mark (?) by pressing the response option.\n
+		&#8226; Each problem has a different rule, so the patterns may seem quite different from the ones in the example items. \n
+		&#8226; Do not spend too much time on any one problem. \n\n
 		When you are ready, press the BEGIN button.
 	</string>
     <string name="button_str_back">BACK</string>
@@ -450,10 +450,10 @@
 		Press the NEXT button to continue, or the BACK button to go back one page.
 	</string>
     <string name="sp_intro">INSTRUCTIONS\n\n
-		â€¢	For each item, select the object that could be made by folding the flat piece at each of the dotted lines.\n
-		â€¢	All folds are indicated by dotted lines.\n
-		â€¢	The solid lines show the cuts in the piece.\n
-		â€¢	Parts are not folded inside of other parts of any objects (in other words, there is no overlapping).\n\n
+		&#8226; For each item, select the object that could be made by folding the flat piece at each of the dotted lines.\n
+		&#8226; All folds are indicated by dotted lines.\n
+		&#8226; The solid lines show the cuts in the piece.\n
+		&#8226; Parts are not folded inside of other parts of any objects (in other words, there is no overlapping).\n\n
 		When you are ready, press the BEGIN button.
 	</string>
     <string name="title_activity_sppractice_">SPpractice_Activity</string>
@@ -477,17 +477,17 @@
     <string name="title_activity_sp53_">SP53_Activity</string>
     <string name="title_activity_sec_pv_">SecPV_Activity</string>
     <string name="pv_intro">Instructions: In this task, you will see several pictures. Please say the name of the pictured object. To record your answer, press the RECORD ANSWER button. If you do not know what is pictured, just give your best guess.\n\n
-		Please click â€œNextâ€ to see an example.
+		Please click \'Next\' to see an example.
 	</string>
     <string name="pvq">What is shown in this picture? Press the RECORD ANSWER button and say the name of this object.</string>
-    <string name="pv_ex">For example, if you see a picture of any kind of car, you would just say the word â€œcar.â€\n
+    <string name="pv_ex">For example, if you see a picture of any kind of car, you would just say the word "car".\n
 		You can see this example below.
 	</string>
-    <string name="pv_next">Please click â€œNextâ€ to see another example.</string>
+    <string name="pv_next">Please click "Next" to see another example.</string>
     <string name="pv_ex2">What is the arrow pointing to? Press the RECORD ANSWER button and say the name of the object.</string>
-    <string name="pv_explain">In the above example, you would say â€œeraserâ€. While the picture shows a pencil, the arrow is pointing to a specific part of this pencil&#8211; its eraser. Not all pictures will have arrows. In those cases, you are to say the word that best describes the entire picture. So in the above example, if no arrow were present, you would simply say â€œpencilâ€.\n\n
+    <string name="pv_explain">In the above example, you would say "eraser". While the picture shows a pencil, the arrow is pointing to a specific part of this pencil&#8211; its eraser. Not all pictures will have arrows. In those cases, you are to say the word that best describes the entire picture. So in the above example, if no arrow were present, you would simply say "pencil".\n\n
 		You will now be asked to identify six more pictures. Take your time. While you do not have an unlimited amount of time to respond to each problem, it is more important to answer correctly than to answer quickly.\n\n
-		Please click â€œNextâ€ to begin.
+		Please click "Next" to begin.
 	</string>
     <string name="title_activity_pvexample1_">PVexample1_Activity</string>
     <string name="title_activity_pvexample2_">PVexample2_Activity</string>
@@ -529,7 +529,7 @@
 	</string>
     <string name="rev_ex1">For example, if you see:\n\n
         RED\n\n
-        Because the rules are â€œREVERSE,â€ you should press the GO button. Please do this now.
+        Because the rules are "REVERSE", you should press the GO button. Please do this now.
 	</string>
     <string name="rev_ex2">And if you see:\n\n
         GREEN\n\n
@@ -687,110 +687,142 @@
     </string>
     <string name="title_activity_vo31_">VO31_Activity</string>
     <string name="vo31">A vacuum is a space containing</string>
-    <string name="vo311">Ozone</string>
-    <string name="vo312">Helium</string>
-    <string name="vo313">Carbon Monoxide</string>
-    <string name="vo314">Nitrogen</string>
-    <string name="vo315">Nothing</string>
+    <string-array name="vo31a">
+        <item>Ozone</item>
+        <item>Helium</item>
+        <item>Carbon monoxide</item>
+        <item>Nitrogen</item>
+        <item>Nothing</item>
+    </string-array>
+
     <string name="title_activity_vo32_">VO32_Activity</string>
     <string name="vo32">To surrender means to</string>
-    <string name="vo321">Fight</string>
-    <string name="vo322">Conquer</string>
-    <string name="vo323">Retreat</string>
-    <string name="vo324">Surround</string>
-    <string name="vo325">Yield</string>
+    <string-array name="vo32a">
+        <item>Fight</item>
+        <item>Conquer</item>
+        <item>Retreat</item>
+        <item>Surround</item>
+        <item>Yield</item>
+    </string-array>
+
     <string name="title_activity_vo33_">VO33_Activity</string>
     <string name="vo33">Obstruction means</string>
-    <string name="vo331">Obeisance</string>
-    <string name="vo332">Obstacle</string>
-    <string name="vo333">Obstinacy</string>
-    <string name="vo334">Obstreperousness</string>
-    <string name="vo335">Obtuseness</string>
+    <string-array name="vo33a">
+        <item>Obeisance</item>
+        <item>Obstacle</item>
+        <item>Obstinacy</item>
+        <item>Obstreperousness</item>
+        <item>Obtuseness</item>
+    </string-array>
 
     <string name="vo11">A diagram is a kind of</string>
-    <string name="vo111">Route</string>
-    <string name="vo112">Building</string>
-    <string name="vo113">Measurement</string>
-    <string name="vo114">Drawing</string>
-    <string name="vo115">Grammatical error</string>
+    <string-array name="vo11a">
+        <item>Route</item>
+        <item>Building</item>
+        <item>Measurement</item>
+        <item>Drawing</item>
+        <item>Grammatical error</item>
+    </string-array>
 
     <string name="vo12">To discard is to</string>
-    <string name="vo121">Gamble</string>
-    <string name="vo122">Hide</string>
-    <string name="vo123">Lie</string>
-    <string name="vo124">Take away</string>
-    <string name="vo125">Throw away</string>
+    <string-array name="vo12a">
+        <item>Gamble</item>
+        <item>Hide</item>
+        <item>Lie</item>
+        <item>Take away</item>
+        <item>Throw away</item>
+    </string-array>
 
     <string name="vo13">Blunt means</string>
-    <string name="vo131">Heavy</string>
-    <string name="vo132">Dangerous</string>
-    <string name="vo133">Weak</string>
-    <string name="vo134">Sharp</string>
-    <string name="vo135">Dull</string>
-
+    <string-array name="vo13a">
+        <item>Heavy</item>
+        <item>Dangerous</item>
+        <item>Weak</item>
+        <item>Sharp</item>
+        <item>Dull</item>
+    </string-array>
 
     <string name="vo21">Which of these is not a measuring device?</string>
-    <string name="vo211">Caliper</string>
-    <string name="vo212">Protractor</string>
-    <string name="vo213">Voltmeter</string>
-    <string name="vo214">Gauge</string>
-    <string name="vo215">Solder</string>
+    <string-array name="vo21a">
+        <item>Caliper</item>
+        <item>Protractor</item>
+        <item>Voltmeter</item>
+        <item>Gauge</item>
+        <item>Solder</item>
+    </string-array>
 
     <string name="vo22">A purpose of lubrication is to</string>
-    <string name="vo221">Prevent motion</string>
-    <string name="vo222">Increase heat</string>
-    <string name="vo223">Reduce friction</string>
-    <string name="vo224">Prevent warping</string>
-    <string name="vo225">Remove dirt</string>
+    <string-array name="vo22a">
+        <item>Prevent motion</item>
+        <item>Increase heat</item>
+        <item>Reduce friction</item>
+        <item>Prevent warping</item>
+        <item>Remove dirt</item>
+    </string-array>
 
     <string name="vo23">Restricted means</string>
-    <string name="vo231">Scolded</string>
-    <string name="vo232">Redesigned</string>
-    <string name="vo233">Limited</string>
-    <string name="vo234">Refrained</string>
-    <string name="vo235">Tense</string>
+    <string-array name="vo23a">
+        <item>Scolded</item>
+        <item>Redesigned</item>
+        <item>Limited</item>
+        <item>Refrained</item>
+        <item>Tense</item>
+    </string-array>
 
     <string name="vo41">To retain means to</string>
-    <string name="vo411">Get</string>
-    <string name="vo412">Give up</string>
-    <string name="vo413">Keep</string>
-    <string name="vo414">Lose</string>
-    <string name="vo415">Create</string>
+    <string-array name="vo41a">
+        <item>Get</item>
+        <item>Give up</item>
+        <item>Keep</item>
+        <item>Lose</item>
+        <item>Create</item>
+    </string-array>
 
     <string name="vo42">A municipal court is a</string>
-    <string name="vo421">City court</string>
-    <string name="vo422">State court</string>
-    <string name="vo423">Federal court</string>
-    <string name="vo424">United Nations court</string>
-    <string name="vo425">Military court</string>
+    <string-array name="vo42a">
+        <item>City court</item>
+        <item>State court</item>
+        <item>Federal court</item>
+        <item>United Nations court</item>
+        <item>Military court</item>
+    </string-array>
 
     <string name="vo43">Which of these is carnivorous?</string>
-    <string name="vo431">Chipmunk</string>
-    <string name="vo432">Cow</string>
-    <string name="vo433">Horse</string>
-    <string name="vo434">Tiger</string>
-    <string name="vo435">Elephant</string>
+    <string-array name="vo43a">
+        <item>Chipmunk</item>
+        <item>Cow</item>
+        <item>Horse</item>
+        <item>Tiger</item>
+        <item>Elephant</item>
+    </string-array>
 
     <string name="vo51">Magnitude means</string>
-    <string name="vo511">Generosity</string>
-    <string name="vo512">Size</string>
-    <string name="vo513">Location</string>
-    <string name="vo514">Kindness</string>
-    <string name="vo515">Direction</string>
+    <string-array name="vo51a">
+        <item>Generosity</item>
+        <item>Size</item>
+        <item>Location</item>
+        <item>Kindness</item>
+        <item>Direction</item>
+    </string-array>
 
     <string name="vo52">Eccentric means</string>
-    <string name="vo521">Odd</string>
-    <string name="vo522">Feeble-minded</string>
-    <string name="vo523">Stingy</string>
-    <string name="vo524">Temperamental</string>
-    <string name="vo525">Solitary</string>
+    <string-array name="vo52a">
+        <item>Odd</item>
+        <item>Feeble-minded</item>
+        <item>Stingy</item>
+        <item>Temperamental</item>
+        <item>Solitary</item>
+    </string-array>
 
     <string name="vo53">A barometer is used to measure</string>
-    <string name="vo531">Temperature</string>
-    <string name="vo532">Rainfall</string>
-    <string name="vo533">Humidity</string>
-    <string name="vo534">Air pressure</string>
-    <string name="vo535">Cloudiness</string>
+    <string-array name="vo53a">
+        <item>Temperature</item>
+        <item>Rainfall</item>
+        <item>Humidity</item>
+        <item>Air pressure</item>
+        <item>Cloudiness</item>
+    </string-array>
+
     <string name="title_activity_vo11_">VO11_Activity</string>
     <string name="title_activity_vo12_">VO12_Activity</string>
     <string name="title_activity_vo13_">VO13_Activity</string>
@@ -808,5 +840,10 @@
     <string name="finishbutton_str">FINISH</string>
     <string name="title_activity_quit_resume">QuitResumeActivity</string>
     <string name="title_activity_finish">FinishActivity</string>
+
+    <string name="quit">Quit</string>
+    <string name="resume">Resume</string>
+    <string name="timeup">2 minutes up</string>
+    <string name="ok">OK</string>
 
 </resources>

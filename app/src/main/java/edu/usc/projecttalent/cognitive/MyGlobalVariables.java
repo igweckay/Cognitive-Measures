@@ -1,7 +1,5 @@
 package edu.usc.projecttalent.cognitive;
 
-
-
 import android.app.Application;
 
 /**

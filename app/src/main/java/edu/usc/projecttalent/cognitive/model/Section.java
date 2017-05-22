@@ -23,6 +23,10 @@ public class Section {
         blocks.add(block);
     }
 
+    public int getBlockSize() {
+        return blocks.size();
+    }
+
     public void endSection() {
         this.end = new Date();
     }

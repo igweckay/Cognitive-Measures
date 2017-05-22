@@ -85,8 +85,4 @@ public class QuestionTimer extends CountDownTimer {
                 })
                 .setCancelable(false).create();
     }
-
-    public static void updateContext(Context context) {
-        mContext = context;
-    }
 }

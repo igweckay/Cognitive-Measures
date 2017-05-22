@@ -12,7 +12,7 @@ public class Answer {
     int actual;
     Date end;
 
-    Answer() {
+    public Answer() {
         this.start = new Date();
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="edu.usc.projecttalent.cognitive.vocab.VO11_Activity">
+    tools:context="edu.usc.projecttalent.cognitive.vocab.VO31_Activity">
 
     <data>
         <variable
@@ -26,7 +26,7 @@
             android:textSize="30sp" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

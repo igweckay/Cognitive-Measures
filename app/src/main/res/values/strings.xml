@@ -686,155 +686,181 @@
 		This task contains words for you to define. The items are multiple choice - select the best response for each word.\n
     </string>
     <string name="title_activity_vo31_">VO31_Activity</string>
-    <string name="vo31">A vacuum is a space containing</string>
-    <string-array name="vo31a">
-        <item>Ozone</item>
-        <item>Helium</item>
-        <item>Carbon monoxide</item>
-        <item>Nitrogen</item>
-        <item>Nothing</item>
-    </string-array>
+    <string name="vocab3">
+          [
+            {
+               \"question\": \"A vacuum is a space containing\",
+               \"options\": [\"Ozone\",
+                        \"Helium\",
+                        \"Carbon monoxide\",
+                        \"Nitrogen\",
+                        \"Nothing\"
+                        ],
+                \"answer\": 4
+            },
+            {
+                \"question\": \"To surrender means to\",
+                \"options\": [\"Fight\",
+                       \"Conquer\",
+                        \"Retreat\",
+                        \"Surround\",
+                        \"Yield\"
+                       ],
+                \"answer\": 4
+            },
+            {
+                \"question\": \"Obstruction means\",
+                \"options\": [\"Obeisance\",
+                        \"Obstacle\",
+                        \"Obstinacy\",
+                        \"Obstreperousness\",
+                        \"Obtuseness\"
+                       ],
+                \"answer\": 1
+            }
+          ]
+    </string>
 
-    <string name="title_activity_vo32_">VO32_Activity</string>
-    <string name="vo32">To surrender means to</string>
-    <string-array name="vo32a">
-        <item>Fight</item>
-        <item>Conquer</item>
-        <item>Retreat</item>
-        <item>Surround</item>
-        <item>Yield</item>
-    </string-array>
+    <string name="vocab1">
+         [
+            {
+               \"question\": \"A diagram is a kind of\",
+               \"options\": [\"Route\",
+                        \"Building\",
+                        \"Measurement\",
+                        \"Drawing\",
+                        \"Grammatical error\"
+                        ],
+                \"answer\": 3
+            },
+            {
+                \"question\": \"To discard is to\",
+                \"options\": [\"Gamble\",
+                       \"Hide\",
+                        \"Lie\",
+                        \"Take away\",
+                        \"Throw away\"
+                       ],
+                \"answer\": 4
+            },
+            {
+                \"question\": \"Blunt means\",
+                \"options\": [\"Heavy\",
+                        \"Dangerous\",
+                        \"Weak\",
+                        \"Sharp\",
+                        \"Dull\"
+                       ],
+                \"answer\": 4
+            }
+          ]
+    </string>
 
-    <string name="title_activity_vo33_">VO33_Activity</string>
-    <string name="vo33">Obstruction means</string>
-    <string-array name="vo33a">
-        <item>Obeisance</item>
-        <item>Obstacle</item>
-        <item>Obstinacy</item>
-        <item>Obstreperousness</item>
-        <item>Obtuseness</item>
-    </string-array>
+    <string name="vocab2">
+         [
+            {
+               \"question\": \"Which of these is not a measuring device?\",
+               \"options\": [\"Caliper\",
+                        \"Protractor\",
+                        \"Voltmeter\",
+                        \"Gauge\",
+                        \"Solder\"
+                        ],
+                \"answer\": 4
+            },
+            {
+                \"question\": \"A purpose of lubrication is to\",
+                \"options\": [\"Prevent motion\",
+                       \"Increase heat\",
+                        \"Reduce friction\",
+                        \"Prevent warping\",
+                        \"Remove dirt\"
+                       ],
+                \"answer\": 2
+            },
+            {
+                \"question\": \"Restricted means\",
+                \"options\": [\"Scolded\",
+                        \"Redesigned\",
+                        \"Limited\",
+                        \"Refrained\",
+                        \"Tense\"
+                       ],
+                \"answer\": 2
+            }
+          ]
+    </string>
 
-    <string name="vo11">A diagram is a kind of</string>
-    <string-array name="vo11a">
-        <item>Route</item>
-        <item>Building</item>
-        <item>Measurement</item>
-        <item>Drawing</item>
-        <item>Grammatical error</item>
-    </string-array>
+    <string name="vocab4">
+         [
+            {
+               \"question\": \"To retain means to\",
+               \"options\": [\"Get\",
+                        \"Give up\",
+                        \"Keep\",
+                        \"Lose\",
+                        \"Create\"
+                        ],
+                \"answer\": 2
+            },
+            {
+                \"question\": \"A municipal court is a\",
+                \"options\": [\"City court\",
+                       \"State court\",
+                        \"Federal court\",
+                        \"United Nations court\",
+                        \"Military court\"
+                       ],
+                \"answer\": 0
+            },
+            {
+                \"question\": \"Which of these is carnivorous?\",
+                \"options\": [\"Chipmunk\",
+                        \"Cow\",
+                        \"Horse\",
+                        \"Tiger\",
+                        \"Elephant\"
+                       ],
+                \"answer\": 3
+            }
+          ]
+    </string>
 
-    <string name="vo12">To discard is to</string>
-    <string-array name="vo12a">
-        <item>Gamble</item>
-        <item>Hide</item>
-        <item>Lie</item>
-        <item>Take away</item>
-        <item>Throw away</item>
-    </string-array>
+    <string name="vocab5">
+         [
+            {
+               \"question\": \"Magnitude means\",
+               \"options\": [\"Generosity\",
+                        \"Size\",
+                        \"Location\",
+                        \"Kindness\",
+                        \"Direction\"
+                        ],
+                \"answer\": 1
+            },
+            {
+                \"question\": \"Eccentric means\",
+                \"options\": [\"Odd\",
+                       \"Feeble-minded\",
+                        \"Stingy\",
+                        \"Temperamental\",
+                        \"Solitary\"
+                       ],
+                \"answer\": 0
+            },
+            {
+                \"question\": \"A barometer is used to measure\",
+                \"options\": [\"Temperature\",
+                        \"Rainfall\",
+                        \"Humidity\",
+                        \"Air pressure\",
+                        \"Cloudiness\"
+                       ],
+                \"answer\": 4
+            }
+          ]
+    </string>
 
-    <string name="vo13">Blunt means</string>
-    <string-array name="vo13a">
-        <item>Heavy</item>
-        <item>Dangerous</item>
-        <item>Weak</item>
-        <item>Sharp</item>
-        <item>Dull</item>
-    </string-array>
-
-    <string name="vo21">Which of these is not a measuring device?</string>
-    <string-array name="vo21a">
-        <item>Caliper</item>
-        <item>Protractor</item>
-        <item>Voltmeter</item>
-        <item>Gauge</item>
-        <item>Solder</item>
-    </string-array>
-
-    <string name="vo22">A purpose of lubrication is to</string>
-    <string-array name="vo22a">
-        <item>Prevent motion</item>
-        <item>Increase heat</item>
-        <item>Reduce friction</item>
-        <item>Prevent warping</item>
-        <item>Remove dirt</item>
-    </string-array>
-
-    <string name="vo23">Restricted means</string>
-    <string-array name="vo23a">
-        <item>Scolded</item>
-        <item>Redesigned</item>
-        <item>Limited</item>
-        <item>Refrained</item>
-        <item>Tense</item>
-    </string-array>
-
-    <string name="vo41">To retain means to</string>
-    <string-array name="vo41a">
-        <item>Get</item>
-        <item>Give up</item>
-        <item>Keep</item>
-        <item>Lose</item>
-        <item>Create</item>
-    </string-array>
-
-    <string name="vo42">A municipal court is a</string>
-    <string-array name="vo42a">
-        <item>City court</item>
-        <item>State court</item>
-        <item>Federal court</item>
-        <item>United Nations court</item>
-        <item>Military court</item>
-    </string-array>
-
-    <string name="vo43">Which of these is carnivorous?</string>
-    <string-array name="vo43a">
-        <item>Chipmunk</item>
-        <item>Cow</item>
-        <item>Horse</item>
-        <item>Tiger</item>
-        <item>Elephant</item>
-    </string-array>
-
-    <string name="vo51">Magnitude means</string>
-    <string-array name="vo51a">
-        <item>Generosity</item>
-        <item>Size</item>
-        <item>Location</item>
-        <item>Kindness</item>
-        <item>Direction</item>
-    </string-array>
-
-    <string name="vo52">Eccentric means</string>
-    <string-array name="vo52a">
-        <item>Odd</item>
-        <item>Feeble-minded</item>
-        <item>Stingy</item>
-        <item>Temperamental</item>
-        <item>Solitary</item>
-    </string-array>
-
-    <string name="vo53">A barometer is used to measure</string>
-    <string-array name="vo53a">
-        <item>Temperature</item>
-        <item>Rainfall</item>
-        <item>Humidity</item>
-        <item>Air pressure</item>
-        <item>Cloudiness</item>
-    </string-array>
-
-    <string name="title_activity_vo11_">VO11_Activity</string>
-    <string name="title_activity_vo12_">VO12_Activity</string>
-    <string name="title_activity_vo13_">VO13_Activity</string>
-    <string name="title_activity_vo21_">VO21_Activity</string>
-    <string name="title_activity_vo22_">VO22_Activity</string>
-    <string name="title_activity_vo23_">VO23_Activity</string>
-    <string name="title_activity_vo41_">VO41_Activity</string>
-    <string name="title_activity_vo42_">VO42_Activity</string>
-    <string name="title_activity_vo43_">VO43_Activity</string>
-    <string name="title_activity_vo51_">VO51_Activity</string>
-    <string name="title_activity_vo52_">VO52_Activity</string>
-    <string name="title_activity_vo53_">VO53_Activity</string>
     <string name="repeatmsg">The word list will now be repeated.</string>
     <string name="title_activity_emp">emp</string>
     <string name="finishbutton_str">FINISH</string>
@@ -845,5 +871,7 @@
     <string name="resume">Resume</string>
     <string name="timeup">2 minutes up</string>
     <string name="ok">OK</string>
+    <string name="next">Next</string>
+    <string name="vocabulary">Vocabulary</string>
 
 </resources>

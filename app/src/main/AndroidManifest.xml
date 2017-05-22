@@ -16,69 +16,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".vocab.VO11_Activity"
-            android:label="@string/title_activity_vo11_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO12_Activity"
-            android:label="@string/title_activity_vo12_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO13_Activity"
-            android:label="@string/title_activity_vo13_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO21_Activity"
-            android:label="@string/title_activity_vo21_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO22_Activity"
-            android:label="@string/title_activity_vo22_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO23_Activity"
-            android:label="@string/title_activity_vo23_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name=".vocab.VO31_Activity"
-            android:label="@string/title_activity_vo31_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO32_Activity"
-            android:label="@string/title_activity_vo32_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO33_Activity"
-            android:label="@string/title_activity_vo33_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO41_Activity"
-            android:label="@string/title_activity_vo41_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO42_Activity"
-            android:label="@string/title_activity_vo42_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO43_Activity"
-            android:label="@string/title_activity_vo43_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO51_Activity"
-            android:label="@string/title_activity_vo51_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO52_Activity"
-            android:label="@string/title_activity_vo52_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".vocab.VO53_Activity"
-            android:label="@string/title_activity_vo53_"
+            android:label="@string/vocabulary"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".FinishActivity"
             android:label="@string/title_activity_finish"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".numbers.SecNS_Activity"
             android:label="@string/title_activity_sec_ns_"
@@ -158,7 +102,6 @@
             android:name=".numbers.Set5Item3_Activity"
             android:label="@string/title_activity_set5_item3_"
             android:windowSoftInputMode="stateHidden" />
-
         <activity
             android:name=".reasoning.SecAR_Activity"
             android:label="@string/title_activity_sec_ar_" />
@@ -228,6 +171,7 @@
         <activity
             android:name=".reasoning.AR53_Activity"
             android:label="@string/title_activity_ar53_" />
+        <activity android:name=".vocab.VocabIntro"></activity>
     </application>
 
 </manifest>

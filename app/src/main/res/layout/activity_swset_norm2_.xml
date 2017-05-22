@@ -18,7 +18,7 @@
         android:text="@string/normal" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/next"
         android:layout_width="100dp"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"

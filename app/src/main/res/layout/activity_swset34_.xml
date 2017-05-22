@@ -83,7 +83,7 @@
         android:textSize="26sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/next"
         android:layout_width="130dp"
         android:layout_height="65dp"
         android:layout_alignRight="@+id/error"

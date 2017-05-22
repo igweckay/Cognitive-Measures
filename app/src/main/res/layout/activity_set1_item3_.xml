@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
 	    android:gravity="center"
 	    android:layout_alignParentTop="true"
 	    android:textSize="30sp"
@@ -53,7 +53,7 @@
         android:textSize="30sp"
         android:layout_toRightOf="@+id/Button09"
         android:text="@string/one" />
-    
+
     <Button
         android:id="@+id/Button07"
         style="?android:attr/buttonStyleSmall"
@@ -65,7 +65,7 @@
         android:layout_height="80dp"
         android:layout_toRightOf="@+id/Button08"
         android:text="@string/two" />
-    
+
     <Button
         android:id="@+id/Button06"
         style="?android:attr/buttonStyleSmall"
@@ -89,7 +89,7 @@
         android:layout_height="80dp"
         android:layout_toRightOf="@+id/Button06"
         android:text="@string/four" />
-    
+
     <Button
         android:id="@+id/Button04"
         style="?android:attr/buttonStyleSmall"
@@ -101,7 +101,7 @@
         android:layout_alignBaseline="@+id/Button05"
         android:layout_alignBottom="@+id/Button05"
         android:text="@string/five" />
-    
+
     <Button
         android:id="@+id/Button03"
         style="?android:attr/buttonStyleSmall"
@@ -114,7 +114,7 @@
         android:layout_toRightOf="@+id/Button04"
         android:text="@string/six" />
 
-   
+
     <Button
         android:id="@+id/Button02"
         style="?android:attr/buttonStyleSmall"
@@ -150,7 +150,7 @@
         android:layout_height="80dp"
         android:layout_toRightOf="@+id/Button01"
         android:text="@string/nine" />
-    
+
      <Button
         android:id="@+id/Button09"
         style="?android:attr/buttonStyleSmall"
@@ -161,7 +161,7 @@
         android:layout_marginTop="28dp"
         android:text="@string/zero"
         android:textSize="30sp" />
-    
+
     <Button
         android:id="@+id/button3"
         android:layout_width="100dp"
@@ -202,13 +202,13 @@
         android:layout_height="60dp"
         android:layout_alignBaseline="@+id/editText1"
         android:layout_alignBottom="@+id/editText1"
-        android:layout_centerHorizontal="true"        
+        android:layout_centerHorizontal="true"
         android:text="@string/eleven"
-        android:textSize="40sp" />  
+        android:textSize="40sp" />
     <EditText
         android:id="@+id/editText1"
         android:layout_width="80dp"
-        android:layout_height="60dp"        
+        android:layout_height="60dp"
         android:layout_marginTop="59dp"
         android:layout_toRightOf="@+id/textView3"
         android:layout_below="@+id/question"

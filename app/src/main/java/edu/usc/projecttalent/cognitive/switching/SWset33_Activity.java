@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -81,7 +79,7 @@ public class SWset33_Activity extends Activity {
 				             btn.setVisibility(View.INVISIBLE);
 				             btn = (Button) findViewById(R.id.button1);
 				             btn.setVisibility(View.INVISIBLE);
-				             btn = (Button) findViewById(R.id.button2);
+				             btn = (Button) findViewById(R.id.next);
 				             btn.setVisibility(View.INVISIBLE);
 
 
@@ -124,7 +122,7 @@ public class SWset33_Activity extends Activity {
 				             btn.setVisibility(View.INVISIBLE);
 				             btn = (Button) findViewById(R.id.button1);
 				             btn.setVisibility(View.INVISIBLE);
-				             btn = (Button) findViewById(R.id.button2);
+				             btn = (Button) findViewById(R.id.next);
 				             btn.setVisibility(View.INVISIBLE);
 
 
@@ -164,7 +162,7 @@ public class SWset33_Activity extends Activity {
 				             tv.setVisibility(View.VISIBLE);
 				             btn = (Button) findViewById(R.id.button1);
 				             btn.setVisibility(View.VISIBLE);
-				             btn = (Button) findViewById(R.id.button2);
+				             btn = (Button) findViewById(R.id.next);
 				             btn.setVisibility(View.VISIBLE);
 	            		}
 	            		else {
@@ -188,7 +186,7 @@ public class SWset33_Activity extends Activity {
 					             btn.setVisibility(View.INVISIBLE);
 					             btn = (Button) findViewById(R.id.button1);
 					             btn.setVisibility(View.INVISIBLE);
-					             btn = (Button) findViewById(R.id.button2);
+					             btn = (Button) findViewById(R.id.next);
 					             btn.setVisibility(View.INVISIBLE);
 
 
@@ -205,7 +203,7 @@ public class SWset33_Activity extends Activity {
 	            		}
 	            }
 	        });
-		  btn = (Button) findViewById(R.id.button2);
+		  btn = (Button) findViewById(R.id.next);
 		  btn.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	                // Perform action on click
@@ -230,7 +228,7 @@ public class SWset33_Activity extends Activity {
 			             btn.setVisibility(View.INVISIBLE);
 			             btn = (Button) findViewById(R.id.button1);
 			             btn.setVisibility(View.INVISIBLE);
-			             btn = (Button) findViewById(R.id.button2);
+			             btn = (Button) findViewById(R.id.next);
 			             btn.setVisibility(View.INVISIBLE);
 
 

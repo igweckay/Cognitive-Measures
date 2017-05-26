@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/numpad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/zero" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/one" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/two" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/three" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/four" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/five" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/six" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/seven" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/eight" />
+
+    <Button
+        style="@style/numpadButton"
+        android:text="@string/nine" />
+
+</LinearLayout>

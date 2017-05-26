@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CogMeasures</string>
-    <string name="hello_world">Hello World!</string>
+    <string name="app_name">Cognitive Measures</string>\
     <string name="action_settings">Settings</string>
     <string name="first_str">Welcome to Project Talent. </string>
     <string name="button_str">NEXT</string>
     <string name="username_msg">Please enter your User ID (as listed in the letter that you received with this tablet).</string>
     <string name="username">Username:</string>
-    <string name="zero">0</string>
-    <string name="one">1</string>
-    <string name="two">2</string>
-    <string name="three">3</string>
-    <string name="four">4</string>
-    <string name="five">5</string>
-    <string name="six">6</string>
-    <string name="seven">7</string>
-    <string name="eight">8</string>
-    <string name="nine">9</string>
-    <string name="ten">10</string>
+
     <string name="agreement">The following are a series of cognitive tasks, several of which are the versions of the tasks you completed in the original Project Talent study.\n\n
         \t&#8226; Read the instructions for each task carefully.\n
         \t&#8226; Do the best you can. If you are unsure of the right answer, pick the one you think is the best.\n
@@ -289,14 +278,10 @@
 	</string>
     <string name="title_activity_name_blue_things_">Name Blue Things</string>
     <string name="title_activity_sec_ns_">Section NS&#8211;Example 1</string>
-    <string name="ns900">Instructions: In this task, on each screen you will be presented with several numbers that make up a series. There will be one or more empty boxes somewhere in the series. Sometimes the empty boxes will be at the end of the series, and sometimes they will be in the middle. Press the number buttons to enter the number that goes in each empty box.\n\n
-		For example:\n
-		Please enter the number that belongs in each empty box.\n\n
-	</string>
+
     <string name="ns901">The answer we were looking for is 3, so the completed sequence is: </string>
     <string name="title_activity_sec_nsex2_">Example 2</string>
     <string name="title_activity_sec_nsex1_a">Example 1 Answer</string>
-    <string name="clicknext">Please click â€œNextâ€ to continue.</string>
     <string name="ns902">Below is another example.\n\n
 		Please enter the number that belongs in each empty box.
 	</string>
@@ -680,12 +665,18 @@
     <string name="w023_5">Smartphone (such as iPhone)</string>
     <string name="w023_6">Mobile phone other than a smartphone</string>
     <string name="w023i">(Select one option for each type)</string>
-    <string name="clear">CLEAR</string>
-    <string name="title_activity_sec_vo_">SecVO_Activity</string>
-    <string name="vo_text">INSTRUCTIONS\n\n\n
-		This task contains words for you to define. The items are multiple choice - select the best response for each word.\n
+
+
+    <string name="repeatmsg">The word list will now be repeated.</string>
+    <string name="title_activity_emp">emp</string>
+    <string name="finishbutton_str">FINISH</string>
+    <string name="title_activity_finish">Finish</string>
+
+    <!-- Vocabulary strings -->
+    <string name="vo_text">INSTRUCTIONS\n\n
+		This task contains words for you to define. The items are multiple choice - select the best response for each word.
     </string>
-    <string name="title_activity_vo31_">VO31_Activity</string>
+    <string name="vocabulary">Vocabulary</string>
     <string name="vocab3">
           [
             {
@@ -720,7 +711,6 @@
             }
           ]
     </string>
-
     <string name="vocab1">
          [
             {
@@ -755,7 +745,6 @@
             }
           ]
     </string>
-
     <string name="vocab2">
          [
             {
@@ -790,7 +779,6 @@
             }
           ]
     </string>
-
     <string name="vocab4">
          [
             {
@@ -825,7 +813,6 @@
             }
           ]
     </string>
-
     <string name="vocab5">
          [
             {
@@ -856,22 +843,42 @@
                         \"Air pressure\",
                         \"Cloudiness\"
                        ],
-                \"answer\": 4
+                \"answer\": 3
             }
           ]
     </string>
+    <!-- Vocabulary strings -->
 
-    <string name="repeatmsg">The word list will now be repeated.</string>
-    <string name="title_activity_emp">emp</string>
-    <string name="finishbutton_str">FINISH</string>
-    <string name="title_activity_quit_resume">QuitResumeActivity</string>
-    <string name="title_activity_finish">FinishActivity</string>
+    <!-- Number Series -->
+    <string name="ns900">Instructions: In this task, on each screen you will be presented with several numbers that make up a series. There will be one or more empty boxes
+        somewhere in the series. Sometimes the empty boxes will be at the end of the series, and sometimes they will be in the middle. Press the number buttons to enter the
+        number that goes in each empty box.\n\n
+		For example:\n
+		Please enter the number that belongs in each empty box.\n\n
+	</string>
+    <string name="clear">Undo</string>
+    <string name="clicknext">Please click \'Next\' to continue.</string>
 
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+
+    <!-- Number series -->
+
+    <!-- Warning messages -->
     <string name="quit">Quit</string>
     <string name="resume">Resume</string>
     <string name="timeup">2 minutes up</string>
     <string name="ok">OK</string>
     <string name="next">Next</string>
-    <string name="vocabulary">Vocabulary</string>
+    <!-- Warning messages -->
 
 </resources>

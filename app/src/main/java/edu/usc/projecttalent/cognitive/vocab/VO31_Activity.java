@@ -121,7 +121,9 @@ public class VO31_Activity extends AppCompatActivity {
     private void finishSection() {
         mSection.endSection(); //end this section.
         Survey.getSurvey().addSection(mSection); //add vocab section to survey.
-        startActivityForResult(new Intent(mContext,FinishActivity.class), 1);
+        Intent intent = new Intent(mContext, FinishActivity.class);
+        intent.putExtra(FinishActivity.SECTION, "number");
+        startActivityForResult(intent, 1);
     }
 
     BroadcastReceiver mReceiver = new BroadcastReceiver() {

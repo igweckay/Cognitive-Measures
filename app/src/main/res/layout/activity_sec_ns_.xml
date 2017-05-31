@@ -1,94 +1,85 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="edu.usc.projecttalent.cognitive.numbers.SecNS_Activity">
 
-   <TextView
-        android:id="@+id/question"
-        android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:gravity="center"
-	    android:layout_alignParentTop="true"
-	    android:textSize="25sp"
-        android:text="@string/ns900"
-        android:labelFor="@+id/editText1" />
+    <data>
+
+        <variable
+            name="item"
+            type="edu.usc.projecttalent.cognitive.numbers.NSExample" />
+        <import type="android.view.View"/>
+    </data>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:text="@{item.question}"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/ns_instr"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/series"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/numQues"
+                android:text="@{Integer.toString(item.options[0])}" />
+
+            <TextView
+                style="@style/numQues"
+                android:text="@{Integer.toString(item.options[1])}" />
+
+            <TextView
+                style="@style/numQues"
+                android:text="@{Integer.toString(item.options[2])}"
+                android:visibility="@{item.ansPosition == 2? View.GONE: View.VISIBLE}"/>
+
+            <TextView
+                style="@style/numQues"
+                android:text="@{Integer.toString(item.options[3])}"
+                android:visibility="@{item.ansPosition == 3? View.GONE: View.VISIBLE}"/>
+
+            <EditText
+                android:id="@+id/answer"
+                style="@style/numAns" />
+
+            <Button
+                android:id="@+id/undo"
+                style="@style/undo" />
+
+        </LinearLayout>
+
+        <include layout="@layout/num_pad" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginRight="26dp"
-            android:text="@string/one"
-            android:textSize="40sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginRight="26dp"
-            android:text="@string/two"
-            android:textSize="40sp" />
-
-        <EditText
-            android:id="@+id/answer"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:cursorVisible="false"
-            android:ems="10"
-            android:editable="false"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/clicknext"
             android:textSize="30sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginLeft="26dp"
-            android:text="@string/four"
-            android:textSize="40sp" />
-
         <Button
-            android:id="@+id/undo"
-            android:layout_width="120dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="26dp"
-            android:radius="10dp"
-            android:text="@string/clear"
-            android:textColor="#000000"
-            android:textSize="26sp" />
-
+            android:id="@+id/next"
+            style="@style/next" />
     </LinearLayout>
-
-    <include layout="@layout/num_pad"/>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/clicknext"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="100dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="45dp"
-        android:layout_marginRight="39dp"
-        android:background="#1E669B"
-        android:radius="10dp"
-        android:text="@string/button_str"
-        android:textColor="#FFFFFF"
-        android:textSize="26sp"
-        android:layout_gravity="end|bottom"/>
-
-
-</LinearLayout>
+</layout>

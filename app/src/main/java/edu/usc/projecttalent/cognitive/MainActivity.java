@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import edu.usc.projecttalent.cognitive.model.Survey;
-import edu.usc.projecttalent.cognitive.vocab.VocabIntro;
+import edu.usc.projecttalent.cognitive.numbers.SecNS_Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, VocabIntro.class);
+                Intent intent = new Intent(mContext, SecNS_Activity.class);
                 startActivityForResult(intent, 1);
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
-                String output = data.getStringExtra("json");
+                String output = data.getStringExtra(FinishActivity.JSON);
                 Log.d(TAG, output);
                 setResult(Activity.RESULT_OK, data);
                 super.finish();

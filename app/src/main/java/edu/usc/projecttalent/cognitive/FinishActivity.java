@@ -16,7 +16,8 @@ public class FinishActivity extends AppCompatActivity {
 
     Class nextClass;
     Context mContext;
-    public static final String SECTION = "section";
+    public static final String SECTION = "section",
+                                JSON = "json";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,30 +25,23 @@ public class FinishActivity extends AppCompatActivity {
         setContentView(R.layout.activity_finish);
         Button button = (Button) findViewById(R.id.finish);
         mContext = this;
-        final String nextItem = getIntent().getStringExtra("section");
+        final int nextItem = getIntent().getIntExtra(SECTION, 0);
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 switch(nextItem) {
-                    case "number":
+                    case R.string.switch_ns:
                        nextClass = SecNS_Activity.class;
                         break;
                     default:
-                        nextClass = FinishActivity.class;
+                        Survey survey = Survey.getSurvey();
+                        survey.endSurvey();
+                        Intent intent = new Intent();
+                        intent.putExtra(JSON, new Gson().toJson(survey));
+                        setResult(RESULT_OK, intent);
+                        finish();
                 }
-
-                if(nextClass == FinishActivity.class) {
-                    Survey survey = Survey.getSurvey();
-                    survey.endSurvey();
-                    Gson gson = new Gson();
-                    String output = gson.toJson(survey);
-                    Intent intent = new Intent();
-                    intent.putExtra("json", output);
-                    setResult(RESULT_OK, intent);
-                } else {
-                    Intent intent = new Intent(mContext, nextClass);
-                    startActivityForResult(intent, 1);
-                }
+                startActivityForResult(new Intent(mContext, nextClass), 1);
                 finish();
             }
         });

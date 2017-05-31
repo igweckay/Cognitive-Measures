@@ -46,7 +46,6 @@ public class Set1Item1_Activity extends Activity {
 	        		s+="nsa11_end:"+end.toString()+";";
 	        		MyGlobalVariables.setTime(s);
 		    		Intent intent = new Intent(Set1Item1_Activity.this, Set1Item2_Activity.class);
-          	    //startActivity(intent);
 					startActivityForResult(intent,1);
 		    	}
 		     }
@@ -63,7 +62,6 @@ public class Set1Item1_Activity extends Activity {
 		Button button = (Button) findViewById(R.id.Button09);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='0';
@@ -73,7 +71,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button11);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='9';
@@ -83,7 +80,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button01);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='8';
@@ -93,7 +89,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button09);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='0';
@@ -103,7 +98,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button02);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='7';
@@ -113,7 +107,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button03);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='6';
@@ -123,7 +116,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button04);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='5';
@@ -133,7 +125,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button05);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='4';
@@ -143,7 +134,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button06);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='3';
@@ -153,7 +143,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button07);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='2';
@@ -163,7 +152,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.Button08);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	String u=uid.getText().toString();
           	u+='1';
@@ -173,7 +161,6 @@ public class Set1Item1_Activity extends Activity {
       button = (Button) findViewById(R.id.button9);
       button.setOnClickListener(new View.OnClickListener() {
           public void onClick(View v) {
-              // Perform action on click
           	EditText uid=(EditText) findViewById(R.id.editText1);
           	uid.setText("");
           }
@@ -192,11 +179,7 @@ public class Set1Item1_Activity extends Activity {
       		}
           	if (u.length()!=0)
           	{
-          		//MyGlobalVariables g = new MyGlobalVariables();
           		s+="nsa11:"+u+";";
-
-//          		Intent intent = new Intent(Set3Item1Activity.this, Set3Item2_Activity.class);
-//          	    startActivity(intent);
           	}
           	if(u.length()==0)
           	{
@@ -225,23 +208,12 @@ public class Set1Item1_Activity extends Activity {
       });
 	}
 	@Override
-	public void onBackPressed()
-	{
-
-	   //thats it
-	}
+	public void onBackPressed() {}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// Check which request we're responding to
-        Log.d("Set1Item1",  "onActivityResult - Set1Item1_Activity");
 		if (requestCode == 1) {
-			// Make sure the request was successful
 			if (resultCode == RESULT_OK) {
-				// The user picked a contact.
-				// The Intent's data Uri identifies which contact was selected.
-
-				// Do something with the contact here (bigger example below)
 				setResult(Activity.RESULT_OK, data);
 				super.finish();
 			}

@@ -1,8 +1,5 @@
 package edu.usc.projecttalent.cognitive.numbers;
 
-//import java.util.Timer;
-//import java.util.TimerTask;
-
 import java.util.Date;
 
 import android.app.Activity;
@@ -17,8 +14,6 @@ import android.widget.TextView;
 
 import edu.usc.projecttalent.cognitive.MyGlobalVariables;
 import edu.usc.projecttalent.cognitive.R;
-//import android.widget.Toast;
-//import android.widget.Toast;
 
 public class Set3Item1Activity extends Activity {
 	boolean click = false; int count=0;long ms;boolean empty=false;

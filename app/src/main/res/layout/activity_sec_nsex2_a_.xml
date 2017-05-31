@@ -69,11 +69,11 @@
         android:layout_width="80dp"
         android:layout_height="60dp"
         android:layout_below="@+id/question"
-        android:layout_toRightOf="@+id/textView3"
         android:layout_marginTop="54dp"
         android:cursorVisible="false"
         android:ems="10"
-        android:inputType="number"
+        android:editable="false"
+        android:text="@string/eight"
         android:textSize="30sp" />
 
     <TextView

@@ -122,7 +122,7 @@ public class VO31_Activity extends AppCompatActivity {
         mSection.endSection(); //end this section.
         Survey.getSurvey().addSection(mSection); //add vocab section to survey.
         Intent intent = new Intent(mContext, FinishActivity.class);
-        intent.putExtra(FinishActivity.SECTION, "number");
+        intent.putExtra(FinishActivity.SECTION, R.string.switch_ns);
         startActivityForResult(intent, 1);
     }
 

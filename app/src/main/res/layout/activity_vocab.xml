@@ -32,56 +32,29 @@
             android:orientation="vertical">
 
             <RadioButton
-                android:id="@+id/o1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@{item.options[0]}"
-                android:textSize="30sp" />
+                style="@style/vocabOption"
+                android:text="@{item.options[0]}"/>
 
             <RadioButton
-                android:id="@+id/o2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@{item.options[1]}"
-                android:textSize="30sp" />
+                style="@style/vocabOption"
+                android:text="@{item.options[1]}"/>
 
             <RadioButton
-                android:id="@+id/o3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@{item.options[2]}"
-                android:textSize="30sp" />
+                style="@style/vocabOption"
+                android:text="@{item.options[2]}" />
 
             <RadioButton
-                android:id="@+id/o4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@{item.options[3]}"
-                android:textSize="30sp" />
+                style="@style/vocabOption"
+                android:text="@{item.options[3]}"/>
 
             <RadioButton
-                android:id="@+id/o5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@{item.options[4]}"
-                android:textSize="30sp" />
+                style="@style/vocabOption"
+                android:text="@{item.options[4]}" />
         </RadioGroup>
 
         <Button
-            android:id="@+id/next"
-            android:layout_width="100dp"
-            android:layout_height="65dp"
-            android:layout_gravity="end"
-            android:background="#1E669B"
-            android:radius="10dp"
-            android:text="@string/button_str"
-            android:textColor="#FFFFFF"
-            android:textSize="26sp" />
+            android:id="@id/next"
+            style="@style/next" />
 
     </LinearLayout>
 </layout>

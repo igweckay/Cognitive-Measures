@@ -32,10 +32,6 @@
             android:label="@string/title_activity_sec_nsex1_a"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".numbers.SecNSEx2A_Activity"
-            android:label="@string/title_activity_sec_nsex2_a_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name=".numbers.SecNSIntro_Activity"
             android:label="@string/title_activity_sec_nsintro_" />
         <activity

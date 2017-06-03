@@ -130,13 +130,10 @@ public class VO31_Activity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            if(action.equals(QuestionTimer.WARNING)) { //no work for warning.
-            } else {
-                if(action.equals(QuestionTimer.QUIT)) {
-                    finishSection(); //go to end of section.
-                } else { //reset timer for the same question.
-                    QuestionTimer.startTimer(mContext);
-                }
+            if(action.equals(QuestionTimer.QUIT)) {
+                finishSection(); //go to end of section.
+            } else if (action.equals(QuestionTimer.RESUME)) { //reset timer for the same question.
+                QuestionTimer.startTimer(mContext);
             }
         }
     };

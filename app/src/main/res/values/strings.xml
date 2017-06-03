@@ -279,7 +279,6 @@
     <string name="title_activity_name_blue_things_">Name Blue Things</string>
     <string name="title_activity_sec_ns_">Section NS&#8211;Example 1</string>
 
-    <string name="ns901">The answer we were looking for is 3, so the completed sequence is: </string>
     <string name="title_activity_sec_nsex2_">Example 2</string>
     <string name="title_activity_sec_nsex1_a">Example 1 Answer</string>
     <string name="title_activity_sec_nsintro_">Section NS Introduction</string>
@@ -833,7 +832,6 @@
 
     <!-- Number Series -->
     <string name="ns_instr"> Please enter the number that belongs in each empty box. </string>
-    <string name="ns903">The answer we were looking for is 8 because the numbers (2, 4, 6, 8) increase by 2. The completed sequence is:</string>
     <string name="title_activity_sec_nsex2_a_">Example 2 Answer</string>
     <string name="ns_intro">You will now see six more questions like the ones you just did.\n\n
 		Instructions:\n
@@ -860,7 +858,8 @@
         number that goes in each empty box.\n\n
 		For example:\",
          \"options\": [1, 2, 3, 4],
-         \"ansPosition\": 2
+         \"ansPosition\": 2,
+          \"answerText\": \"The answer we were looking for is 3, so the completed sequence is:\"
         }
     </string>
 
@@ -869,8 +868,96 @@
           \"id\": 2,
           \"question\": \"Below is another example.\",
           \"options\": [2, 4, 6, 8],
-          \"ansPosition\": 3
+          \"ansPosition\": 3,
+          \"answerText\": \"The answer we were looking for is 8 because the numbers (2, 4, 6, 8) increase by 2. The completed sequence is:\"
         }
+    </string>
+
+    <string name="ns_3">
+        [
+          {
+            \"options\": [8, 10, 12, 14],
+            \"ansPosition\": 1
+          },
+          {
+            \"options\": [23, 26, 30, 35, 41],
+            \"ansPosition\": 4
+          },
+          {
+            \"options\": [18, 17, 15, 12, 8],
+            \"ansPosition\": 3
+          }
+        ]
+    </string>
+
+    <string name="ns_1">
+        [
+          {
+            \"options\": [6, 7, 8, 9],
+            \"ansPosition\": 2
+          },
+          {
+            \"options\": [6, 5, 4, 3],
+            \"ansPosition\": 1
+          },
+          {
+            \"options\": [5, 8, 11, 14],
+            \"ansPosition\": 3
+          }
+        ]
+    </string>
+
+    <string name="ns_2">
+        [
+          {
+            \"options\": [2, 4, 6, 8],
+            \"ansPosition\": 0
+          },
+          {
+            \"options\": [1, 3, 3, 5, 7, 7, 9],
+            \"ansPosition\": 6
+          },
+          {
+            \"options\": [18, 10, 6, 4, 3],
+            \"ansPosition\": 3
+          }
+        ]
+    </string>
+
+    <string name="ns_4">
+        [
+          {
+            \"options\": [17, 15, 12, 8],
+            \"ansPosition\": 1
+          },
+          {
+            \"options\": [10, 6, 3, 1],
+            \"ansPosition\": 1
+          },
+          {
+            \"options\": [17, 16, 14, 10, 2],
+            \"ansPosition\": 4
+            \"ansOptions\": [2, 3]
+          }
+        ]
+    </string>
+
+    <string name="ns_5">
+        [
+          {
+            \"options\": [17, 20, 26, 38, 62],
+            \"ansPosition\": 0
+          },
+          {
+            \"options\": [5, 7, 11, 19, 35],
+            \"ansPosition\": 1
+          },
+          {
+            \"options\": [70, 72, 76, 84],
+            \"ansPositions\": [1, 2],
+            \"ansOptions\": [[72, 76], [78, 82]]
+          }
+        ]
     </string>
 
     <string name="zero">0</string>
@@ -900,5 +987,6 @@
     <string name="switch_ar">Switch to abstract reasoning.</string>
     <string name="switch_sv">Switch to spatial visualization.</string>
     <string name="switch_bt">Switch to BTACT switching.</string>
+    <string name="ns_section_title">Number Series</string>
     <!--Context switch -->
 </resources>

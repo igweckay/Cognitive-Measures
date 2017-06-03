@@ -11,4 +11,5 @@ public class NSExample implements Serializable {
     public String question;
     public int[] options;
     public int ansPosition;
+    public String answerText;
 }

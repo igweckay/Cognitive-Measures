@@ -57,7 +57,7 @@ public class SecNS_Activity extends Activity {
 
         (findViewById(R.id.next)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(mContext, showSecond ? SecNSEx2A_Activity.class : SecNSEx1AActivity.class);
+    			Intent intent = new Intent(mContext, SecNSEx1AActivity.class);
                 intent.putExtra("example", mExample);
 				startActivityForResult(intent, 1);
             }

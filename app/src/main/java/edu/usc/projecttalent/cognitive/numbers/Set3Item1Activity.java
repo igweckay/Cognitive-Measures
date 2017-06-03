@@ -1,250 +1,234 @@
 package edu.usc.projecttalent.cognitive.numbers;
 
-import java.util.Date;
-
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
-import edu.usc.projecttalent.cognitive.MyGlobalVariables;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+import edu.usc.projecttalent.cognitive.FinishActivity;
+import edu.usc.projecttalent.cognitive.QuestionTimer;
 import edu.usc.projecttalent.cognitive.R;
+import edu.usc.projecttalent.cognitive.databinding.ActivitySet3Item1Binding;
+import edu.usc.projecttalent.cognitive.model.Answer;
+import edu.usc.projecttalent.cognitive.model.Block;
+import edu.usc.projecttalent.cognitive.model.Section;
+import edu.usc.projecttalent.cognitive.model.Survey;
+import edu.usc.projecttalent.cognitive.vocab.VocabItem;
 
 public class Set3Item1Activity extends Activity {
-	boolean click = false; int count=0;long ms;boolean empty=false;
+    int mScore;
+    Section mSection;
+    Context mContext;
+    Block mBlock;
+
+    ArrayList<NSQuestion> mList;
+    Queue<NSQuestion> mQueue;
+    Answer mAnswer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_set3_item1);
-		Date start = new Date();
-		String s = MyGlobalVariables.getTime();
-		s+="sec_ns_start:"+start.toString()+";";
-		s+="nsa31_start:"+start.toString()+";";
-		MyGlobalVariables.setTime(s);
-		count=0;
-		new CountDownTimer(60000, 1000) {
 
-		     public void onTick(long millisUntilFinished) {
-		    	 ms=millisUntilFinished;
-		    	if(millisUntilFinished>=55000 && click && !empty){
-		    		click = false;
-		    		TextView tv = (TextView) findViewById(R.id.message);
-		    			 String t = getResources().getString(R.string.msg1);
-		    			 tv.setText(t);
-		    			 tv.setVisibility(View.VISIBLE);
-		    		 }
-		    	else if(click && !empty)
-		    	{
-		    		click = false;
-		    		TextView tv = (TextView) findViewById(R.id.message);
-	        		tv.setVisibility(View.INVISIBLE);
-	        		Date end = new Date();
-	        		String s = MyGlobalVariables.getTime();
-	        		s+="nsa31_end:"+end.toString()+";";
-	        		MyGlobalVariables.setTime(s);
-		    		Intent intent = new Intent(Set3Item1Activity.this, Set3Item2_Activity.class);
-            	    //startActivity(intent);
-					startActivityForResult(intent,1);
-		    	}
-		     }
-		     public void onFinish() {
-		         if(!click){
-		        	 TextView tv = (TextView) findViewById(R.id.message);
-		             	String t = getResources().getString(R.string.msg2);
-		             	tv.setText(t);
-		             	tv.setVisibility(View.VISIBLE);
-		             	count++;
-		         }
-		     }
-		  }.start();
-		Button button = (Button) findViewById(R.id.Button09);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='0';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button11);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='9';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button01);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='8';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button09);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='0';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button02);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='7';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button03);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='6';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button04);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='5';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button05);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='4';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button06);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='3';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button07);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='2';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.Button08);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	u+='1';
-            	uid.setText(u);
-            }
-        });
-        button = (Button) findViewById(R.id.button9);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	uid.setText("");
-            }
-        });
-        button = (Button) findViewById(R.id.button3);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	click = true;count++;
-            	EditText uid=(EditText) findViewById(R.id.editText1);
-            	String u=uid.getText().toString();
-            	String s = MyGlobalVariables.getData();
-        		if (s.contains("nsa31:")){
-        			int p=s.indexOf("nsa31:");
-        			s = s.substring(0,p);
-        		}
-            	if (u.length()!=0)
-            	{
-            		//MyGlobalVariables g = new MyGlobalVariables();
-            		s+="nsa31:"+u+";";
+        mContext = this;
+        mSection = new Section(getString(R.string.ns_section_title));  //make new section.
+        mScore = 0; //reset score at the beginning of block.
 
-            	}
+        //prepare timer.
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(QuestionTimer.WARNING);
+        filter.addAction(QuestionTimer.QUIT);
+        filter.addAction(QuestionTimer.RESUME);
+        registerReceiver(mReceiver, filter);
 
-            	if(u.length()==0)
-            	{
-            		s+="nsa31:"+"-1"+";";
+        mBlock = new Block(3); //first block is Block 3.
 
-                		TextView tv = (TextView) findViewById(R.id.message);
-                		String t = getResources().getString(R.string.msg3);
-           				 tv.setText(t);
-           				 tv.setVisibility(View.VISIBLE);
-           				 empty=true;
-            	}
-            	MyGlobalVariables.setData(s);
-            	if((click && count>=2)){
-            		//Toast.makeText(getBaseContext(), MyGlobalVariables.getData(), Toast.LENGTH_LONG).show();
-            		click = false;
-            		TextView tv = (TextView) findViewById(R.id.message);
-            		tv.setVisibility(View.INVISIBLE);
-            		Date end = new Date();
-	        		 s = MyGlobalVariables.getTime();
-	        		s+="nsa31_end:"+end.toString()+";";
-	        		MyGlobalVariables.setTime(s);
-            		Intent intent = new Intent(Set3Item1Activity.this, Set3Item2_Activity.class);
-            	    //startActivity(intent);
-					startActivityForResult(intent,1);
-            	}
+        final Type question = new TypeToken<ArrayList<NSQuestion>>(){}.getType();
+        mList = new Gson().fromJson(getString(R.string.ns_3), question);
+        mQueue = new LinkedList<>();
+        mQueue.addAll(mList);
+
+        final ActivitySet3Item1Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_set3_item1);
+        binding.setItem(mQueue.remove());
+        mAnswer = new Answer();
+
+        final LinearLayout series = (LinearLayout) findViewById(R.id.series);
+        LinearLayout numPad = (LinearLayout) findViewById(R.id.numpad);
+        final EditText answer= (EditText) findViewById(R.id.answer),
+                answer2 = (EditText) findViewById(R.id.answer2);
+
+        series.removeView(answer);
+        series.addView(answer, binding.getItem().ansPosition); //set the edit box to correct position.
+
+        //setting up number pad and undo.
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(answer2.hasFocus())
+                    answer2.append(((Button)v).getText());
+                else
+                    answer.append(((Button)v).getText()); //extra code for Set 5 Q3.
+            }
+        };
+        for(int i=0; i<numPad.getChildCount(); i++) {
+            (numPad.getChildAt(i)).setOnClickListener(listener);
+        }
+
+        (findViewById(R.id.undo)).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if(answer2.hasFocus()) {
+                    int length = answer2.length();
+                    if (length > 0)
+                        answer2.getText().delete(length - 1, length);
+                } else {
+                    int length = answer.length();
+                    if (length > 0)
+                        answer.getText().delete(length - 1, length);
+                }
+            }
+        });
+
+        QuestionTimer.startTimer(mContext); //start the timer for first question.
+
+        Button button = (Button) findViewById(R.id.next);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                NSQuestion curQuestion = binding.getItem();
+                if(curQuestion.ansPositions == null) { //only one option.
+                    int userAns = -99; //invalid. user did not select an answer;
+                    try {
+                        userAns = Integer.parseInt(answer.getText().toString());
+                    } catch (Exception e) {
+                    }
+                    answer.setText("");
+                    int ans = curQuestion.options[curQuestion.ansPosition];
+                    if (userAns == ans) {
+                        mScore++; //correct answer.
+                    } else if (curQuestion.ansOptions != null) {
+                        int[] answers = curQuestion.ansOptions;
+                        for (int i = 0; i < answers.length; i++) {
+                            ans = answers[i];
+                            if (userAns == ans) { //if there are multiple answers to the same question.
+                                mScore++;
+                                break;
+                            }
+                        }
+                    }
+                    mAnswer.endAnswer(userAns, ans); //end answer.
+                    mBlock.addAnswer(mAnswer); //add answer to block.
+                } else {
+                    //This section is for Sec 5 Q 3.
+                    //Hardcoding this section because there is only 1 out of 15 such questions.
+                    //Generalizing this would involve lots of complicated code.
+                    int userAns1 = -99;
+                    int userAns2 = -99;
+                    try {
+                        userAns1 = Integer.parseInt(answer.getText().toString());
+                        userAns2 = Integer.parseInt(answer2.getText().toString());
+                    } catch (Exception e) {}
+                    if((userAns1 == 72 && userAns2 == 76) || (userAns1 == 78 && userAns2 ==82)) {
+                        mScore++;
+                    }
+                    mAnswer.endAnswer(userAns1, 72); //TODO: // FIXME: 6/3/2017
+                    mBlock.addAnswer(mAnswer);
+                }
+
+
+                if(!mQueue.isEmpty()) { //more questions in the same block.
+                    mAnswer = new Answer();
+                    binding.setItem(mQueue.remove()); //add new question.
+                    curQuestion = binding.getItem();
+                    if(curQuestion.ansPositions == null) {
+                        series.removeView(answer); //update position of answer box.
+                        series.addView(answer, binding.getItem().ansPosition);
+                    } else {
+                        EditText answer2 = (EditText) series.findViewById(R.id.answer2);
+                        series.removeView(answer2);
+                        series.addView(answer2, 2);
+                    }
+
+
+                } else { //a block has ended. end this block and prepare for new block.
+                    mBlock.endBlock(mScore);
+                    mSection.addBlock(mBlock);
+
+                    if(mSection.getBlockSize() == 1) { //only block 3 has been shown yet. show next block.
+                        int block = nextSet();
+                        mBlock = new Block(getBlockId(block));
+                        mList = new Gson().fromJson(getString(block), question); //get new questions.
+                        mQueue.addAll(mList);
+                        mScore = 0; //reset the score for the new block.
+                        binding.setItem(mQueue.remove());
+
+                        series.removeView(answer); //update position of answer box.
+                        series.addView(answer, binding.getItem().ansPosition);
+                    } else {
+                        finishSection();
+                    }
+                }
+            }
+
+            private int getBlockId(int set) {
+                switch(set) {
+                    case R.string.ns_1: return 1;
+                    case R.string.ns_2: return 2;
+                    case R.string.ns_4: return 4;
+                    default: return 5;
+                }
+            }
+
+            private int nextSet() {
+                switch (mScore) {
+                    case 0: return R.string.ns_1;
+                    case 1: return R.string.ns_2;
+                    case 2: return R.string.ns_4;
+                    default: return R.string.ns_5;
+                }
             }
         });
 	}
+
+    BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if(action.equals(QuestionTimer.QUIT)) {
+                finishSection(); //go to end of section.
+            } else if (action.equals(QuestionTimer.RESUME)) { //reset timer for the same question.
+                QuestionTimer.startTimer(mContext);
+            }
+        }
+    };
+
+    private void finishSection() {
+        mSection.endSection(); //end this section.
+        Survey.getSurvey().addSection(mSection); //add vocab section to survey.
+        Intent intent = new Intent(mContext, FinishActivity.class);
+        intent.putExtra(FinishActivity.SECTION, R.string.switch_ar);
+        startActivityForResult(intent, 1);
+    }
+
 	@Override
-	public void onBackPressed()
-	{
-
-	   //thats it
-	}
+	public void onBackPressed() {}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// Check which request we're responding to
-        Log.d("Set3Item1",  "onActivityResult - Set3Item1_Activity");
 		if (requestCode == 1) {
-			// Make sure the request was successful
 			if (resultCode == RESULT_OK) {
-				// The user picked a contact.
-				// The Intent's data Uri identifies which contact was selected.
-
-				// Do something with the contact here (bigger example below)
 				setResult(Activity.RESULT_OK, data);
 				super.finish();
 			}

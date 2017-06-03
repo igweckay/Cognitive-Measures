@@ -39,62 +39,6 @@
             android:label="@string/title_activity_set3_item1"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".numbers.Set3Item2_Activity"
-            android:label="@string/title_activity_set3_item2_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set3Item3_Activity"
-            android:label="@string/title_activity_set3_item3_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set1Item1_Activity"
-            android:label="@string/title_activity_set1_item1_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set1Item2_Activity"
-            android:label="@string/title_activity_set1_item2_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set1Item3_Activity"
-            android:label="@string/title_activity_set1_item3_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set2Item1_Activity"
-            android:label="@string/title_activity_set2_item1_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set2Item2_Activity"
-            android:label="@string/title_activity_set2_item2_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set2Item3_Activity"
-            android:label="@string/title_activity_set2_item3_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set4Item1_Activity"
-            android:label="@string/title_activity_set4_item1_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set5Item1_Activity"
-            android:label="@string/title_activity_set5_item1_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set4Item2_Activity"
-            android:label="@string/title_activity_set4_item2_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set4Item3_Activity"
-            android:label="@string/title_activity_set4_item3_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set5Item2_Activity"
-            android:label="@string/title_activity_set5_item2_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.Set5Item3_Activity"
-            android:label="@string/title_activity_set5_item3_"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name=".reasoning.SecAR_Activity"
             android:label="@string/title_activity_sec_ar_" />
         <activity

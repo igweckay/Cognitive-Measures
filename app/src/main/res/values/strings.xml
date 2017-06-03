@@ -936,7 +936,7 @@
           },
           {
             \"options\": [17, 16, 14, 10, 2],
-            \"ansPosition\": 4
+            \"ansPosition\": 4,
             \"ansOptions\": [2, 3]
           }
         ]
@@ -954,8 +954,9 @@
           },
           {
             \"options\": [70, 72, 76, 84],
+            \"ansPosition\": 1,
             \"ansPositions\": [1, 2],
-            \"ansOptions\": [[72, 76], [78, 82]]
+            \"ansMultiOptions\": [[72, 76], [78, 82]]
           }
         ]
     </string>

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -37,9 +38,12 @@ public class FinishActivity extends AppCompatActivity {
                         Survey survey = Survey.getSurvey();
                         survey.endSurvey();
                         Intent intent = new Intent();
-                        intent.putExtra(JSON, new Gson().toJson(survey));
+                        String output = new Gson().toJson(survey);
+                        Log.e("anindya",output);
+                        intent.putExtra(JSON, output);
                         setResult(RESULT_OK, intent);
                         finish();
+                        return;
                 }
                 startActivityForResult(new Intent(mContext, nextClass), 1);
                 finish();

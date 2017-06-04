@@ -1,17 +1,12 @@
 package edu.usc.projecttalent.cognitive;
 
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.CountDownTimer;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.Snackbar;
-import android.util.Log;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 /**
  * Created by anind on 5/18/2017.
@@ -23,17 +18,22 @@ public class QuestionTimer extends CountDownTimer {
     private static Context mContext;
     private static AlertDialog mWarningDialog;
     private static AlertDialog mQuitDialog;
-    static boolean shown;
+    private static AlertDialog mAnsDialog;
+    private static boolean shown;
 
     public static final String WARNING = "cognitive.timewarning";
     public static final String QUIT = "cognitive.quit";
     public static final String RESUME = "cognitive.resume";
+    public static final String NOANSWER = "cognitive.noanswer";
 
 
     private QuestionTimer(long millisInFuture, long countDownInterval, Context context) {
         super(millisInFuture, countDownInterval);
         mContext = context;
         shown = false;
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(NOANSWER);
+        mContext.registerReceiver(mReceiver, filter);
     }
 
     @Override
@@ -63,6 +63,10 @@ public class QuestionTimer extends CountDownTimer {
         mTimer.start();
     }
 
+    public static void stopTimer() {
+        mTimer.cancel();
+    }
+
     private static void createDialogs() {
         mWarningDialog =  new AlertDialog.Builder(mContext)
                 .setMessage(R.string.msg2)
@@ -84,5 +88,18 @@ public class QuestionTimer extends CountDownTimer {
                     }
                 })
                 .setCancelable(false).create();
+        mAnsDialog = new AlertDialog.Builder(mContext)
+                .setMessage(R.string.msg3)
+                .setNeutralButton(R.string.ok, null)
+                .create();
     }
+
+    static BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if(intent.getAction().equals(NOANSWER)) {
+                mAnsDialog.show();
+            }
+        }
+    };
 }

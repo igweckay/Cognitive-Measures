@@ -9,5 +9,4 @@ public class NSQuestion {
     public int ansPosition;
     public int[] ansOptions;
     public int[] ansPositions;
-    public int[][] ansMultiOptions;
 }

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -12,6 +11,7 @@ import com.google.gson.Gson;
 
 import edu.usc.projecttalent.cognitive.model.Survey;
 import edu.usc.projecttalent.cognitive.numbers.SecNS_Activity;
+import edu.usc.projecttalent.cognitive.reasoning.SecAR_Activity;
 
 public class FinishActivity extends AppCompatActivity {
 
@@ -34,14 +34,15 @@ public class FinishActivity extends AppCompatActivity {
                     case R.string.switch_ns:
                        nextClass = SecNS_Activity.class;
                         break;
+                    case R.string.switch_ar:
+                        nextClass = SecAR_Activity.class;
                     default:
                         Survey survey = Survey.getSurvey();
                         survey.endSurvey();
                         Intent intent = new Intent();
-                        String output = new Gson().toJson(survey);
-                        Log.e("anindya",output);
-                        intent.putExtra(JSON, output);
+                        intent.putExtra(JSON,  new Gson().toJson(survey));
                         setResult(RESULT_OK, intent);
+                        QuestionTimer.stopTimer(); //to prevent new on-ticks after activity closes.
                         finish();
                         return;
                 }

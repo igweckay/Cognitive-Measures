@@ -44,6 +44,7 @@ public class SecNS_Activity extends Activity {
             }
         };
         for(int i=0; i<numPad.getChildCount(); i++) {
+            ((Button)(numPad.getChildAt(i))).setText(Integer.toString(i));
             (numPad.getChildAt(i)).setOnClickListener(listener);
         }
 

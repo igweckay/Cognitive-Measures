@@ -300,21 +300,7 @@
     <string name="six_two">62</string>
     <string name="seventy">70</string>
     <string name="eight_four">84</string>
-    <string name="title_activity_set3_item2_">Set3Item2_Activity</string>
-    <string name="title_activity_set3_item3_">Set3Item3_Activity</string>
-    <string name="title_activity_set1_item1_">Set1Item1_Activity</string>
-    <string name="title_activity_set1_item2_">Set1Item2_Activity</string>
-    <string name="title_activity_set1_item3_">Set1Item3_Activity</string>
     <string name="title_activity_sec_ve_">SecVE_Activity</string>
-    <string name="title_activity_set2_item1_">Set2Item1_Activity</string>
-    <string name="title_activity_set2_item2_">Set2Item2_Activity</string>
-    <string name="title_activity_set2_item3_">Set2Item3_Activity</string>
-    <string name="title_activity_set4_item1_">Set4Item1_Activity</string>
-    <string name="title_activity_set5_item1_">Set5Item1_Activity</string>
-    <string name="title_activity_set4_item2_">Set4Item2_Activity</string>
-    <string name="title_activity_set4_item3_">Set4Item3_Activity</string>
-    <string name="title_activity_set5_item2_">Set5Item2_Activity</string>
-    <string name="title_activity_set5_item3_">Set5Item3_Activity</string>
     <string name="ve900">Instructions: In this next task, you will see several words on each screen, followed by a blank. Please say the word that best completes the phrase. To record your answer, press the RECORD ANSWER button.\n\n
 		Read the example below:
 	</string>
@@ -960,18 +946,6 @@
           }
         ]
     </string>
-
-    <string name="zero">0</string>
-    <string name="one">1</string>
-    <string name="two">2</string>
-    <string name="three">3</string>
-    <string name="four">4</string>
-    <string name="five">5</string>
-    <string name="six">6</string>
-    <string name="seven">7</string>
-    <string name="eight">8</string>
-    <string name="nine">9</string>
-    <string name="ten">10</string>
 
     <!-- Number series -->
 

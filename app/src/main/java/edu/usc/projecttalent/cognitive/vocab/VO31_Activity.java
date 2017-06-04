@@ -30,6 +30,7 @@ import edu.usc.projecttalent.cognitive.model.*;
 public class VO31_Activity extends AppCompatActivity {
     Context mContext;
     int mScore;
+    boolean mFtWarn; //first time warning for no selection.
 
     Section mSection;
     Answer mAnswer;
@@ -45,6 +46,7 @@ public class VO31_Activity extends AppCompatActivity {
         mContext = this;
         mSection = new Section(getString(R.string.vocabulary)); //make new section.
         mScore = 0; //reset score at the beginning of block.
+        mFtWarn = true; //FTU logic.
 
         //prepare timer.
         IntentFilter filter = new IntentFilter();
@@ -70,30 +72,39 @@ public class VO31_Activity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                int answer = binding.getItem().answer; //Retrieve correct answer.
-                RadioButton checked =  (RadioButton) options.findViewById(options.getCheckedRadioButtonId());
-                int index = options.indexOfChild(checked); //Retrieve user answer.
-                options.clearCheck(); //Clear radio button for next question.
-                if(answer == index)
-                    mScore++; //if answer is correct, update score.
-                mAnswer.endAnswer(index, answer); //Record answer and end time.
-                mBlock.addAnswer(mAnswer); //Add answer to block.
-                if(!mQueue.isEmpty()) { //Other questions from this block left.
-                    mAnswer = new Answer();
-                    binding.setItem(mQueue.remove());
-                } else { // a block has ended. End this block and prepare for new block.
-                    mBlock.endBlock(mScore); //end block.
-                    mSection.addBlock(mBlock); //add this block to the vocabulary section.
-
-                    if(mSection.getBlockSize() == 1) { //only block 3 has been shown yet. show new block.
-                        int block = nextSet(); //find next set based on score.
-                        mBlock = new Block(getBlockId(block)); //create new block.
-                        mList = new Gson().fromJson(getString(block), question); //get new questions.
-                        mQueue.addAll(mList);
-                        mScore = 0; //reset the score for the new block.
+                if(options.getCheckedRadioButtonId() == -1 && mFtWarn) {
+                    mFtWarn = false;
+                    sendBroadcast(new Intent(QuestionTimer.NOANSWER));
+                } else {
+                    int answer = binding.getItem().answer; //Retrieve correct answer.
+                    RadioButton checked = (RadioButton) options.findViewById(options.getCheckedRadioButtonId());
+                    int index = options.indexOfChild(checked); //Retrieve user answer.
+                    options.clearCheck(); //Clear radio button for next question.
+                    if (answer == index)
+                        mScore++; //if answer is correct, update score.
+                    mAnswer.endAnswer(index, answer); //Record answer and end time.
+                    mBlock.addAnswer(mAnswer); //Add answer to block.
+                    if (!mQueue.isEmpty()) { //Other questions from this block left.
+                        mAnswer = new Answer();
                         binding.setItem(mQueue.remove());
-                    } else { //both blocks have been shown. proceed to next section.
-                        finishSection();
+                        QuestionTimer.startTimer(mContext);
+                        mFtWarn = true;
+                    } else { // a block has ended. End this block and prepare for new block.
+                        mBlock.endBlock(mScore); //end block.
+                        mSection.addBlock(mBlock); //add this block to the vocabulary section.
+
+                        if (mSection.getBlockSize() == 1) { //only block 3 has been shown yet. show new block.
+                            int block = nextSet(); //find next set based on score.
+                            mBlock = new Block(getBlockId(block)); //create new block.
+                            mList = new Gson().fromJson(getString(block), question); //get new questions.
+                            mQueue.addAll(mList);
+                            mScore = 0; //reset the score for the new block.
+                            binding.setItem(mQueue.remove());
+                            QuestionTimer.startTimer(mContext);
+                            mFtWarn = true;
+                        } else { //both blocks have been shown. proceed to next section.
+                            finishSection();
+                        }
                     }
                 }
             }

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,13 +29,13 @@ import edu.usc.projecttalent.cognitive.model.Answer;
 import edu.usc.projecttalent.cognitive.model.Block;
 import edu.usc.projecttalent.cognitive.model.Section;
 import edu.usc.projecttalent.cognitive.model.Survey;
-import edu.usc.projecttalent.cognitive.vocab.VocabItem;
 
 public class Set3Item1Activity extends Activity {
     int mScore;
     Section mSection;
     Context mContext;
     Block mBlock;
+    boolean mFtWarn;
 
     ArrayList<NSQuestion> mList;
     Queue<NSQuestion> mQueue;
@@ -56,6 +57,7 @@ public class Set3Item1Activity extends Activity {
         registerReceiver(mReceiver, filter);
 
         mBlock = new Block(3); //first block is Block 3.
+        mFtWarn = true; //for FTU.
 
         final Type question = new TypeToken<ArrayList<NSQuestion>>(){}.getType();
         mList = new Gson().fromJson(getString(R.string.ns_3), question);
@@ -85,6 +87,7 @@ public class Set3Item1Activity extends Activity {
             }
         };
         for(int i=0; i<numPad.getChildCount(); i++) {
+            ((Button)(numPad.getChildAt(i))).setText(Integer.toString(i)); //set the number from 0 to 9 dynamically.
             (numPad.getChildAt(i)).setOnClickListener(listener);
         }
 
@@ -107,77 +110,86 @@ public class Set3Item1Activity extends Activity {
         Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                NSQuestion curQuestion = binding.getItem();
-                if(curQuestion.ansPositions == null) { //only one option.
-                    int userAns = -99; //invalid. user did not select an answer;
-                    try {
-                        userAns = Integer.parseInt(answer.getText().toString());
-                    } catch (Exception e) {
-                    }
-                    answer.setText("");
-                    int ans = curQuestion.options[curQuestion.ansPosition];
-                    if (userAns == ans) {
-                        mScore++; //correct answer.
-                    } else if (curQuestion.ansOptions != null) {
-                        int[] answers = curQuestion.ansOptions;
-                        for (int i = 0; i < answers.length; i++) {
-                            ans = answers[i];
-                            if (userAns == ans) { //if there are multiple answers to the same question.
-                                mScore++;
-                                break;
+                if(answer.getText().toString().equals("") && mFtWarn) {
+                    mFtWarn = false;
+                    sendBroadcast(new Intent(QuestionTimer.NOANSWER));
+                } else {
+                    NSQuestion curQuestion = binding.getItem();
+                    if (curQuestion.ansPositions == null) { //only one option.
+                        int userAns = -99; //invalid. user did not select an answer;
+                        try {
+                            userAns = Integer.parseInt(answer.getText().toString());
+                        } catch (Exception e) {
+                        }
+                        answer.setText("");
+                        int ans = curQuestion.options[curQuestion.ansPosition];
+                        if (userAns == ans) {
+                            mScore++; //correct answer.
+                        } else if (curQuestion.ansOptions != null) {
+                            int[] answers = curQuestion.ansOptions;
+                            for (int i = 0; i < answers.length; i++) {
+                                ans = answers[i];
+                                if (userAns == ans) { //if there are multiple answers to the same question.
+                                    mScore++;
+                                    break;
+                                }
                             }
                         }
-                    }
-                    mAnswer.endAnswer(userAns, ans); //end answer.
-                    mBlock.addAnswer(mAnswer); //add answer to block.
-                } else {
-                    //This section is for Sec 5 Q 3.
-                    //Hardcoding this section because there is only 1 out of 15 such questions.
-                    //Generalizing this would involve lots of complicated code.
-                    int userAns1 = -99;
-                    int userAns2 = -99;
-                    try {
-                        userAns1 = Integer.parseInt(answer.getText().toString());
-                        userAns2 = Integer.parseInt(answer2.getText().toString());
-                    } catch (Exception e) {}
-                    if((userAns1 == 72 && userAns2 == 76) || (userAns1 == 78 && userAns2 ==82)) {
-                        mScore++;
-                    }
-                    mAnswer.endAnswer(userAns1, 72); //TODO: // FIXME: 6/3/2017
-                    mBlock.addAnswer(mAnswer);
-                }
-
-
-                if(!mQueue.isEmpty()) { //more questions in the same block.
-                    mAnswer = new Answer();
-                    binding.setItem(mQueue.remove()); //add new question.
-                    curQuestion = binding.getItem();
-                    if(curQuestion.ansPositions == null) {
-                        series.removeView(answer); //update position of answer box.
-                        series.addView(answer, binding.getItem().ansPosition);
+                        mAnswer.endAnswer(userAns, ans); //end answer.
+                        mBlock.addAnswer(mAnswer); //add answer to block.
                     } else {
-                        EditText answer2 = (EditText) series.findViewById(R.id.answer2);
-                        series.removeView(answer2);
-                        series.addView(answer2, 2);
+                        //This section is for Sec 5 Q 3.
+                        //Hardcoding this section because there is only 1 out of 15 such questions.
+                        //Generalizing this would involve lots of complicated code.
+                        int userAns1 = -99;
+                        int userAns2 = -99;
+                        try {
+                            userAns1 = Integer.parseInt(answer.getText().toString());
+                            userAns2 = Integer.parseInt(answer2.getText().toString());
+                        } catch (Exception e) {
+                        }
+                        if ((userAns1 == 72 && userAns2 == 76) || (userAns1 == 78 && userAns2 == 82)) {
+                            mScore++;
+                        }
+                        mAnswer.endAnswer(userAns1, 72); //TODO: // FIXME: 6/3/2017
+                        mBlock.addAnswer(mAnswer);
                     }
 
 
-                } else { //a block has ended. end this block and prepare for new block.
-                    mBlock.endBlock(mScore);
-                    mSection.addBlock(mBlock);
+                    if (!mQueue.isEmpty()) { //more questions in the same block.
+                        mAnswer = new Answer();
+                        binding.setItem(mQueue.remove()); //add new question.
+                        QuestionTimer.startTimer(mContext);
+                        mFtWarn = true;
+                        curQuestion = binding.getItem();
+                        if (curQuestion.ansPositions == null) {
+                            series.removeView(answer); //update position of answer box.
+                            series.addView(answer, binding.getItem().ansPosition);
+                        } else {
+                            EditText answer2 = (EditText) series.findViewById(R.id.answer2);
+                            series.removeView(answer2);
+                            series.addView(answer2, 2);
+                        }
 
-                    if(mSection.getBlockSize() == 1) { //only block 3 has been shown yet. show next block.
-                        int block = nextSet();
-                        mBlock = new Block(getBlockId(block));
-                        mList = new Gson().fromJson(getString(block), question); //get new questions.
-                        mQueue.addAll(mList);
-                        mScore = 0; //reset the score for the new block.
-                        binding.setItem(mQueue.remove());
 
-                        series.removeView(answer); //update position of answer box.
-                        series.addView(answer, binding.getItem().ansPosition);
-                    } else {
-                        finishSection();
+                    } else { //a block has ended. end this block and prepare for new block.
+                        mBlock.endBlock(mScore);
+                        mSection.addBlock(mBlock);
+
+                        if (mSection.getBlockSize() == 1) { //only block 3 has been shown yet. show next block.
+                            int block = nextSet();
+                            mBlock = new Block(getBlockId(block));
+                            mList = new Gson().fromJson(getString(block), question); //get new questions.
+                            mQueue.addAll(mList);
+                            mScore = 0; //reset the score for the new block.
+                            binding.setItem(mQueue.remove());
+                            QuestionTimer.startTimer(mContext);
+                            mFtWarn = true;
+                            series.removeView(answer); //update position of answer box.
+                            series.addView(answer, binding.getItem().ansPosition);
+                        } else {
+                            finishSection();
+                        }
                     }
                 }
             }

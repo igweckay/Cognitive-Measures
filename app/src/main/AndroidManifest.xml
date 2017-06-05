@@ -42,22 +42,10 @@
             android:name=".reasoning.SecAR_Activity"
             android:label="@string/ar_section_title" />
         <activity
-            android:name=".reasoning.ARans1_Activity"
-            android:label="@string/ar_section_title" />
-        <activity
             android:name=".reasoning.ARpractice1_Activity"
             android:label="@string/ar_section_title" />
         <activity
-            android:name=".reasoning.ARpracticeCorrect_Activity"
-            android:label="@string/ar_section_title" />
-        <activity
-            android:name=".reasoning.ARpracticeWrong_Activity"
-            android:label="@string/ar_section_title" />
-        <activity
             android:name=".reasoning.ARpractice2_Activity"
-            android:label="@string/ar_section_title" />
-        <activity
-            android:name=".reasoning.ARpractice2ans_Activity"
             android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARIntro_Activity"
@@ -107,7 +95,8 @@
         <activity
             android:name=".reasoning.AR53_Activity"
             android:label="@string/ar_section_title" />
-        <activity android:name=".vocab.VocabIntro"></activity>
+        <activity android:name=".vocab.VocabIntro" />
+        <activity android:name=".reasoning.ARInstructions"></activity>
     </application>
 
 </manifest>

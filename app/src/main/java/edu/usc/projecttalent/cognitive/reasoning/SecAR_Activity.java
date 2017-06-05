@@ -2,51 +2,42 @@ package edu.usc.projecttalent.cognitive.reasoning;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
-import edu.usc.projecttalent.cognitive.ImageDecoder;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import edu.usc.projecttalent.cognitive.R;
+import edu.usc.projecttalent.cognitive.databinding.ActivitySecArBinding;
 
 public class SecAR_Activity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		ImageView img1,img2,img3,img4,img5;
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sec_ar_);
-		ImageView myImage = (ImageView) findViewById(R.id.question_image);
-		myImage.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_main,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
-		img1 = (ImageView) findViewById(R.id.imageView1);
-		img1.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_1,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        final Queue<ARExample> exampleList = new LinkedList<>();
+        Resources res = getResources();
+        TypedArray arr = res.obtainTypedArray(R.array.ar_ex_1);
+		exampleList.add(new ARExample(getString(R.string.ar_text), arr, getString(R.string.ar_text1), false, 0));
+        exampleList.add(new ARExample("", arr, getString(R.string.ar_text3), true, 5));
 
-		img2 = (ImageView) findViewById(R.id.imageView2);
-		img2.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_2,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
-
-		img3 = (ImageView) findViewById(R.id.imageView3);
-		img3.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_3,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
-
-		img4 = (ImageView) findViewById(R.id.imageView4);
-		img4.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_4,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
-
-		img5 = (ImageView) findViewById(R.id.imageView5);
-		img5.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_5,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
-
-
-		img1.setPadding(1, 1, 1, 1);
-		img2.setPadding(1, 1, 1, 1);
-		img3.setPadding(1, 1, 1, 1);
-		img4.setPadding(1, 1, 1, 1);
-		img5.setPadding(1, 1, 1, 1);
-        Button button = (Button) findViewById(R.id.button3);
+        final ActivitySecArBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_sec_ar_);
+        binding.setItem(exampleList.remove());
+        Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            	Intent intent = new Intent(SecAR_Activity.this, ARans1_Activity.class);
-            	startActivityForResult(intent,1);
+                if(!exampleList.isEmpty())
+                    binding.setItem(exampleList.remove());
+                else {
+                    Intent intent = new Intent(SecAR_Activity.this, ARInstructions.class);
+                    startActivityForResult(intent, 1);
+                }
 
             }
         });

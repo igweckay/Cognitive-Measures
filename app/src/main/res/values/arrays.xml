@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="ar_ex_1">
+        <item>@drawable/ar_001_main</item>
+        <item>@drawable/ar_001_1</item>
+        <item>@drawable/ar_001_2</item>
+        <item>@drawable/ar_001_3</item>
+        <item>@drawable/ar_001_4</item>
+        <item>@drawable/ar_001_5</item>
+    </integer-array>
+    <integer-array name="ar_ex_2">
+        <item>@drawable/ar_002_main</item>
+        <item>@drawable/ar_002_1</item>
+        <item>@drawable/ar_002_2</item>
+        <item>@drawable/ar_002_3</item>
+        <item>@drawable/ar_002_4</item>
+        <item>@drawable/ar_002_5</item>
+    </integer-array>
+    <integer-array name="ar_ex_3">
+        <item>@drawable/ar_003_main</item>
+        <item>@drawable/ar_003_1</item>
+        <item>@drawable/ar_003_2</item>
+        <item>@drawable/ar_003_3</item>
+        <item>@drawable/ar_003_4</item>
+        <item>@drawable/ar_003_5</item>
+    </integer-array>
+    <integer-array name="ar_31">
+        <item>@drawable/ar_7_main</item>
+        <item>@drawable/ar_7_1</item>
+        <item>@drawable/ar_7_2</item>
+        <item>@drawable/ar_7_3</item>
+        <item>@drawable/ar_7_4</item>
+        <item>@drawable/ar_7_5</item>
+    </integer-array>
+    <integer-array name="ar_32">
+        <item>@drawable/ar_6_main</item>
+        <item>@drawable/ar_6_1</item>
+        <item>@drawable/ar_6_2</item>
+        <item>@drawable/ar_6_3</item>
+        <item>@drawable/ar_6_4</item>
+        <item>@drawable/ar_6_5</item>
+    </integer-array>
+    <integer-array name="ar_33">
+        <item>@drawable/ar_13_main</item>
+        <item>@drawable/ar_13_1</item>
+        <item>@drawable/ar_13_2</item>
+        <item>@drawable/ar_13_3</item>
+        <item>@drawable/ar_13_4</item>
+        <item>@drawable/ar_13_5</item>
+    </integer-array>
+    <integer-array name="ar_11">
+        <item>@drawable/ar_1_main</item>
+        <item>@drawable/ar_1_1</item>
+        <item>@drawable/ar_1_2</item>
+        <item>@drawable/ar_1_3</item>
+        <item>@drawable/ar_1_4</item>
+        <item>@drawable/ar_1_5</item>
+    </integer-array>
+    <integer-array name="ar_12">
+        <item>@drawable/ar_2_main</item>
+        <item>@drawable/ar_2_1</item>
+        <item>@drawable/ar_2_2</item>
+        <item>@drawable/ar_2_3</item>
+        <item>@drawable/ar_2_4</item>
+        <item>@drawable/ar_2_5</item>
+    </integer-array>
+    <integer-array name="ar_13">
+        <item>@drawable/ar_4_main</item>
+        <item>@drawable/ar_4_1</item>
+        <item>@drawable/ar_4_2</item>
+        <item>@drawable/ar_4_3</item>
+        <item>@drawable/ar_4_4</item>
+        <item>@drawable/ar_4_5</item>
+    </integer-array>
+    <integer-array name="ar_21">
+        <item>@drawable/ar_9_main</item>
+        <item>@drawable/ar_9_1</item>
+        <item>@drawable/ar_9_2</item>
+        <item>@drawable/ar_9_3</item>
+        <item>@drawable/ar_9_4</item>
+        <item>@drawable/ar_9_5</item>
+    </integer-array>
+    <integer-array name="ar_22">
+        <item>@drawable/ar_3_main</item>
+        <item>@drawable/ar_3_1</item>
+        <item>@drawable/ar_3_2</item>
+        <item>@drawable/ar_3_3</item>
+        <item>@drawable/ar_3_4</item>
+        <item>@drawable/ar_3_5</item>
+    </integer-array>
+    <integer-array name="ar_23">
+        <item>@drawable/ar_11_main</item>
+        <item>@drawable/ar_11_1</item>
+        <item>@drawable/ar_11_2</item>
+        <item>@drawable/ar_11_3</item>
+        <item>@drawable/ar_11_4</item>
+        <item>@drawable/ar_11_5</item>
+    </integer-array>
+    <integer-array name="ar_41">
+        <item>@drawable/ar_10_main</item>
+        <item>@drawable/ar_10_1</item>
+        <item>@drawable/ar_10_2</item>
+        <item>@drawable/ar_10_3</item>
+        <item>@drawable/ar_10_4</item>
+        <item>@drawable/ar_10_5</item>
+    </integer-array>
+    <integer-array name="ar_42">
+        <item>@drawable/ar_5_main</item>
+        <item>@drawable/ar_5_1</item>
+        <item>@drawable/ar_5_2</item>
+        <item>@drawable/ar_5_3</item>
+        <item>@drawable/ar_5_4</item>
+        <item>@drawable/ar_5_5</item>
+    </integer-array>
+    <integer-array name="ar_43">
+        <item>@drawable/ar_14_main</item>
+        <item>@drawable/ar_14_1</item>
+        <item>@drawable/ar_14_2</item>
+        <item>@drawable/ar_14_3</item>
+        <item>@drawable/ar_14_4</item>
+        <item>@drawable/ar_14_5</item>
+    </integer-array>
+    <integer-array name="ar_51">
+        <item>@drawable/ar_15_main</item>
+        <item>@drawable/ar_15_1</item>
+        <item>@drawable/ar_15_2</item>
+        <item>@drawable/ar_15_3</item>
+        <item>@drawable/ar_15_4</item>
+        <item>@drawable/ar_15_5</item>
+    </integer-array>
+    <integer-array name="ar_52">
+        <item>@drawable/ar_8_main</item>
+        <item>@drawable/ar_8_1</item>
+        <item>@drawable/ar_8_2</item>
+        <item>@drawable/ar_8_3</item>
+        <item>@drawable/ar_8_4</item>
+        <item>@drawable/ar_8_5</item>
+    </integer-array>
+    <integer-array name="ar_53">
+        <item>@drawable/ar_12_main</item>
+        <item>@drawable/ar_12_1</item>
+        <item>@drawable/ar_12_2</item>
+        <item>@drawable/ar_12_3</item>
+        <item>@drawable/ar_12_4</item>
+        <item>@drawable/ar_12_5</item>
+    </integer-array>
+
+</resources>

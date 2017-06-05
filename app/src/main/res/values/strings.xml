@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Cognitive Measures</string>\
+    <string name="app_name">Cognitive Measures</string>
     <string name="action_settings">Settings</string>
     <string name="first_str">Welcome to Project Talent. </string>
     <string name="button_str">NEXT</string>
@@ -14,325 +14,14 @@
         \t&#8226; If a task includes multiple-choice questions, select only one answer.\n
         \t&#8226; There is only one right answer for each question.\n\n
         Press the NEXT button to begin the first task.</string>
-    <string name="finsih_message">Please click "Finish" to proceed into next section.</string>
-    <string name="title_activity_agreement"></string>
-    <string name="title_activity_sec_a_">Section A</string>
-    <string name="dob">Birth Date:</string>
-    <string name="month">Month:</string>
-    <string name="day">Day:</string>
-    <string name="year">Year:</string>
+    <string name="finish_message">Please click "Finish" to proceed into next section.</string>
 
-    <string-array name="month_array">
-        <item>--</item>
-        <item>Jan</item>
-        <item>Feb</item>
-        <item>Mar</item>
-        <item>Apr</item>
-        <item>May</item>
-        <item>Jun</item>
-        <item>Jul</item>
-        <item>Aug</item>
-        <item>Sep</item>
-        <item>Oct</item>
-        <item>Nov</item>
-        <item>Dec</item>
-    </string-array>
-    <string-array name="day_array">
-        <item>--</item>
-        <item>01</item>
-        <item>02</item>
-        <item>03</item>
-        <item>04</item>
-        <item>05</item>
-        <item>06</item>
-        <item>07</item>
-        <item>08</item>
-        <item>09</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
-        <item>18</item>
-        <item>19</item>
-        <item>20</item>
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-        <item>25</item>
-        <item>26</item>
-        <item>27</item>
-        <item>28</item>
-        <item>29</item>
-        <item>30</item>
-        <item>31</item>
-    </string-array>
-    <string-array name="year_array">
-        <item>--</item>
-        <item>1900</item>
-        <item>1901</item>
-        <item>1902</item>
-        <item>1903</item>
-        <item>1904</item>
-        <item>1905</item>
-        <item>1906</item>
-        <item>1907</item>
-        <item>1908</item>
-        <item>1909</item>
-        <item>1910</item>
-        <item>1911</item>
-        <item>1912</item>
-        <item>1913</item>
-        <item>1914</item>
-        <item>1915</item>
-        <item>1916</item>
-        <item>1917</item>
-        <item>1918</item>
-        <item>1919</item>
-        <item>1920</item>
-        <item>1921</item>
-        <item>1922</item>
-        <item>1923</item>
-        <item>1924</item>
-        <item>1925</item>
-        <item>1926</item>
-        <item>1927</item>
-        <item>1928</item>
-        <item>1929</item>
-        <item>1930</item>
-        <item>1931</item>
-        <item>1932</item>
-        <item>1933</item>
-        <item>1934</item>
-        <item>1935</item>
-        <item>1936</item>
-        <item>1937</item>
-        <item>1938</item>
-        <item>1939</item>
-        <item>1940</item>
-        <item>1941</item>
-        <item>1942</item>
-        <item>1943</item>
-        <item>1944</item>
-        <item>1945</item>
-        <item>1946</item>
-        <item>1947</item>
-        <item>1948</item>
-        <item>1949</item>
-        <item>1950</item>
-        <item>1951</item>
-        <item>1952</item>
-        <item>1953</item>
-        <item>1954</item>
-        <item>1955</item>
-        <item>1956</item>
-        <item>1957</item>
-        <item>1958</item>
-        <item>1959</item>
-        <item>1960</item>
-        <item>1961</item>
-        <item>1962</item>
-        <item>1963</item>
-        <item>1964</item>
-        <item>1965</item>
-        <item>1966</item>
-        <item>1967</item>
-        <item>1968</item>
-        <item>1969</item>
-        <item>1970</item>
-    </string-array>
-
-    <string name="aw993">What is your current marital status?</string>
-    <string name="aw993a1">MARRIED</string>
-    <string name="aw993a2">LIVING WITH PARTNER AS IF MARRIED</string>
-    <string name="aw993a3">SINGLE</string>
-    <string name="aw993a4">DIVORCED</string>
-    <string name="aw993a5">WIDOWED</string>
-    <string name="other">OTHER</string>
-    <string name="yes">YES</string>
-    <string name="no">NO</string>
-    <string name="a028">Are you living in a nursing home or other health care facility?</string>
-    <string name="aw994">Do you consider yourself to be retired?</string>
-    <string name="a098s1">You told us that you are retired. Some people who are retired do still work for pay. In terms of your current employment situation, are you currently doing any work for pay?</string>
-    <string name="a098s2">In terms of your current employment situation, are you currently doing any work for pay?</string>
-    <string name="a099">On your current (main) job, do you work for someone else, are you self-employed, or what?</string>
-    <string name="a099a1">WORK FOR SOMEONE ELSE</string>
-    <string name="a099a2">SELF-EMPLOYED</string>
-    <string name="a100">On your current (main) job, approximately how many hours do you work each week?</string>
-    <string name="a100label">HOURS PER WEEK</string>
-    <string name="a101">Thinking about work in general and not just your present situation, what do you think the chances are that you will be doing any work for pay after you reach age 62? Please answer on a scale of 0 to 10, where 0 means \Wosurely won\'t happen\' and 10 means \'surely will happen.\'</string>
-    <string name="a101a1">SURELY WONT HAPPEN</string>
-    <string name="a101a2">SURELY WILL HAPPEN</string>
-    <string name="a102">Thinking about work in general and not just your present situation, what do you think the chances are that you will be doing any work for pay after you reach age 65? Please answer on a scale of 0 to 10, where 0 means \'surely won\'t happen\' and 10 means \'surely will happen.\'</string>
-    <string name="a103">Thinking about work in general and not just your present situation, what do you think the chances are that you will be doing any work for pay after you reach age 70? Please answer on a scale of 0 to 10, where 0 means \'surely won\'t happen\' and 10 means \'surely will happen.\'</string>
-    <string name="a104">Thinking about work in general and not just your present situation, what do you think the chances are that you will be working for pay again at any point in the future? Please answer on a scale of 0 to 10, where 0 means \'surely won\'t happen\' and 10 means \'surely will happen.\'</string>
-    <string name="hearing_intro_auw999">The purpose of the next set of questions is to identify any problems you may experience due to any hearing loss.  If you use a hearing aid, please answer the way you hear with the hearing aid.</string>
-    <string name="au001">Does a hearing problem cause you to feel embarrassed when meeting new people? </string>
-    <string name="au002">Does a hearing problem cause you to feel frustrated when talking to members of your family?  </string>
-    <string name="au003">Do you have difficulty hearing when someone speaks in a whisper? </string>
-    <string name="au004">Do you feel handicapped by a hearing problem?</string>
-    <string name="au005">Does a hearing problem cause you difficulty when visiting friends, relatives or neighbors? </string>
-    <string name="au006">Does a hearing problem cause you to attend religious services less often than you would like? </string>
-    <string name="au007">Does a hearing problem cause you to have arguments with family members? </string>
-    <string name="au008">Does a hearing problem cause you difficulty when listening to a TV or radio? </string>
-    <string name="au009">Do you feel that any difficulty with your hearing limits or hampers your personal or social life? </string>
-    <string name="au010">Does a hearing problem cause you difficulty when in a restaurant with relatives or friends?  </string>
-    <string name="c102">Do you ever wear a hearing aid?</string>
-    <string name="c103s1">Is your hearing excellent, very good, good, fair, or poor using a hearing aid as usual?</string>
-    <string name="c103s2">Is your hearing excellent, very good, good, fair, or poor?</string>
-    <string name="c095">Is your eyesight excellent, very good, good, fair, or poor using glasses or corrective lenses as usual?</string>
-    <string name="c096">How good is your eyesight for seeing things at a distance, like recognizing a friend across the street, using glasses or corrective lenses as usual?</string>
-    <string name="c097">How good is your eyesight for seeing things up close, like reading ordinary newspaper print, using glasses or corrective lenses as usual?</string>
-    <string name="excellent">EXCELLENT</string>
-    <string name="very_good">VERY GOOD</string>
-    <string name="good">GOOD</string>
-    <string name="fair">FAIR</string>
-    <string name="poor">POOR</string>
-    <string name="sometimes">SOMETIMES</string>
-    <string name="title_activity_marital_status_">Marital Status</string>
-    <string name="title_activity_nursing_status_">Nursing Status</string>
-    <string name="title_activity_retired">Retired</string>
-    <string name="title_activity_current_pay_">Currently Working for Pay</string>
-    <string name="title_activity_work_for_">Works For or Self Employed</string>
-    <string name="title_activity_week_hours_">Hours Work Each Week</string>
-    <string name="title_activity_work_after62_">Work Beyond Age 62</string>
-    <string name="title_activity_work_after65_">Work After Age 65</string>
-    <string name="title_activity_work_after70_">Work After Age 70</string>
-    <string name="title_activity_hearing_intro_">Web Hearing Introduction</string>
-    <string name="title_activity_meet_people_">Embarrassed Meet New People</string>
-    <string name="title_activity_frustrated_">Frustrated When talking to Family Members</string>
-    <string name="title_activity_whisper_">Difficulty Hearing Whisper</string>
-    <string name="title_activity_handicapped_">Fell Handicapped by Hearing Problem</string>
-    <string name="title_activity_visiting_others_">Hearing Difficulty when Visiting Others</string>
-    <string name="title_activity_religious_attendance_">Attend Religious Service Less Often due to Hearing</string>
-    <string name="title_activity_arguments_">Arguments with Family Members due to Hearing Problem</string>
-    <string name="title_activity_tv_radio_">Hearing Difficulty when listening to TV or Radio</string>
-    <string name="title_activity_limits_social_life_">Hearing Limits Social Life</string>
-    <string name="title_activity_restaurants_">Hearing Difficulty in a Restaurant</string>
-    <string name="title_activity_hearing_aid_">Hearing Aid</string>
-    <string name="title_activity_rate_hearing_">Rate Hearing</string>
-    <string name="title_activity_eyesight_">Rate Eyesight</string>
-    <string name="title_activity_sound_check_">Sound Check</string>
-    <string name="soundchk">Please say today\'s Date. Click on START to record.</string>
-    <string name="soundchk_1">If you could here the recording, Please click on NEXT.\nElse click on START to record again.</string>
-    <string name="title_activity_eyesight_at_distance_">Rate Eyesight At Distance</string>
-    <string name="title_activity_eyesight_up_close_">Rate Eyesight Up Close</string>
-    <string name="title_activity_work_again_after70_">Work Again Beyond Age 70</string>
-    <string name="title_activity_audio_record_test">Sound Check</string>
-    <string name="start">START</string>
-    <string name="title_activity_sec_d_">Section D</string>
-    <string name="sec_d_intro">Part of this study is concerned with people\'s memory, and ability to think about things.</string>
-    <string name="title_activity_rate_memory_">Rate Memory</string>
-    <string name="d101">How would you rate your memory at the present time?</string>
-    <string name="d102">Compared to two years ago, would you say your memory is better now, about the same, or worse now than it was then?</string>
-    <string name="d103">For this next task you will hear a set of 10 words. You will then be asked to recall as many words as you can. We have purposely made the list long so that it will be difficult for anyone to recall all the words &#8211; most people recall just a few.\n\n
-		Please listen carefully as the set of words are read to you. You will only hear the words once.\n\n
-		When the word list is finished, you will be asked to recall aloud as many of the words as you can, in any order.
-	</string>
-    <string name="d106">Now please say as many words that you can recall.</string>
-    <string name="d120">For this next task, please try to count backward as quickly as you can from the number 20.</string>
-    <string name="better">BETTER</string>
-    <string name="same">ABOUT THE SAME</string>
-    <string name="worse">WORSE</string>
-    <string name="title_activity_memory_past_">Rate Memory Past</string>
-    <string name="title_activity_word_recall_">Immediate Word Recall</string>
     <string name="begin">BEGIN</string>
-    <string name="title_activity_word_recall_audio_">Play Word Recall Audio</string>
-    <string name="title_activity_word_recall_record_">Word Recall Record</string>
-    <string name="wr_response">Please click on START to record your response.</string>
-    <string name="title_activity_backward_count_">Backward Count</string>
-    <string name="title_activity_backward_count_record_">Backward Count Record</string>
-    <string name="title_activity_number_subtract_">Number Subtraction</string>
-    <string name="d142">Now let\'s try some subtraction of numbers.\n\n
-		What is 100 minus 7?</string>
-    <string name="eq">100&#8211;7:</string>
-    <string name="d143">And 7 subtracted from that?</string>
-    <string name="title_activity_ns143_">Number Subtraction</string>
-    <string name="title_activity_ns144_">Number Subtraction</string>
-    <string name="title_activity_ns145_">Number Subtraction</string>
-    <string name="title_activity_ns146_">Number Subtraction</string>
-    <string name="title_activity_word_recall_again_">Recall The Words Again</string>
-    <string name="d148">A little while ago, you heard a list of words and you repeated the ones you could remember. Please tell me any of the words that you remember now.</string>
-    <string name="title_activity_number_questions_">Number Questions</string>
-    <string name="d178">Next I would like to ask you some questions which assess how people use numbers in everyday life.\n\n
-		If the chance of getting a disease is 10 percent, how many people out of 1,000 would be expected to get the disease?
-	</string>
-    <string name="d179">If 5 people all have the winning numbers in a lottery and the prize is 2 million dollars, how much will each of them get?</string>
-    <string name="title_activity_number_questions_next_">Number Questions</string>
-    <string name="title_activity_sec_dlast_">Number Questions</string>
-    <string name="d180">Let\â€™s say you have $200 in a savings account. The account earns 10 percent interest per year. How much would you have in the account at the end of two years?</string>
-    <string name="title_activity_sec_rf_">Section RF&#8211;Name Animals</string>
-    <string name="rf101">How many different animals can you name?\n\n
-		You will have 45 seconds.  Click on START, and say the names of animals as fast as you can.
-	</string>
-    <string name="rf201">Please name as many different things that you can eat or drink as you can.\n\n
-		You will have 45 seconds.  Click on START, and say the names of things you can eat or drink as fast as you can.
-	</string>
-    <string name="title_activity_name_food_">Name Food</string>
-    <string name="rf301">How many different things can you name that are blue?\n\n
-		You will have 45 seconds.  Click on START, and say the names of things that are blue as fast as you can.
-	</string>
-    <string name="title_activity_name_blue_things_">Name Blue Things</string>
-    <string name="title_activity_sec_ns_">Section NS&#8211;Example 1</string>
-
-    <string name="title_activity_sec_nsex2_">Example 2</string>
-    <string name="title_activity_sec_nsex1_a">Example 1 Answer</string>
-    <string name="title_activity_sec_nsintro_">Section NS Introduction</string>
-    <string name="title_activity_set3_item1">Number Series 1</string>
-    <string name="eleven">11</string>
-    <string name="twelve">12</string>
-    <string name="fourteen">14</string>
-    <string name="fifteen">15</string>
-    <string name="sixteen">16</string>
-    <string name="seventeen">17</string>
-    <string name="eighteen">18</string>
-    <string name="nineteen">19</string>
-    <string name="twenty">20</string>
-    <string name="two_three">23</string>
-    <string name="two_six">26</string>
-    <string name="thirty">30</string>
-    <string name="three_five">35</string>
-    <string name="three_eight">38</string>
-    <string name="six_two">62</string>
-    <string name="seventy">70</string>
-    <string name="eight_four">84</string>
-    <string name="title_activity_sec_ve_">SecVE_Activity</string>
-    <string name="ve900">Instructions: In this next task, you will see several words on each screen, followed by a blank. Please say the word that best completes the phrase. To record your answer, press the RECORD ANSWER button.\n\n
-		Read the example below:
-	</string>
-    <string name="ve_ex">Mother is to Daughter as Father is to _</string>
-    <string name="ve_exa">Mother is to Daughter as Father is to Son</string>
-    <string name="ve901">The correct answer is son.</string>
-    <string name="veq">Press the RECORD ANSWER button and say the word that best completes this phrase.</string>
-    <string name="title_activity_sec_ve_ans_">SecVE_ans_Activity</string>
-    <string name="title_activity_sec_veintro_">SecVEIntro_Activity</string>
-    <string name="ve_intro">Instructions:\n
-		You will now be asked to complete three more phrases like the example you just saw.\n
-		Please say the word that best completes each phrase.\n
-		Some of the items may be easy, but others may be hard. Just do the best you can.\n
-		It is more important to answer the item correctly than it is to answer quickly, so take a little time to think before answering.\n
-		In a few cases, more than one word could be correct. If your answer is one of the correct answers, you will receive credit.\n
-		You can go on to the next item at any time by clicking â€œNext.â€\n\n
-		If you are ready to begin, please click â€œNext.â€
-	</string>
-    <string name="record">RECORD ANSWER</string>
     <string name="msg1">Please take your time to answer.</string>
     <string name="msg2">You have not submitted a response yet.Your answers are important to us.\nPlease try to answer as best you can. If you are not willing to provide an answer, please press NEXT to continue.</string>
     <string name="msg3">You did not complete the question. Your answers are important to us. Please try to answer as best you can. If you are not willing to provide an answer, please press NEXT to continue.</string>
     <string name="quit_resume">Would you like to quit? Or go back to where you left off?</string>
 
-
-    <string name="ve31">Night is to Dark as Day is to _</string>
-    <string name="ve32">Tomato is to Carrot as Red is to _</string>
-    <string name="ve33">Two is to Duet as Three is to _</string>
-    <string name="title_activity_veitem1_">VEItem1_Activity</string>
-    <string name="title_activity_veitem2_">VEItem2_Activity</string>
-    <string name="title_activity_veitem3_">VEItem3_Activity</string>
-    <string name="title_activity_sec_ar_">SecAR_Activity</string>
     <string name="ar_text">INSTRUCTIONS\n
 		Each item in this task consists of a set of figures arranged in a pattern, formed according to certain rules.\n
 		Look at the figures in the first example.
@@ -345,11 +34,9 @@
     <string name="opt5">option 5</string>
     <string name="main">main question</string>
     <string name="correct_response">The correct answer is the figure selected here. </string>
-    <string name="title_activity_arans1_">ARans1_Activity</string>
     <string name="ar_text3">It follows the same pattern as the other figures in the box. The figure in the bottom left is larger than the one above it but otherwise the same. In the top row, the figure at the right is the same as the one to the left of it except that it has been turned upside down. Following these rules, the missing figure should be larger than the one above it, and exactly the same size as the one to the left of it, but upside down. Therefore, the response choice selected is the correct answer.\n\n
 		Press the NEXT button to continue.
 	</string>
-    <string name="title_activity_arpractice1_">ARpractice1_Activity</string>
     <string name="practice">PRACTICE EXAMPLE</string>
     <string name="practiceq1">Here is a practice item.  Select the figure that completes the pattern then press NEXT.  Or if you would like to read the instructions again, press the BACK button.</string>
     <string name="practiceq2">Now look at another problem, which is quite different from either of the previous ones.</string>
@@ -366,28 +53,6 @@
 		When you are ready, press the BEGIN button.
 	</string>
     <string name="button_str_back">BACK</string>
-    <string name="title_activity_arpractice_correct_">ARpracticeCorrect_Activity</string>
-    <string name="title_activity_arpractice_wrong_">ARpracticeWrong_Activity</string>
-    <string name="title_activity_arpractice2_">ARpractice2_Activity</string>
-    <string name="title_activity_arpracrice2ans_">ARpracrice2ans_Activity</string>
-    <string name="title_activity_arpractice2ans_">ARpractice2ans_Activity</string>
-    <string name="title_activity_arintro_">ARIntro_Activity</string>
-    <string name="title_activity_ar31_">AR31_Activity</string>
-    <string name="title_activity_ar32_">AR32_Activity</string>
-    <string name="title_activity_ar33_">AR33_Activity</string>
-    <string name="title_activity_ar11_">AR11_Activity</string>
-    <string name="title_activity_ar12_">AR12_Activity</string>
-    <string name="title_activity_ar13_">AR13_Activity</string>
-    <string name="title_activity_sec_sw_">SecSW_Activity</string>
-    <string name="title_activity_ar21_">AR21_Activity</string>
-    <string name="title_activity_ar22_">AR22_Activity</string>
-    <string name="title_activity_ar23_">AR23_Activity</string>
-    <string name="title_activity_ar41_">AR41_Activity</string>
-    <string name="title_activity_ar42_">AR42_Activity</string>
-    <string name="title_activity_ar43_">AR43_Activity</string>
-    <string name="title_activity_ar51_">AR51_Activity</string>
-    <string name="title_activity_ar52_">AR52_Activity</string>
-    <string name="title_activity_ar53_">AR53_Activity</string>
     <string name="title_activity_sec_sp_">SecSP_Activity</string>
     <string name="sp_text">Each item in this task has a drawing of a flat piece of metal, like the example shown here.</string>
     <string name="sp_text1">Below each drawing are five objects, only one of which can be made by folding the flat piece of metal along the dotted lines. You are to select which object shows just how the piece of flat metal would look when it is folded at the dotted lines. When it is folded, no piece of metal overlaps any other piece, or is enclosed inside the object.</string>
@@ -502,7 +167,7 @@
     <string name="mix_ex1">So if you see:\n\n
         RED\n\n
         You should press the STOP button. This is because the last screen said â€œNORMAL,â€ and this screen says â€œRED.â€ Please do this now.
-</string>
+    </string>
     <string name="mix_ex2">And if you see:\n\n
         GREEN\n\n
         You should press the GO button. This is because the rules screen said â€œNORMAL,â€ and this screen says â€œGREEN.â€ Please do this now.
@@ -542,98 +207,6 @@
     <string name="title_activity_swset32_">SWset32_Activity</string>
     <string name="title_activity_swset34_">SWset34_Activity</string>
     <string name="title_activity_sec_w_">SecW_Activity</string>
-    <string name="w001">Do you use e-mail?</string>
-    <string name="w002">How often do you check your e-mail? </string>
-    <string name="w003">Other than e-mail, how often do you use the internet (for example, to read news, check weather, make purchases, search for information, make travel reservations, etc.)? </string>
-    <string name="w014">Now we would like to ask you some questions regarding your thoughts about participating in this study using the tablet.</string>
-    <string name="w015">Did you read the User Manual before handling the tablet?</string>
-    <string name="w015sub">The User Manual was easy for me to understand</string>
-    <string name="w016">Did you have any trouble turning on the tablet?</string>
-    <string name="w017">Did you need any help in using the tablet?</string>
-    <string name="w017sub">Did you contact the study help line for assistance?</string>
-    <string name="w018">The touch screen was easy to use.</string>
-    <string name="w019">The words and images on the tablet were easy to see and read.</string>
-    <string name="w020">Picking a specific answer to a survey question was easy for me.</string>
-    <string name="w021">I enjoyed completing the interview on the tablet.</string>
-    <string name="w022">Using the tablet was a stressful experience for me.</string>
-    <string name="option1">DAILY</string>
-    <string name="option2">3 TO 4 TIMES A WEEK</string>
-    <string name="option3">1 TO 2 TIMES A WEEK</string>
-    <string name="option4">2 TO 3 TIMES A MONTH</string>
-    <string name="option5">ONCE A MONTH OR LESS</string>
-    <string name="option6">NEVER</string>
-    <string name="rating1">DEFINITELY DISAGREE</string>
-    <string name="rating2">MOSTLY DISAGREE</string>
-    <string name="rating3">NEUTRAL</string>
-    <string name="rating4">MOSTLY AGREE</string>
-    <string name="rating5">DEFINITLEY AGREE</string>
-    <string name="final_q">Now, we have just a few final questions for you.</string>
-    <string name="title_activity_w001_">W001_Activity</string>
-    <string name="title_activity_w002_">W002_Activity</string>
-    <string name="title_activity_w003_">W003_Activity</string>
-    <string name="title_activity_w014_">W014_Activity</string>
-    <string name="title_activity_w015_">W015_Activity</string>
-    <string name="title_activity_w016_">W016_Activity</string>
-    <string name="title_activity_w015sub_">W015sub_Activity</string>
-    <string name="title_activity_w017_">W017_Activity</string>
-    <string name="title_activity_w017sub_">W017sub_Activity</string>
-    <string name="title_activity_w018_">W018_Activity</string>
-    <string name="title_activity_w019_">W019_Activity</string>
-    <string name="title_activity_w020_">W020_Activity</string>
-    <string name="title_activity_w021_">W021_Activity</string>
-    <string name="title_activity_w0211_">W0211_Activity</string>
-    <string name="title_activity_w022_">W022_Activity</string>
-    <string name="w004">How much did you enjoy this interview? </string>
-    <string name="w007">How tired did you feel while completing this interview?</string>
-    <string name="w008">Were you doing any other activities while completing this interview, for example, checking email or doing household chores?</string>
-    <string name="w010">We hear a lot of talk these days about liberals and conservatives.  Where would you place yourself: would you say you are generally liberal, conservative, or something in between?</string>
-    <string name="w011">What is your favorite type of TV show? </string>
-    <string name="w012">What is the name of your favorite TV show?</string>
-    <string name="w013">You have now completed the cognitive tasks.\n\n
-        Thank you for your participation!\n\n
-        Please refer to the User Manual for instructions on how to turn off the tablet, and return the tablet to AIR.
-</string>
-    <string name="o41">NOT AT ALL</string>
-    <string name="o42">A LITTLE</string>
-    <string name="o43">SOMEWHAT</string>
-    <string name="o44">VERY MUCH</string>
-    <string name="o71">NOT AT ALL TIRED</string>
-    <string name="o72">A LITTLE TIRED</string>
-    <string name="o73">SOMEWHAT TIRED</string>
-    <string name="o74">VERY MUCH TIRED</string>
-    <string name="o101">LIBERAL</string>
-    <string name="o102">IN-BETWEEN</string>
-    <string name="o103">CONSERVATIVE</string>
-    <string name="o111">COMEDY</string>
-    <string name="o112">DRAMA</string>
-    <string name="o113">REALITY</string>
-    <string name="o114">NEWS</string>
-    <string name="o115">SPORTS</string>
-    <string name="o116">SPECIAL INTEREST (COOKING, HOME IMPROVEMENT)</string>
-    <string name="title_activity_w004_">W004_Activity</string>
-    <string name="title_activity_w007_">W007_Activity</string>
-    <string name="title_activity_w008_">W008_Activity</string>
-    <string name="title_activity_w010_">W010_Activity</string>
-    <string name="title_activity_w011_">W011_Activity</string>
-    <string name="title_activity_w012_">W012_Activity</string>
-    <string name="title_activity_w013_">W013_Activity</string>
-    <string name="input_instr">Instruction: Type in the name and press DONE.</string>
-    <string name="shift">Click on arrow to enter value in the second box.</string>
-    <string name="title_activity_w023_">W023_Activity</string>
-    <string name="w023">Which of the following types of technology do you use regularly?</string>
-    <string name="daily">Daily</string>
-    <string name="weekly">Weekly</string>
-    <string name="monthly">Monthly</string>
-    <string name="never">Never</string>
-    <string name="w023_1">Desktop computer</string>
-    <string name="w023_2">Laptop computer</string>
-    <string name="w023_3">Tablet computer (such as iPad)</string>
-    <string name="w023_4">eReader (such as Kindle)</string>
-    <string name="w023_5">Smartphone (such as iPhone)</string>
-    <string name="w023_6">Mobile phone other than a smartphone</string>
-    <string name="w023i">(Select one option for each type)</string>
-
-
     <string name="repeatmsg">The word list will now be repeated.</string>
     <string name="title_activity_emp">emp</string>
     <string name="finishbutton_str">FINISH</string>
@@ -817,6 +390,7 @@
     <!-- Vocabulary strings -->
 
     <!-- Number Series -->
+    <string name="ns_section_title">Number Series</string>
     <string name="ns_instr"> Please enter the number that belongs in each empty box. </string>
     <string name="title_activity_sec_nsex2_a_">Example 2 Answer</string>
     <string name="ns_intro">You will now see six more questions like the ones you just did.\n\n
@@ -832,10 +406,8 @@
 		If you are ready to begin, please click \'Next\'.
 	</string>
     <string name="nsq">Please enter the number that belongs in each empty box.</string>
-
     <string name="clear">Undo</string>
     <string name="clicknext">Please click \'Next\' to continue.</string>
-
     <string name="ns_example1">
         {
           \"id\": 1,
@@ -848,7 +420,6 @@
           \"answerText\": \"The answer we were looking for is 3, so the completed sequence is:\"
         }
     </string>
-
     <string name="ns_example2">
         {
           \"id\": 2,
@@ -858,7 +429,6 @@
           \"answerText\": \"The answer we were looking for is 8 because the numbers (2, 4, 6, 8) increase by 2. The completed sequence is:\"
         }
     </string>
-
     <string name="ns_3">
         [
           {
@@ -875,7 +445,6 @@
           }
         ]
     </string>
-
     <string name="ns_1">
         [
           {
@@ -892,7 +461,6 @@
           }
         ]
     </string>
-
     <string name="ns_2">
         [
           {
@@ -909,7 +477,6 @@
           }
         ]
     </string>
-
     <string name="ns_4">
         [
           {
@@ -927,7 +494,6 @@
           }
         ]
     </string>
-
     <string name="ns_5">
         [
           {
@@ -946,8 +512,11 @@
           }
         ]
     </string>
-
     <!-- Number series -->
+
+    <!-- Abstract reasoning -->
+    <string name="ar_section_title">Abstract Reasoning</string>
+    <!-- Abstract reasoning -->
 
     <!-- Warning messages -->
     <string name="quit">Quit</string>
@@ -962,6 +531,5 @@
     <string name="switch_ar">Switch to abstract reasoning.</string>
     <string name="switch_sv">Switch to spatial visualization.</string>
     <string name="switch_bt">Switch to BTACT switching.</string>
-    <string name="ns_section_title">Number Series</string>
     <!--Context switch -->
 </resources>

@@ -16,7 +16,7 @@
 
         android:layout_alignParentTop="true"
         android:textSize="25sp"
-        android:text="@string/finsih_message"/>
+        android:text="@string/finish_message"/>
 
     <Button
         android:id="@+id/finish"

@@ -18,9 +18,6 @@ public class SecAR_Activity extends Activity {
 		ImageView img1,img2,img3,img4,img5;
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sec_ar_);
-		/** Need to set the bitmap image code here
-		 *
-		 */
 		ImageView myImage = (ImageView) findViewById(R.id.question_image);
 		myImage.setImageBitmap(ImageDecoder.decodeImage(getResources(),R.drawable.ar_001_main,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
@@ -48,7 +45,6 @@ public class SecAR_Activity extends Activity {
         Button button = (Button) findViewById(R.id.button3);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Perform action on click
             	Intent intent = new Intent(SecAR_Activity.this, ARans1_Activity.class);
             	startActivityForResult(intent,1);
 
@@ -56,25 +52,12 @@ public class SecAR_Activity extends Activity {
         });
 	}
 	@Override
-	public void onBackPressed()
-	{
-
-	   //thats it
-	}
+	public void onBackPressed() {}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// Check which request we're responding to
-		Log.d("SecAR",  "onActivityResult - SecAR Activity");
 		if (requestCode == 1) {
-			// Make sure the request was successful
 			if (resultCode == RESULT_OK) {
-				// The user picked a contact.
-				// The Intent's data Uri identifies which contact was selected.
-
-				// Do something with the contact here (bigger example below)
-				String output = data.getExtras().get("jsonData").toString();
-				Log.d("final result", output);
 				setResult(Activity.RESULT_OK, data);
 				super.finish();
 			}

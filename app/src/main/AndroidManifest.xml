@@ -25,88 +25,88 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".numbers.SecNS_Activity"
-            android:label="@string/title_activity_sec_ns_"
+            android:label="@string/ns_section_title"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".numbers.SecNSEx1AActivity"
-            android:label="@string/title_activity_sec_nsex1_a"
+            android:label="@string/ns_section_title"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".numbers.SecNSIntro_Activity"
-            android:label="@string/title_activity_sec_nsintro_" />
+            android:label="@string/ns_section_title" />
         <activity
             android:name=".numbers.Set3Item1Activity"
-            android:label="@string/title_activity_set3_item1"
+            android:label="@string/ns_section_title"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".reasoning.SecAR_Activity"
-            android:label="@string/title_activity_sec_ar_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARans1_Activity"
-            android:label="@string/title_activity_arans1_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARpractice1_Activity"
-            android:label="@string/title_activity_arpractice1_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARpracticeCorrect_Activity"
-            android:label="@string/title_activity_arpractice_correct_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARpracticeWrong_Activity"
-            android:label="@string/title_activity_arpractice_wrong_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARpractice2_Activity"
-            android:label="@string/title_activity_arpractice2_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARpractice2ans_Activity"
-            android:label="@string/title_activity_arpractice2ans_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.ARIntro_Activity"
-            android:label="@string/title_activity_arintro_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR31_Activity"
-            android:label="@string/title_activity_ar31_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR32_Activity"
-            android:label="@string/title_activity_ar32_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR33_Activity"
-            android:label="@string/title_activity_ar33_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR11_Activity"
-            android:label="@string/title_activity_ar11_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR12_Activity"
-            android:label="@string/title_activity_ar12_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR13_Activity"
-            android:label="@string/title_activity_ar13_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR21_Activity"
-            android:label="@string/title_activity_ar21_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR22_Activity"
-            android:label="@string/title_activity_ar22_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR23_Activity"
-            android:label="@string/title_activity_ar23_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR41_Activity"
-            android:label="@string/title_activity_ar41_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR42_Activity"
-            android:label="@string/title_activity_ar42_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR43_Activity"
-            android:label="@string/title_activity_ar43_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR51_Activity"
-            android:label="@string/title_activity_ar51_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR52_Activity"
-            android:label="@string/title_activity_ar52_" />
+            android:label="@string/ar_section_title" />
         <activity
             android:name=".reasoning.AR53_Activity"
-            android:label="@string/title_activity_ar53_" />
+            android:label="@string/ar_section_title" />
         <activity android:name=".vocab.VocabIntro"></activity>
     </application>
 

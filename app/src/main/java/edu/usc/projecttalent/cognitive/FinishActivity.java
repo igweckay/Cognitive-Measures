@@ -36,6 +36,7 @@ public class FinishActivity extends AppCompatActivity {
                         break;
                     case R.string.switch_ar:
                         nextClass = SecAR_Activity.class;
+                        break;
                     default:
                         Survey survey = Survey.getSurvey();
                         survey.endSurvey();
@@ -44,7 +45,6 @@ public class FinishActivity extends AppCompatActivity {
                         setResult(RESULT_OK, intent);
                         QuestionTimer.stopTimer(); //to prevent new on-ticks after activity closes.
                         finish();
-                        return;
                 }
                 startActivityForResult(new Intent(mContext, nextClass), 1);
                 finish();

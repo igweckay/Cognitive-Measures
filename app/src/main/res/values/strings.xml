@@ -61,49 +61,7 @@
 		&#8226; Parts are not folded inside of other parts of any objects (in other words, there is no overlapping).\n\n
 		When you are ready, press the BEGIN button.
 	</string>
-    <string name="title_activity_sppractice_">SPpractice_Activity</string>
-    <string name="title_activity_sppractice_correct_">SPpracticeCorrect_Activity</string>
-    <string name="title_activity_sppractice_wrong_">SPpracticeWrong_Activity</string>
-    <string name="title_activity_spintro_">SPIntro_Activity</string>
-    <string name="title_activity_sp31_">SP31_Activity</string>
-    <string name="title_activity_sp32_">SP32_Activity</string>
-    <string name="title_activity_sp33_">SP33_Activity</string>
-    <string name="title_activity_sp11_">SP11_Activity</string>
-    <string name="title_activity_sp12_">SP12_Activity</string>
-    <string name="title_activity_sp13_">SP13_Activity</string>
-    <string name="title_activity_sp21_">SP21_Activity</string>
-    <string name="title_activity_sp22_">SP22_Activity</string>
-    <string name="title_activity_sp23_">SP23_Activity</string>
-    <string name="title_activity_sp41_">SP41_Activity</string>
-    <string name="title_activity_sp42_">SP42_Activity</string>
-    <string name="title_activity_sp43_">SP43_Activity</string>
-    <string name="title_activity_sp51_">SP51_Activity</string>
-    <string name="title_activity_sp52_">SP52_Activity</string>
-    <string name="title_activity_sp53_">SP53_Activity</string>
-    <string name="title_activity_sec_pv_">SecPV_Activity</string>
-    <string name="pv_intro">Instructions: In this task, you will see several pictures. Please say the name of the pictured object. To record your answer, press the
-        RECORD ANSWER button. If you do not know what is pictured, just give your best guess.\n\n
-		Please click \'Next\' to see an example.
-	</string>
-    <string name="pvq">What is shown in this picture? Press the RECORD ANSWER button and say the name of this object.</string>
-    <string name="pv_ex">For example, if you see a picture of any kind of car, you would just say the word "car".\n
-		You can see this example below.
-	</string>
-    <string name="pv_next">Please click "Next" to see another example.</string>
-    <string name="pv_ex2">What is the arrow pointing to? Press the RECORD ANSWER button and say the name of the object.</string>
-    <string name="pv_explain">In the above example, you would say "eraser". While the picture shows a pencil, the arrow is pointing to a specific part of this pencil
-        &#8211; its eraser. Not all pictures will have arrows. In those cases, you are to say the word that best describes the entire picture. So in the above example,
-        if no arrow were present, you would simply say "pencil".\n\n
-		You will now be asked to identify six more pictures. Take your time. While you do not have an unlimited amount of time to respond to each problem, it is more
-        important to answer correctly than to answer quickly.\n\n
-		Please click "Next" to begin.
-	</string>
-    <string name="title_activity_pvexample1_">PVexample1_Activity</string>
-    <string name="title_activity_pvexample2_">PVexample2_Activity</string>
-    <string name="title_activity_pvexample2ans_">PVexample2ans_Activity</string>
-    <string name="title_activity_pvitem1_">PVItem1_Activity</string>
-    <string name="title_activity_pvitem2_">PVItem2_Activity</string>
-    <string name="title_activity_pvitem3_">PVItem3_Activity</string>
+
     <string name="sw_intro">In this next task, we would like to see how quickly you can respond to the words RED and GREEN.\n\n
 		For the first several items, if you see RED you will press the STOP button. If you see GREEN you will press the GO button.\n\n
 		Try to be accurate, but respond as quickly as you can.

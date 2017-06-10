@@ -550,6 +550,11 @@
 		&#8226; Do not spend too much time on any one problem. \n\n
 		If you are ready to begin, please click \"Next\".
 	</string>
+    <string name="start_now">Start Now</string>
+    <string name="start_task">Would you like to see another example, or are you ready to start this task?</string>
+    <string name="example">Another example</string>
+    <string name="start_task_confirm">Start task</string>
+    <string name="ar_instr">Choose the answer that belongs in \"?\" below, then click \"Next\" to continue.</string>
     <!-- Abstract reasoning -->
 
     <!-- Warning messages -->
@@ -565,9 +570,5 @@
     <string name="switch_ar">Switch to abstract reasoning.</string>
     <string name="switch_sv">Switch to spatial visualization.</string>
     <string name="switch_bt">Switch to BTACT switching.</string>
-    <string name="start_now">Start Now</string>
-    <string name="start_task">Would you like to see another example, or are you ready to start this task?</string>
-    <string name="example">Another example</string>
-    <string name="start_task_confirm">Start task</string>
     <!--Context switch -->
 </resources>

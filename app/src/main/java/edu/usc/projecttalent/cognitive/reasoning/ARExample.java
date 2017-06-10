@@ -15,12 +15,18 @@ public class ARExample {
     public boolean answer;
     public int ansOption;
 
-    public ARExample(String instructions, TypedArray arr, String details, boolean answer, int ansOption) {
+    ARExample(String instructions, TypedArray options, String details, boolean answer, int ansOption) {
         this.instructions = instructions;
-        options = arr;
+        this.options = options;
         this.details = details;
         this.answer = answer;
         this.ansOption = ansOption;
+    }
+
+    @SuppressWarnings("ResourceType")
+    ARExample(TypedArray options) {
+        this.options = options;
+        this.ansOption = options.getInt(6, -1);
     }
 
     @BindingAdapter({"bind:imageUrl"})

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import edu.usc.projecttalent.cognitive.MyGlobalVariables;
 import edu.usc.projecttalent.cognitive.R;
-import edu.usc.projecttalent.cognitive.spatial.SecSP_Activity;
+import edu.usc.projecttalent.cognitive.spatial.SPpractice_Activity;
 
 public class SWset34_Activity extends Activity {
 	String[] seq={"GREEN","GREEN"};int i=0,score=0,miss= MyGlobalVariables.getMissItem();
@@ -84,7 +84,7 @@ public class SWset34_Activity extends Activity {
 	                   		s = MyGlobalVariables.getData();
 	                   		s+="swset3_end:"+end.toString()+";";
 	                   		MyGlobalVariables.setData(s);
-	            			Intent intent = new Intent(SWset34_Activity.this, SecSP_Activity.class);
+	            			Intent intent = new Intent(SWset34_Activity.this, SPpractice_Activity.class);
 		            	    startActivity(intent);
 	            		}
 	            		else {
@@ -142,7 +142,7 @@ public class SWset34_Activity extends Activity {
 	                   		s = MyGlobalVariables.getData();
 	                   		s+="swset3_end:"+end.toString()+";";
 	                   		MyGlobalVariables.setData(s);
-	            			Intent intent = new Intent(SWset34_Activity.this, SecSP_Activity.class);
+	            			Intent intent = new Intent(SWset34_Activity.this, SPpractice_Activity.class);
 		            	    startActivity(intent);
 	            		}
 	            		else {
@@ -222,7 +222,7 @@ public class SWset34_Activity extends Activity {
 		                   		s = MyGlobalVariables.getData();
 		                   		s+="swset3_end:"+end.toString()+";";
 		                   		MyGlobalVariables.setData(s);
-	                			Intent intent = new Intent(SWset34_Activity.this, SecSP_Activity.class);
+	                			Intent intent = new Intent(SWset34_Activity.this, SPpractice_Activity.class);
 	    	            	    startActivity(intent);
 	                		}
 	            			else{
@@ -278,7 +278,7 @@ public class SWset34_Activity extends Activity {
                    		s = MyGlobalVariables.getData();
                    		s+="swset3_end:"+end.toString()+";";
                    		MyGlobalVariables.setData(s);
-            			Intent intent = new Intent(SWset34_Activity.this, SecSP_Activity.class);
+            			Intent intent = new Intent(SWset34_Activity.this, SPpractice_Activity.class);
 	            	    startActivity(intent);
             		}
             		else {
@@ -335,7 +335,7 @@ public class SWset34_Activity extends Activity {
                    		s+="swset3_end:"+end.toString()+";";
                    		s+="sec_sw_end:"+end.toString()+";";
                    		MyGlobalVariables.setData(s);
-            			Intent intent = new Intent(SWset34_Activity.this, SecSP_Activity.class);
+            			Intent intent = new Intent(SWset34_Activity.this, SPpractice_Activity.class);
 	            	    startActivity(intent);
 	            }
 	        });

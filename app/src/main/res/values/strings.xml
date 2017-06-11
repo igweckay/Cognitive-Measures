@@ -43,7 +43,7 @@
         or is enclosed inside the object.</string>
     <string name="sp_practice">Now look at the example.\n\nSelect which of the five objects would be made by folding the flat piece along each of the dotted lines.
 	</string>
-    <string name="sp_next">Press the object and then the NEXT button when you are ready to go on.</string>
+    <string name="sp_next2">Press the object and then the NEXT button when you are ready to go on.</string>
     <string name="sp_explain">It follows the same pattern as the other figures in the box. The figure in the bottom left is larger than the one above it but otherwise the
         same. In the top row, the figure at the right is the same as the one to the left of it except that it has been turned upside down. Following these rules,
         the missing figure should be larger than the one above it, and exactly the same size as the one to the left of it, but upside down. Therefore, the response choice
@@ -514,6 +514,11 @@
     <string name="start_task_confirm">Start task</string>
     <string name="ar_instr">Choose the answer that belongs in \"?\" below, then click \"Next\" to continue.</string>
     <!-- Abstract reasoning -->
+
+    <!-- 2D visualization -->
+    <string name="sp_instr">Look at the drawings below. The first drawing is shaped like the letter L. The rest of the drawings are like the first, except that they
+    have been turned in different directions. </string>
+    <string name="sp_next">Please click \"Next\" to continue.</string>
 
     <!-- Warning messages -->
     <string name="quit">Quit</string>

@@ -38,6 +38,27 @@
         <activity android:name=".reasoning.AR31_Activity" />
         <activity android:name=".vocab.VocabIntro" />
         <activity android:name=".reasoning.ARInstructions"></activity>
+
+        <activity android:name=".spatial.SP11_Activity"/>
+        <activity android:name=".spatial.SP12_Activity"/>
+        <activity android:name=".spatial.SP13_Activity"/>
+        <activity android:name=".spatial.SP21_Activity"/>
+        <activity android:name=".spatial.SP22_Activity"/>
+        <activity android:name=".spatial.SP23_Activity"/>
+        <activity android:name=".spatial.SP31_Activity"/>
+        <activity android:name=".spatial.SP32_Activity"/>
+        <activity android:name=".spatial.SP33_Activity"/>
+        <activity android:name=".spatial.SP41_Activity"/>
+        <activity android:name=".spatial.SP42_Activity"/>
+        <activity android:name=".spatial.SP43_Activity"/>
+        <activity android:name=".spatial.SP51_Activity"/>
+        <activity android:name=".spatial.SP52_Activity"/>
+        <activity android:name=".spatial.SP53_Activity"/>
+        <activity android:name=".spatial.SPIntro_Activity"/>
+        <activity android:name=".spatial.SPpractice_Activity"/>
+        <activity android:name=".spatial.SPpracticeCorrect_Activity"/>
+        <activity android:name=".spatial.SPpracticeWrong_Activity"/>
+
     </application>
 
 </manifest>

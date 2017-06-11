@@ -23,22 +23,22 @@ public class SPpractice_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sppractice_);
 		ImageView myImage = (ImageView) findViewById(R.id.question_image);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_001_main,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_s1_main,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
 	    img1 = (ImageView) findViewById(R.id.imageView1);
-	    img1.setImageBitmap(decodeImage(getResources(),R.drawable.sp_001_1,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+	    img1.setImageBitmap(decodeImage(getResources(),R.drawable.sp_s1_1,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
 	    img2 = (ImageView) findViewById(R.id.imageView2);
-	    img2.setImageBitmap(decodeImage(getResources(),R.drawable.sp_001_2,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+	    img2.setImageBitmap(decodeImage(getResources(),R.drawable.sp_s1_2,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
 	    img3 = (ImageView) findViewById(R.id.imageView3);
-	    img3.setImageBitmap(decodeImage(getResources(),R.drawable.sp_001_3,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+	    img3.setImageBitmap(decodeImage(getResources(),R.drawable.sp_s1_3,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
 	    img4 = (ImageView) findViewById(R.id.imageView4);
-	    img4.setImageBitmap(decodeImage(getResources(),R.drawable.sp_001_4,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+	    img4.setImageBitmap(decodeImage(getResources(),R.drawable.sp_s1_4,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
 	    img5 = (ImageView) findViewById(R.id.imageView5);
-	    img5.setImageBitmap(decodeImage(getResources(),R.drawable.sp_001_5,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+	    img5.setImageBitmap(decodeImage(getResources(),R.drawable.sp_s1_5,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
 
 
 		img1.setPadding(1, 1, 1, 1);

@@ -165,29 +165,194 @@
         <item>@array/ar_32</item>
         <item>@array/ar_33</item>
     </integer-array>
-
     <integer-array name="ar_1">
         <item>@array/ar_11</item>
         <item>@array/ar_12</item>
         <item>@array/ar_13</item>
     </integer-array>
-
     <integer-array name="ar_2">
         <item>@array/ar_21</item>
         <item>@array/ar_22</item>
         <item>@array/ar_23</item>
     </integer-array>
-
     <integer-array name="ar_4">
         <item>@array/ar_41</item>
         <item>@array/ar_42</item>
         <item>@array/ar_43</item>
     </integer-array>
-
     <integer-array name="ar_5">
         <item>@array/ar_51</item>
         <item>@array/ar_52</item>
         <item>@array/ar_53</item>
+    </integer-array>
+
+    <array name="sp_ex_1">
+        <item>@drawable/sp_instr_l_1</item>
+        <item>@drawable/sp_instr_l_2</item>
+        <item>@drawable/sp_instr_l_3</item>
+        <item>@drawable/sp_instr_l_4</item>
+        <item>@drawable/sp_instr_l_5</item>
+    </array>
+    <array name="sp_ex_2">
+        <item>@drawable/sp_instr_p_1</item>
+        <item>@drawable/sp_instr_p_2</item>
+        <item>@drawable/sp_instr_p_3</item>
+        <item>@drawable/sp_instr_p_4</item>
+        <item>@drawable/sp_instr_p_5</item>
+    </array>
+    <array name="sp_ex_3">
+        <item>@drawable/sp_s1_main</item>
+        <item>@drawable/sp_s1_1</item>
+        <item>@drawable/sp_s1_2</item>
+        <item>@drawable/sp_s1_3</item>
+        <item>@drawable/sp_s1_4</item>
+        <item>@drawable/sp_s1_5</item>
+    </array>
+    <array name="sp_31">
+        <item>@drawable/sp_3_main</item>
+        <item>@drawable/sp_3_1</item>
+        <item>@drawable/sp_3_2</item>
+        <item>@drawable/sp_3_3</item>
+        <item>@drawable/sp_3_4</item>
+        <item>@drawable/sp_3_5</item>
+    </array>
+    <array name="sp_32">
+        <item>@drawable/sp_11_main</item>
+        <item>@drawable/sp_11_1</item>
+        <item>@drawable/sp_11_2</item>
+        <item>@drawable/sp_11_3</item>
+        <item>@drawable/sp_11_4</item>
+        <item>@drawable/sp_11_5</item>
+    </array>
+    <array name="sp_33">
+        <item>@drawable/sp_15_main</item>
+        <item>@drawable/sp_15_1</item>
+        <item>@drawable/sp_15_2</item>
+        <item>@drawable/sp_15_3</item>
+        <item>@drawable/sp_15_4</item>
+        <item>@drawable/sp_15_5</item>
+    </array>
+    <array name="sp_11">
+        <item>@drawable/sp_2_main</item>
+        <item>@drawable/sp_2_1</item>
+        <item>@drawable/sp_2_2</item>
+        <item>@drawable/sp_2_3</item>
+        <item>@drawable/sp_2_4</item>
+        <item>@drawable/sp_2_5</item>
+    </array>
+    <array name="sp_12">
+        <item>@drawable/sp_4_main</item>
+        <item>@drawable/sp_4_1</item>
+        <item>@drawable/sp_4_2</item>
+        <item>@drawable/sp_4_3</item>
+        <item>@drawable/sp_4_4</item>
+        <item>@drawable/sp_4_5</item>
+    </array>
+    <array name="sp_13">
+        <item>@drawable/sp_7_main</item>
+        <item>@drawable/sp_7_1</item>
+        <item>@drawable/sp_7_2</item>
+        <item>@drawable/sp_7_3</item>
+        <item>@drawable/sp_7_4</item>
+        <item>@drawable/sp_7_5</item>
+    </array>
+    <array name="sp_21">
+        <item>@drawable/sp_9_main</item>
+        <item>@drawable/sp_9_1</item>
+        <item>@drawable/sp_9_2</item>
+        <item>@drawable/sp_9_3</item>
+        <item>@drawable/sp_9_4</item>
+        <item>@drawable/sp_9_5</item>
+    </array>
+    <array name="sp_22">
+        <item>@drawable/sp_18_main</item>
+        <item>@drawable/sp_18_1</item>
+        <item>@drawable/sp_18_2</item>
+        <item>@drawable/sp_18_3</item>
+        <item>@drawable/sp_18_4</item>
+        <item>@drawable/sp_18_5</item>
+    </array>
+    <array name="sp_23">
+        <item>@drawable/sp_13_main</item>
+        <item>@drawable/sp_13_1</item>
+        <item>@drawable/sp_13_2</item>
+        <item>@drawable/sp_13_3</item>
+        <item>@drawable/sp_13_4</item>
+        <item>@drawable/sp_13_5</item>
+    </array>
+    <array name="sp_41">
+        <item>@drawable/sp_14_main</item>
+        <item>@drawable/sp_14_1</item>
+        <item>@drawable/sp_14_2</item>
+        <item>@drawable/sp_14_3</item>
+        <item>@drawable/sp_14_4</item>
+        <item>@drawable/sp_14_5</item>
+    </array>
+    <array name="sp_42">
+        <item>@drawable/sp_19_main</item>
+        <item>@drawable/sp_19_1</item>
+        <item>@drawable/sp_19_2</item>
+        <item>@drawable/sp_19_3</item>
+        <item>@drawable/sp_19_4</item>
+        <item>@drawable/sp_19_5</item>
+    </array>
+    <array name="sp_43">
+        <item>@drawable/sp_16_main</item>
+        <item>@drawable/sp_16_1</item>
+        <item>@drawable/sp_16_2</item>
+        <item>@drawable/sp_16_3</item>
+        <item>@drawable/sp_16_4</item>
+        <item>@drawable/sp_16_5</item>
+    </array>
+    <array name="sp_51">
+        <item>@drawable/sp_17_main</item>
+        <item>@drawable/sp_17_1</item>
+        <item>@drawable/sp_17_2</item>
+        <item>@drawable/sp_17_3</item>
+        <item>@drawable/sp_17_4</item>
+        <item>@drawable/sp_17_5</item>
+    </array>
+    <array name="sp_52">
+        <item>@drawable/sp_20_main</item>
+        <item>@drawable/sp_20_1</item>
+        <item>@drawable/sp_20_2</item>
+        <item>@drawable/sp_20_3</item>
+        <item>@drawable/sp_20_4</item>
+        <item>@drawable/sp_20_5</item>
+    </array>
+    <array name="sp_53">
+        <item>@drawable/sp_24_main</item>
+        <item>@drawable/sp_24_1</item>
+        <item>@drawable/sp_24_2</item>
+        <item>@drawable/sp_24_3</item>
+        <item>@drawable/sp_24_4</item>
+        <item>@drawable/sp_24_5</item>
+    </array>
+
+    <integer-array name="sp_3">
+        <item>@array/sp_31</item>
+        <item>@array/sp_32</item>
+        <item>@array/sp_33</item>
+    </integer-array>
+    <integer-array name="sp_1">
+        <item>@array/sp_11</item>
+        <item>@array/sp_12</item>
+        <item>@array/sp_13</item>
+    </integer-array>
+    <integer-array name="sp_2">
+        <item>@array/sp_21</item>
+        <item>@array/sp_22</item>
+        <item>@array/sp_23</item>
+    </integer-array>
+    <integer-array name="sp_4">
+        <item>@array/sp_41</item>
+        <item>@array/sp_42</item>
+        <item>@array/sp_43</item>
+    </integer-array>
+    <integer-array name="sp_5">
+        <item>@array/sp_51</item>
+        <item>@array/sp_52</item>
+        <item>@array/sp_53</item>
     </integer-array>
 
 </resources>

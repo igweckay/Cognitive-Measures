@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import edu.usc.projecttalent.cognitive.MyGlobalVariables;
 import edu.usc.projecttalent.cognitive.R;
-import edu.usc.projecttalent.cognitive.spatial.SecSP_Activity;
+import edu.usc.projecttalent.cognitive.spatial.SPpractice_Activity;
 
 public class SWset33_Activity extends Activity {
 	String[] seq={"RED","GREEN","RED","GREEN","GREEN","RED"};int i=0,score=0,miss= MyGlobalVariables.getMissItem();
@@ -257,7 +257,7 @@ public class SWset33_Activity extends Activity {
                    		s+="swset33:"+Integer.toString(score)+";";
                    		MyGlobalVariables.setData(s);
                    		MyGlobalVariables.setMissItem(miss);
-            			Intent intent = new Intent(SWset33_Activity.this, SecSP_Activity.class);
+            			Intent intent = new Intent(SWset33_Activity.this, SPpractice_Activity.class);
 	            	    startActivity(intent);
 	            }
 	        });

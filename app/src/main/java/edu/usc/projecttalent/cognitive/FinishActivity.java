@@ -12,6 +12,8 @@ import com.google.gson.Gson;
 import edu.usc.projecttalent.cognitive.model.Survey;
 import edu.usc.projecttalent.cognitive.numbers.SecNS_Activity;
 import edu.usc.projecttalent.cognitive.reasoning.SecAR_Activity;
+import edu.usc.projecttalent.cognitive.spatial.SPpractice_Activity;
+import edu.usc.projecttalent.cognitive.switching.SecSW_Activity;
 
 public class FinishActivity extends AppCompatActivity {
 
@@ -36,6 +38,12 @@ public class FinishActivity extends AppCompatActivity {
                         break;
                     case R.string.switch_ar:
                         nextClass = SecAR_Activity.class;
+                        break;
+                    case R.string.switch_sv:
+                        nextClass = SPpractice_Activity.class;
+                        break;
+                    case R.string.switch_bt:
+                        nextClass = SecSW_Activity.class;
                         break;
                     default:
                         Survey survey = Survey.getSurvey();

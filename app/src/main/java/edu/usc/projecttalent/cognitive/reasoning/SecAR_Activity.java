@@ -24,8 +24,8 @@ public class SecAR_Activity extends Activity {
         final Queue<ARExample> exampleList = new LinkedList<>();
         Resources res = getResources();
         TypedArray arr = res.obtainTypedArray(R.array.ar_ex_1);
-		exampleList.add(new ARExample(getString(R.string.ar_text), arr, getString(R.string.ar_text1), false, 0));
-        exampleList.add(new ARExample("", arr, getString(R.string.ar_text3), true, 5));
+		exampleList.add(new ARExample(getString(R.string.ar_text), arr, getString(R.string.ar_text1), false));
+        exampleList.add(new ARExample("", arr, getString(R.string.ar_text3), true));
 
         final ActivitySecArBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_sec_ar_);
         binding.setItem(exampleList.remove());

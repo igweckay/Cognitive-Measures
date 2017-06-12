@@ -64,7 +64,8 @@ public class QuestionTimer extends CountDownTimer {
     }
 
     public static void stopTimer() {
-        mTimer.cancel();
+        if(mTimer != null)
+            mTimer.cancel();
     }
 
     private static void createDialogs() {

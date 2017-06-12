@@ -96,6 +96,7 @@ public class AR31_Activity extends Activity {
                     mBlock.addAnswer(mAnswer);
                     if(oldView != null)
                         oldView.setBackground(null);
+                    oldView = null;
                     if(!mQueue.isEmpty()) {
                         mAnswer = new Answer();
                         binding.setItem(mQueue.remove());

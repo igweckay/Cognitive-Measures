@@ -7,6 +7,7 @@
         <item>@drawable/ar_001_3</item>
         <item>@drawable/ar_001_4</item>
         <item>@drawable/ar_001_5</item>
+        <item>5</item>
     </array>
     <array name="ar_ex_2">
         <item>@drawable/ar_002_main</item>
@@ -15,6 +16,7 @@
         <item>@drawable/ar_002_3</item>
         <item>@drawable/ar_002_4</item>
         <item>@drawable/ar_002_5</item>
+        <item>5</item>
     </array>
     <array name="ar_ex_3">
         <item>@drawable/ar_003_main</item>
@@ -23,6 +25,7 @@
         <item>@drawable/ar_003_3</item>
         <item>@drawable/ar_003_4</item>
         <item>@drawable/ar_003_5</item>
+        <item>3</item>
     </array>
     <array name="ar_31">
         <item>@drawable/ar_7_main</item>
@@ -187,6 +190,7 @@
     </integer-array>
 
     <array name="sp_ex_1">
+        <item>null</item>
         <item>@drawable/sp_instr_l_1</item>
         <item>@drawable/sp_instr_l_2</item>
         <item>@drawable/sp_instr_l_3</item>
@@ -194,6 +198,7 @@
         <item>@drawable/sp_instr_l_5</item>
     </array>
     <array name="sp_ex_2">
+        <item>null</item>
         <item>@drawable/sp_instr_p_1</item>
         <item>@drawable/sp_instr_p_2</item>
         <item>@drawable/sp_instr_p_3</item>
@@ -207,6 +212,7 @@
         <item>@drawable/sp_s1_3</item>
         <item>@drawable/sp_s1_4</item>
         <item>@drawable/sp_s1_5</item>
+        <item>3</item>
     </array>
     <array name="sp_31">
         <item>@drawable/sp_3_main</item>
@@ -215,6 +221,7 @@
         <item>@drawable/sp_3_3</item>
         <item>@drawable/sp_3_4</item>
         <item>@drawable/sp_3_5</item>
+        <item>0</item>
     </array>
     <array name="sp_32">
         <item>@drawable/sp_11_main</item>
@@ -223,6 +230,7 @@
         <item>@drawable/sp_11_3</item>
         <item>@drawable/sp_11_4</item>
         <item>@drawable/sp_11_5</item>
+        <item>0</item>
     </array>
     <array name="sp_33">
         <item>@drawable/sp_15_main</item>
@@ -231,6 +239,7 @@
         <item>@drawable/sp_15_3</item>
         <item>@drawable/sp_15_4</item>
         <item>@drawable/sp_15_5</item>
+        <item>2</item>
     </array>
     <array name="sp_11">
         <item>@drawable/sp_2_main</item>
@@ -239,6 +248,7 @@
         <item>@drawable/sp_2_3</item>
         <item>@drawable/sp_2_4</item>
         <item>@drawable/sp_2_5</item>
+        <item>1</item>
     </array>
     <array name="sp_12">
         <item>@drawable/sp_4_main</item>
@@ -247,6 +257,7 @@
         <item>@drawable/sp_4_3</item>
         <item>@drawable/sp_4_4</item>
         <item>@drawable/sp_4_5</item>
+        <item>4</item>
     </array>
     <array name="sp_13">
         <item>@drawable/sp_7_main</item>
@@ -255,6 +266,7 @@
         <item>@drawable/sp_7_3</item>
         <item>@drawable/sp_7_4</item>
         <item>@drawable/sp_7_5</item>
+        <item>1</item>
     </array>
     <array name="sp_21">
         <item>@drawable/sp_9_main</item>
@@ -263,6 +275,7 @@
         <item>@drawable/sp_9_3</item>
         <item>@drawable/sp_9_4</item>
         <item>@drawable/sp_9_5</item>
+        <item>2</item>
     </array>
     <array name="sp_22">
         <item>@drawable/sp_18_main</item>
@@ -271,6 +284,7 @@
         <item>@drawable/sp_18_3</item>
         <item>@drawable/sp_18_4</item>
         <item>@drawable/sp_18_5</item>
+        <item>0</item>
     </array>
     <array name="sp_23">
         <item>@drawable/sp_13_main</item>
@@ -279,6 +293,7 @@
         <item>@drawable/sp_13_3</item>
         <item>@drawable/sp_13_4</item>
         <item>@drawable/sp_13_5</item>
+        <item>0</item>
     </array>
     <array name="sp_41">
         <item>@drawable/sp_14_main</item>
@@ -287,6 +302,7 @@
         <item>@drawable/sp_14_3</item>
         <item>@drawable/sp_14_4</item>
         <item>@drawable/sp_14_5</item>
+        <item>4</item>
     </array>
     <array name="sp_42">
         <item>@drawable/sp_19_main</item>
@@ -295,6 +311,7 @@
         <item>@drawable/sp_19_3</item>
         <item>@drawable/sp_19_4</item>
         <item>@drawable/sp_19_5</item>
+        <item>1</item>
     </array>
     <array name="sp_43">
         <item>@drawable/sp_16_main</item>
@@ -303,6 +320,7 @@
         <item>@drawable/sp_16_3</item>
         <item>@drawable/sp_16_4</item>
         <item>@drawable/sp_16_5</item>
+        <item>2</item>
     </array>
     <array name="sp_51">
         <item>@drawable/sp_17_main</item>
@@ -311,6 +329,7 @@
         <item>@drawable/sp_17_3</item>
         <item>@drawable/sp_17_4</item>
         <item>@drawable/sp_17_5</item>
+        <item>3</item>
     </array>
     <array name="sp_52">
         <item>@drawable/sp_20_main</item>
@@ -319,6 +338,7 @@
         <item>@drawable/sp_20_3</item>
         <item>@drawable/sp_20_4</item>
         <item>@drawable/sp_20_5</item>
+        <item>4</item>
     </array>
     <array name="sp_53">
         <item>@drawable/sp_24_main</item>
@@ -327,6 +347,7 @@
         <item>@drawable/sp_24_3</item>
         <item>@drawable/sp_24_4</item>
         <item>@drawable/sp_24_5</item>
+        <item>1</item>
     </array>
 
     <integer-array name="sp_3">

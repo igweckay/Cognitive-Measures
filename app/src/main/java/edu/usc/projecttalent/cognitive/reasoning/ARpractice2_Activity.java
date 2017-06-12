@@ -29,8 +29,8 @@ public class ARpractice2_Activity extends Activity {
         final Queue<ARExample> exampleList = new LinkedList<>();
         Resources res = getResources();
         TypedArray arr = res.obtainTypedArray(R.array.ar_ex_3);
-        exampleList.add(new ARExample(getString(R.string.practiceq2), arr, "", false, 0));
-        exampleList.add(new ARExample("", arr, getString(R.string.pr_explain), true, 3));
+        exampleList.add(new ARExample(getString(R.string.practiceq2), arr, "", false));
+        exampleList.add(new ARExample("", arr, getString(R.string.pr_explain), true));
 
         mContext = this;
         final ActivitySecArBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_sec_ar_);

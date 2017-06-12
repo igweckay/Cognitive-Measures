@@ -15,16 +15,18 @@ public class ARExample {
     public boolean answer;
     public int ansOption;
 
-    ARExample(String instructions, TypedArray options, String details, boolean answer, int ansOption) {
+    @SuppressWarnings("ResourceType")
+    public ARExample(String instructions, TypedArray options, String details, boolean answer) {
         this.instructions = instructions;
         this.options = options;
         this.details = details;
         this.answer = answer;
-        this.ansOption = ansOption;
+        if(answer)
+            this.ansOption = options.getInt(6, -1);
     }
 
     @SuppressWarnings("ResourceType")
-    ARExample(TypedArray options) {
+    public ARExample(TypedArray options) {
         this.options = options;
         this.ansOption = options.getInt(6, -1);
     }

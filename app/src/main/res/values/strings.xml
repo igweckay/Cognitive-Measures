@@ -5,8 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="first_str">Welcome to Project Talent. </string>
     <string name="button_str">NEXT</string>
-    <string name="username_msg">Please enter your User ID (as listed in the letter that you received with this tablet).</string>
-    <string name="username">Username:</string>
 
     <string name="agreement">The following are a series of cognitive tasks, several of which are the versions of the tasks you completed in the original Project Talent
         study.\n\n
@@ -25,42 +23,7 @@
         answer, please press NEXT to continue.</string>
     <string name="quit_resume">Would you like to quit? Or go back to where you left off?</string>
 
-
-    <string name="opt1">option 1</string>
-    <string name="opt2">option 2</string>
-    <string name="opt3">option 3</string>
-    <string name="opt4">option 4</string>
-    <string name="opt5">option 5</string>
-    <string name="main">main question</string>
-    <string name="correct_response">The correct answer is the figure selected here. </string>
-
-
     <string name="button_str_back">BACK</string>
-    <string name="title_activity_sec_sp_">SecSP_Activity</string>
-    <string name="sp_text">Each item in this task has a drawing of a flat piece of metal, like the example shown here.</string>
-    <string name="sp_text1">Below each drawing are five objects, only one of which can be made by folding the flat piece of metal along the dotted lines. You are to select
-        which object shows just how the piece of flat metal would look when it is folded at the dotted lines. When it is folded, no piece of metal overlaps any other piece,
-        or is enclosed inside the object.</string>
-    <string name="sp_practice">Now look at the example.\n\nSelect which of the five objects would be made by folding the flat piece along each of the dotted lines.
-	</string>
-    <string name="sp_next2">Press the object and then the NEXT button when you are ready to go on.</string>
-    <string name="sp_explain">It follows the same pattern as the other figures in the box. The figure in the bottom left is larger than the one above it but otherwise the
-        same. In the top row, the figure at the right is the same as the one to the left of it except that it has been turned upside down. Following these rules,
-        the missing figure should be larger than the one above it, and exactly the same size as the one to the left of it, but upside down. Therefore, the response choice
-        selected is the correct answer.</string>
-    <string name="sp_right">That is correct.  Of the five objects shown, only this one could be made from the flat piece by folding it at each of the dotted lines.\n\n
-		Press the NEXT button to continue, or the BACK button to go back one page.
-	</string>
-    <string name="sp_wrong">No, the correct response is this one.  Only it could be made from the flat piece by folding it at each of the dotted lines.\n\n
-		Press the NEXT button to continue, or the BACK button to go back one page.
-	</string>
-    <string name="sp_intro">INSTRUCTIONS\n\n
-		&#8226; For each item, select the object that could be made by folding the flat piece at each of the dotted lines.\n
-		&#8226; All folds are indicated by dotted lines.\n
-		&#8226; The solid lines show the cuts in the piece.\n
-		&#8226; Parts are not folded inside of other parts of any objects (in other words, there is no overlapping).\n\n
-		When you are ready, press the BEGIN button.
-	</string>
 
     <string name="sw_intro">In this next task, we would like to see how quickly you can respond to the words RED and GREEN.\n\n
 		For the first several items, if you see RED you will press the STOP button. If you see GREEN you will press the GO button.\n\n
@@ -83,15 +46,10 @@
     <string name="error_ex1">You pressed GO. Please press the STOP button.</string>
     <string name="error_ex2">You pressed STOP. Please press the GO button.</string>
     <string name="sw_begin">This first set will last about 30 seconds. Please press BEGIN when you are ready.</string>
-    <string name="title_activity_sec_swexample_">SecSWexample_Activity</string>
-    <string name="title_activity_swintro_">SWIntro_Activity</string>
-    <string name="title_activity_sec_swset1_">SecSWset1_Activity</string>
     <string name="alert_error">You have not submitted a response. Please press STOP or GO to continue to the next item.</string>
     <string name="miss_error">You did not answer the previous item in the time allowed. Please press NEXT to continue to the next item.</string>
-    <string name="quit_error">You have not responded to the last 5 items. Please choose â€œExitâ€ to exit this task, or choose â€œContinueâ€ to continue this
+    <string name="quit_error">You have not responded to the last 5 items. Please choose \"Exit\" to exit this task, or choose \"Continue\" to continue this
         task.</string>
-    <string name="title_activity_sec_sw__reverse_intro_">SecSW_ReverseIntro_Activity</string>
-    <string name="title_activity_sec_swreverse_intro_">SecSWReverseIntro_Activity</string>
     <string name="rev_intro">Now you will do just the REVERSE of what you have been doing.  So when you see RED you will press the GO button. When you see GREEN you will
         press the STOP button.\n\n
         Try to be accurate, but answer as quickly as you can.
@@ -104,19 +62,13 @@
         GREEN\n\n
         You should press the STOP button. Please do this now.
 	</string>
-    <string name="title_activity_sec_swrev_ex_">SecSWRevEx_Activity</string>
-    <string name="title_activity_swrev_intro_">SWRevIntro_Activity</string>
-    <string name="title_activity_sec_swset2_">SecSWset2_Activity</string>
-    <string name="title_activity_sec_swmixed_intro_">SecSWMixedIntro_Activity</string>
     <string name="mix_intro">Now we are going to mix up these two types of responses.  When you see the word NORMAL, you will respond the way you did at first: RED means
         \"STOP\", GREEN means \"GO\".  But when you see the word REVERSE, you will give the reverse responses: RED means \"GO\", and GREEN means \"STOP\".\n\n
 		We will alternate between the NORMAL and the REVERSE every few trials.\n\n
 		Try to be accurate, but answer as quickly as you can.
 	</string>
-    <string name="title_activity_sec_swmix_ex_">SecSWMixEx_Activity</string>
     <string name="normal">NORMAL</string>
     <string name="reverse">REVERSE</string>
-    <string name="title_activity_swmix_ex1_">SWMixEx1_Activity</string>
     <string name="mix_ex1">So if you see:\n\n
         RED\n\n
         You should press the STOP button. This is because the last screen said \"NORMA\L", and this screen says \"RED\". Please do this now.
@@ -141,27 +93,9 @@
         RED\n\n
         You should press the GO button.  Please do this now.
     </string>
-    <string name="title_activity_swrev1_">SWRev1_Activity</string>
-    <string name="title_activity_sec_swmix_ex2_">SecSWMixEx2_Activity</string>
-    <string name="title_activity_swnorm2_">SWNorm2_Activity</string>
     <string name="transit">Now, please practice a few times on your own.</string>
-    <string name="title_activity_swtransit_">SWTransit_Activity</string>
-    <string name="title_activity_sec_swmix_ex3_">SecSWMixEx3_Activity</string>
-    <string name="title_activity_swrev2_">SWRev2_Activity</string>
-    <string name="title_activity_sec_swmix_ex4_">SecSWMixEx4_Activity</string>
-    <string name="title_activity_swmix_intro_">SWMixIntro_Activity</string>
     <string name="mix_begin">We are now ready to begin. This will take about one minute. Please press BEGIN when you are ready.</string>
-    <string name="title_activity_swset_norm1_">SWsetNorm1_Activity</string>
-    <string name="title_activity_swset_norm2_">SWsetNorm2_Activity</string>
-    <string name="title_activity_swset_rev1_">SWsetRev1_Activity</string>
-    <string name="title_activity_swset_rev2_">SWsetRev2_Activity</string>
-    <string name="title_activity_swset31_">SWset31_Activity</string>
-    <string name="title_activity_swset33_">SWset33_Activity</string>
-    <string name="title_activity_swset32_">SWset32_Activity</string>
-    <string name="title_activity_swset34_">SWset34_Activity</string>
-    <string name="title_activity_sec_w_">SecW_Activity</string>
     <string name="repeatmsg">The word list will now be repeated.</string>
-    <string name="title_activity_emp">emp</string>
     <string name="finishbutton_str">FINISH</string>
     <string name="title_activity_finish">Finish</string>
 
@@ -516,9 +450,22 @@
     <!-- Abstract reasoning -->
 
     <!-- 2D visualization -->
-    <string name="sp_instr">Look at the drawings below. The first drawing is shaped like the letter L. The rest of the drawings are like the first, except that they
+    <string name="sp_1_instr">Look at the drawings below. The first drawing is shaped like the letter L. The rest of the drawings are like the first, except that they
     have been turned in different directions. </string>
     <string name="sp_next">Please click \"Next\" to continue.</string>
+    <string name="sp_1_sol"> If you think of the drawing at the left above as being made out of wire and lying on a table, the positions shown in each of the other four
+        drawings could be taken simply by turning the wire figure at the left around, without lifting it off the table. </string>
+    <string name="sp_2_instr">Now look at the next row of drawings. The first drawing is shaped like the letter P. But even if the rest of the drawings were turned
+        around, they would still be backwards; you would have to lift the figure at the left off the table and flip it over to make any of the other figures. </string>
+    <string name="sp_intro"> In this test each problem has one drawing at the left and five similar drawings to the right of it but only one of the five drawings on the
+        right exactly matches the drawing at the left if you turn it around. The rest of the drawings are backwards even when they are turned around.</string>
+    <string name="sp_3_instr">Now look at the sample problem below.\nWhich one of the choices, when turned around, exactly matches the diagram at the left?</string>
+    <string name="sp_3_sol">You should have picked choice D. All of the other choices have been "lifted off the table and flipped over" as well as turned around,
+        and thus are backwards. For the sample problem, the answer D has been selected.</string>
+    <string name="sp_begin">For each problem in this test, choose the one drawing which, when turned around or rotated, is exactly like the basic drawing at the left.\n\n
+        If you are ready to begin, please click \"Next\".</string>
+    <string name="sp_question">Choose the one drawing which, when turned around or rotated, is exactly like the basic drawing at the left.</string>
+    <!-- 2D visualization -->
 
     <!-- Warning messages -->
     <string name="quit">Quit</string>

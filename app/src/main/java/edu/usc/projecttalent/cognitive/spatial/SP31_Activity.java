@@ -1,246 +1,180 @@
 package edu.usc.projecttalent.cognitive.spatial;
 
-import java.util.Date;
-
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
+import android.content.res.TypedArray;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
-import edu.usc.projecttalent.cognitive.MyGlobalVariables;
+import java.util.LinkedList;
+import java.util.Queue;
+
+import edu.usc.projecttalent.cognitive.FinishActivity;
+import edu.usc.projecttalent.cognitive.QuestionTimer;
 import edu.usc.projecttalent.cognitive.R;
+import edu.usc.projecttalent.cognitive.databinding.ActivitySp31Binding;
+import edu.usc.projecttalent.cognitive.model.Answer;
+import edu.usc.projecttalent.cognitive.model.Block;
+import edu.usc.projecttalent.cognitive.model.Section;
+import edu.usc.projecttalent.cognitive.model.Survey;
+import edu.usc.projecttalent.cognitive.reasoning.ARExample;
 
 public class SP31_Activity extends Activity {
-	boolean[] selected={false,false,false,false,false};
-	boolean click = false; int count=0;long ms;boolean empty=false;
-	ImageView img1,img2,img3,img4,img5;
+
+    int mScore;
+    Section mSection;
+    Context mContext;
+    Block mBlock;
+    boolean mFtWarn;
+    Queue<ARExample> mQueue;
+    Answer mAnswer;
+    View oldView;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sp31_);
-		Date start = new Date();
-		String s = MyGlobalVariables.getTime();
-		s+="sec_sp_start:"+start.toString()+";";
-		s+="sp31_start:"+start.toString()+";";
-		MyGlobalVariables.setTime(s);
-		ImageView myImage = (ImageView) findViewById(R.id.question_image);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_3_main,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        mContext = this;
+        mSection = new Section(getString(R.string.ar_section_title));  //make new section.
+        mScore = 0; //reset score at the beginning of block.
 
-	    myImage = (ImageView) findViewById(R.id.imageView1);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_3_1,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        //prepare timer.
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(QuestionTimer.WARNING);
+        filter.addAction(QuestionTimer.QUIT);
+        filter.addAction(QuestionTimer.RESUME);
+        registerReceiver(mReceiver, filter);
 
-	    myImage = (ImageView) findViewById(R.id.imageView2);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_3_2,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        mBlock = new Block(3); //first block is Block 3.
+        mFtWarn = true; //for FTU.
 
-	    myImage = (ImageView) findViewById(R.id.imageView3);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_3_3,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        final Resources res = getResources();
+        TypedArray questions = res.obtainTypedArray(R.array.sp_3); //all questions of Set 3.
+        //get questions for set 3.
+        mQueue = new LinkedList<>();
+        for(int i=0; i<questions.length(); i++) {
+            mQueue.add(new ARExample(res.obtainTypedArray(questions.getResourceId(i, 0)))); //each question. sp_31 .. sp_33.
+        }
 
-	    myImage = (ImageView) findViewById(R.id.imageView4);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_3_4,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        final ActivitySp31Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_sp31_);
+        binding.setItem(mQueue.remove());
+        mAnswer = new Answer();
+        QuestionTimer.startTimer(mContext);
 
-	    myImage = (ImageView) findViewById(R.id.imageView5);
-	    myImage.setImageBitmap(decodeImage(getResources(),R.drawable.sp_3_5,myImage.getLayoutParams().width,myImage.getLayoutParams().height));
+        final LinearLayout options = (LinearLayout) findViewById(R.id.options);
+        for(int i=1; i<options.getChildCount(); i++) {
+            (options.getChildAt(i)).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    v.setPadding(1, 1, 1, 1);
+                    v.setBackgroundColor(getResources().getColor(R.color.black));
+                    if (oldView != null)
+                        oldView.setBackground(null);
+                    oldView = v;
+                }
+            });
+        }
 
-		new CountDownTimer(60000, 1000) {
-
-		     public void onTick(long millisUntilFinished) {
-		    	 ms=millisUntilFinished;
-		    	if(millisUntilFinished>=55000 && click && !empty){
-		    		click = false;
-		    		TextView tv = (TextView) findViewById(R.id.message);
-		    			 String t = getResources().getString(R.string.msg1);
-		    			 tv.setText(t);
-		    			 tv.setVisibility(View.VISIBLE);
-		    		 }
-		    	else if(click && !empty)
-		    	{
-		    		click = false;
-		    		TextView tv = (TextView) findViewById(R.id.message);
-	        		tv.setVisibility(View.INVISIBLE);
-	        		Date end = new Date();
-	        		String s = MyGlobalVariables.getTime();
-	        		s+="sp31_end:"+end.toString()+";";
-	        		MyGlobalVariables.setTime(s);
-		    		Intent intent = new Intent(SP31_Activity.this, SP32_Activity.class);
-          	    startActivity(intent);
-		    	}
-		     }
-		     public void onFinish() {
-		         if(!click){
-		        	 TextView tv = (TextView) findViewById(R.id.message);
-		             	String t = getResources().getString(R.string.msg2);
-		             	tv.setText(t);
-		             	tv.setVisibility(View.VISIBLE);
-		             	count++;
-		         }
-		     }
-		  }.start();
-		  img1 = (ImageView) findViewById(R.id.imageView1);
-			img2 = (ImageView) findViewById(R.id.imageView2);
-			img3 = (ImageView) findViewById(R.id.imageView3);
-			img4 = (ImageView) findViewById(R.id.imageView4);
-			img5 = (ImageView) findViewById(R.id.imageView5);
-			img1.setPadding(1, 1, 1, 1);
-			img2.setPadding(1, 1, 1, 1);
-			img3.setPadding(1, 1, 1, 1);
-			img4.setPadding(1, 1, 1, 1);
-			img5.setPadding(1, 1, 1, 1);
-	        img1.setOnClickListener(new View.OnClickListener() {
-	            public void onClick(View v) {
-	                // Perform action on click
-	            	selected[0]=true;
-	            	selected[1]=false;
-	            	selected[2]=false;
-	            	selected[3]=false;
-	            	selected[4]=false;
-	            	img1.setBackgroundColor(Color.parseColor("#000000"));
-	            	img2.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img3.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img4.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img5.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            }
-	        });
-	        img2.setOnClickListener(new View.OnClickListener() {
-	            public void onClick(View v) {
-	                // Perform action on click
-	            	selected[0]=false;
-	            	selected[1]=true;
-	            	selected[2]=false;
-	            	selected[3]=false;
-	            	selected[4]=false;
-	            	img1.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img2.setBackgroundColor(Color.parseColor("#000000"));
-	            	img3.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img4.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img5.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            }
-	        });
-	        img3.setOnClickListener(new View.OnClickListener() {
-	            public void onClick(View v) {
-	                // Perform action on click
-	            	selected[0]=false;
-	            	selected[1]=false;
-	            	selected[2]=true;
-	            	selected[3]=false;
-	            	selected[4]=false;
-	            	img1.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img2.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img3.setBackgroundColor(Color.parseColor("#000000"));
-	            	img4.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img5.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            }
-	        });
-	        img4.setOnClickListener(new View.OnClickListener() {
-	            public void onClick(View v) {
-	                // Perform action on click
-	            	selected[0]=false;
-	            	selected[1]=false;
-	            	selected[2]=false;
-	            	selected[3]=true;
-	            	selected[4]=false;
-	            	img1.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img2.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img3.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img4.setBackgroundColor(Color.parseColor("#000000"));
-	            	img5.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            }
-	        });
-	        img5.setOnClickListener(new View.OnClickListener() {
-	            public void onClick(View v) {
-	                // Perform action on click
-	            	selected[0]=false;
-	            	selected[1]=false;
-	            	selected[2]=false;
-	            	selected[3]=false;
-	            	selected[4]=true;
-	            	img1.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img2.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img3.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img4.setBackgroundColor(Color.parseColor("#FFFFFF"));
-	            	img5.setBackgroundColor(Color.parseColor("#000000"));
-	            }
-	        });
-       Button button = (Button) findViewById(R.id.button3);
-       button.setOnClickListener(new View.OnClickListener() {
+       Button next = (Button) findViewById(R.id.next);
+       next.setOnClickListener(new View.OnClickListener() {
            public void onClick(View v) {
-               // Perform action on click
-           	click = true;count++;
-           	String s = MyGlobalVariables.getData();
-       		if (s.contains("sp31:")){
-       			int p=s.indexOf("sp31:");
-       			s = s.substring(0,p);
-       		}
-           	if (selected[0] || selected[1] || selected[2] || selected[3] || selected[4])
-           	{
-           		int u=0;
-           		if(selected[0])u=1;
-           		else if(selected[1])u=2;
-           		else if(selected[2])u=3;
-           		else if(selected[3])u=4;
-           		else if(selected[4])u=5;
-           		s+="sp31:"+Integer.toString(u)+";";
-           	}
-           	else
-           	{
-           		s+="sp31:0"+";";
+               if (oldView == null && mFtWarn) {
+                   mFtWarn = false;
+                   sendBroadcast(new Intent(QuestionTimer.NOANSWER));
+               } else {
+                   ARExample question = binding.getItem();
+                   if (options.indexOfChild(oldView) == question.ansOption) {
+                       mScore++; //correct answer.
+                   }
+                   mAnswer.endAnswer(oldView == null ? -99 : options.indexOfChild(oldView), question.ansOption);
+                   mBlock.addAnswer(mAnswer);
+                   if (oldView != null)
+                       oldView.setBackground(null);
+                   oldView = null;
+                   if (!mQueue.isEmpty()) {
+                       mAnswer = new Answer();
+                       binding.setItem(mQueue.remove());
+                       QuestionTimer.startTimer(mContext);
+                       mFtWarn = true;
+                   } else {
+                       mBlock.endBlock(mScore);
+                       mSection.addBlock(mBlock);
+                       if (mSection.getBlockSize() == 1) { //get next block.
+                           int block = nextSet();
+                           mBlock = new Block(getBlockId(block));
+                           TypedArray questions = res.obtainTypedArray(block); //all questions of Set X.
+                           mQueue = new LinkedList<>();
+                           for (int i = 0; i < questions.length(); i++) {
+                               mQueue.add(new ARExample(res.obtainTypedArray(questions.getResourceId(i, 0)))); //each question. sp_x1 .. sp_x3.
+                           }
+                           mScore = 0;
+                           binding.setItem(mQueue.remove());
+                           QuestionTimer.startTimer(mContext);
+                           mFtWarn = true;
+                       } else {
+                           finishSection();
+                       }
+                   }
+               }
+           }
 
-               		TextView tv = (TextView) findViewById(R.id.message);
-               		String t = getResources().getString(R.string.msg3);
-          				 tv.setText(t);
-          				 tv.setVisibility(View.VISIBLE);
-          				 empty=true;
-           	}
-           	MyGlobalVariables.setData(s);
-           	if((click && count>=2)){
-           		click = false;
-           		TextView tv = (TextView) findViewById(R.id.message);
-           		tv.setVisibility(View.INVISIBLE);
-           		Date end = new Date();
-        		 s = MyGlobalVariables.getTime();
-        		s+="sp31_end:"+end.toString()+";";
-        		MyGlobalVariables.setTime(s);
-           		Intent intent = new Intent(SP31_Activity.this, SP32_Activity.class);
-           	    startActivity(intent);
-           	}
+           private int getBlockId(int block) {
+               switch (block) {
+                   case R.array.sp_1: return 1;
+                   case R.array.sp_2: return 2;
+                   case R.array.sp_4: return 4;
+                   default: return 5;
+               }
+           }
+
+           private int nextSet() {
+               switch (mScore) {
+                   case 0: return R.array.sp_1;
+                   case 1: return R.array.sp_2;
+                   case 2: return R.array.sp_4;
+                   default: return R.array.sp_5;
+               }
            }
        });
 	}
-	public static Bitmap decodeImage(Resources res,int resid,int WIDTH,int HIGHT){
-		 //Decode image size
-		 BitmapFactory.Options o = new BitmapFactory.Options();
-		 o.inJustDecodeBounds = true;
-		 BitmapFactory.decodeResource(res,resid,o);
 
-		 //The new size we want to scale to
-		 final int REQUIRED_WIDTH=WIDTH;
-		 final int REQUIRED_HIGHT=HIGHT;
-		 //Find the correct scale value. It should be the power of 2.
-		 int scale=1;
-		 while(o.outWidth/scale/2>=REQUIRED_WIDTH && o.outHeight/scale/2>=REQUIRED_HIGHT)
-		     scale*=2;
+    BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if(action.equals(QuestionTimer.QUIT)) {
+                finishSection(); //go to end of section.
+            } else if (action.equals(QuestionTimer.RESUME)) { //reset timer for the same question.
+                QuestionTimer.startTimer(mContext);
+            }
+        }
+    };
 
-		 //Decode with inSampleSize
-		 BitmapFactory.Options o2 = new BitmapFactory.Options();
-		 o2.inSampleSize=scale;
-		 return BitmapFactory.decodeResource(res,resid, o2);
-		}
-
+    private void finishSection() {
+        mSection.endSection(); //end this section.
+        Survey.getSurvey().addSection(mSection); //add vocab section to survey.
+        Intent intent = new Intent(mContext, FinishActivity.class);
+        intent.putExtra(FinishActivity.SECTION, R.string.switch_bt);
+        startActivityForResult(intent, 1);
+    }
 
 	@Override
-	public void onBackPressed()
-	{
+	public void onBackPressed() {}
 
-	   //thats it
-	}
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                setResult(Activity.RESULT_OK, data);
+                super.finish();
+            }
+        }
+    }
 
 }

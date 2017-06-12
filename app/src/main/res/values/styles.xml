@@ -30,7 +30,7 @@
         <item name="android:layout_gravity">end</item>
         <item name="android:background">#1E669B</item>
         <item name="android:radius">0dp</item>
-        <item name="android:text">@string/button_str</item>
+        <item name="android:text">@string/next</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">26sp</item>
     </style>

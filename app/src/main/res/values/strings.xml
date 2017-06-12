@@ -2,9 +2,6 @@
 <resources>
 
     <string name="app_name">Cognitive Measures</string>
-    <string name="action_settings">Settings</string>
-    <string name="first_str">Welcome to Project Talent. </string>
-    <string name="button_str">NEXT</string>
 
     <string name="agreement">The following are a series of cognitive tasks, several of which are the versions of the tasks you completed in the original Project Talent
         study.\n\n
@@ -15,89 +12,9 @@
         Press the NEXT button to begin the first task.</string>
     <string name="finish_message">Please click "Finish" to proceed into next section.</string>
 
-    <string name="begin">BEGIN</string>
-    <string name="msg1">Please take your time to answer.</string>
-    <string name="msg2">You have not submitted a response yet.Your answers are important to us.\nPlease try to answer as best you can. If you are not willing to provide
-        an answer, please press NEXT to continue.</string>
-    <string name="msg3">You did not complete the question. Your answers are important to us. Please try to answer as best you can. If you are not willing to provide an
-        answer, please press NEXT to continue.</string>
-    <string name="quit_resume">Would you like to quit? Or go back to where you left off?</string>
-
-    <string name="button_str_back">BACK</string>
-
-    <string name="sw_intro">In this next task, we would like to see how quickly you can respond to the words RED and GREEN.\n\n
-		For the first several items, if you see RED you will press the STOP button. If you see GREEN you will press the GO button.\n\n
-		Try to be accurate, but respond as quickly as you can.
-	</string>
-    <string name="green">GREEN</string>
-    <string name="red">RED</string>
-    <string name="stop">STOP</string>
-    <string name="go">GO</string>
-    <string name="exitbtn">EXIT</string>
-    <string name="cont">CONTINUE</string>
-    <string name="sw_ex1">For example, if you see:\n\n
-        RED\n\n
-        You should press the STOP button. Please do this now.
-	</string>
-    <string name="sw_ex2">And if you see:\n\n
-        GREEN\n\n
-        You should press the GO button. Please do this now.
-	</string>
-    <string name="error_ex1">You pressed GO. Please press the STOP button.</string>
-    <string name="error_ex2">You pressed STOP. Please press the GO button.</string>
-    <string name="sw_begin">This first set will last about 30 seconds. Please press BEGIN when you are ready.</string>
-    <string name="alert_error">You have not submitted a response. Please press STOP or GO to continue to the next item.</string>
-    <string name="miss_error">You did not answer the previous item in the time allowed. Please press NEXT to continue to the next item.</string>
-    <string name="quit_error">You have not responded to the last 5 items. Please choose \"Exit\" to exit this task, or choose \"Continue\" to continue this
-        task.</string>
-    <string name="rev_intro">Now you will do just the REVERSE of what you have been doing.  So when you see RED you will press the GO button. When you see GREEN you will
-        press the STOP button.\n\n
-        Try to be accurate, but answer as quickly as you can.
-	</string>
-    <string name="rev_ex1">For example, if you see:\n\n
-        RED\n\n
-        Because the rules are "REVERSE", you should press the GO button. Please do this now.
-	</string>
-    <string name="rev_ex2">And if you see:\n\n
-        GREEN\n\n
-        You should press the STOP button. Please do this now.
-	</string>
-    <string name="mix_intro">Now we are going to mix up these two types of responses.  When you see the word NORMAL, you will respond the way you did at first: RED means
-        \"STOP\", GREEN means \"GO\".  But when you see the word REVERSE, you will give the reverse responses: RED means \"GO\", and GREEN means \"STOP\".\n\n
-		We will alternate between the NORMAL and the REVERSE every few trials.\n\n
-		Try to be accurate, but answer as quickly as you can.
-	</string>
-    <string name="normal">NORMAL</string>
-    <string name="reverse">REVERSE</string>
-    <string name="mix_ex1">So if you see:\n\n
-        RED\n\n
-        You should press the STOP button. This is because the last screen said \"NORMA\L", and this screen says \"RED\". Please do this now.
-    </string>
-    <string name="mix_ex2">And if you see:\n\n
-        GREEN\n\n
-        You should press the GO button. This is because the rules screen said \"NORMAL\", and this screen says \"GREEN\". Please do this now.
-    </string>
-    <string name="mix_ex3">And if you see:\n\n
-        RED\n\n
-        You should press the STOP button. Please do this now.
-    </string>
-    <string name="mix_ex4">So if you see:\n\n
-        GREEN\n\n
-        You should press the STOP button. This is because the last screen said \"REVERSE\", and this screen says \"GREEN\". Please do this now.
-    </string>
-    <string name="mix_ex5">Or if you see:\n\n
-        RED\n\n
-        You should press the GO button. This is because the rules screen said \"REVERSE\", and this screen says \"RED\". Please do this now.
-    </string>
-    <string name="mix_ex6">Or if you see:\n\n
-        RED\n\n
-        You should press the GO button.  Please do this now.
-    </string>
-    <string name="transit">Now, please practice a few times on your own.</string>
-    <string name="mix_begin">We are now ready to begin. This will take about one minute. Please press BEGIN when you are ready.</string>
-    <string name="repeatmsg">The word list will now be repeated.</string>
-    <string name="finishbutton_str">FINISH</string>
-    <string name="title_activity_finish">Finish</string>
+    <string name="begin">Begin</string>
+    <string name="button_str_back">Back</string>
+    <string name="finishbutton_str">Finish</string>
 
     <!-- Vocabulary strings -->
     <string name="vo_text">INSTRUCTIONS\n\n
@@ -473,12 +390,16 @@
     <string name="timeup">2 minutes up</string>
     <string name="ok">OK</string>
     <string name="next">Next</string>
+    <string name="msg2">You have not submitted a response yet.Your answers are important to us.\nPlease try to answer as best you can. If you are not willing to provide
+        an answer, please press NEXT to continue.</string>
+    <string name="msg3">You did not complete the question. Your answers are important to us. Please try to answer as best you can. If you are not willing to provide an
+        answer, please press NEXT to continue.</string>
+    <string name="quit_resume">Would you like to quit? Or go back to where you left off?</string>
     <!-- Warning messages -->
 
     <!--Context switch -->
     <string name="switch_ns">Switch to number section.</string>
     <string name="switch_ar">Switch to abstract reasoning.</string>
     <string name="switch_sv">Switch to spatial visualization.</string>
-    <string name="switch_bt">Switch to BTACT switching.</string>
     <!--Context switch -->
 </resources>

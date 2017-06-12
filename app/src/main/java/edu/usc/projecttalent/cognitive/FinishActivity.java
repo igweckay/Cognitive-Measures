@@ -1,5 +1,6 @@
 package edu.usc.projecttalent.cognitive;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +14,6 @@ import edu.usc.projecttalent.cognitive.model.Survey;
 import edu.usc.projecttalent.cognitive.numbers.SecNS_Activity;
 import edu.usc.projecttalent.cognitive.reasoning.SecAR_Activity;
 import edu.usc.projecttalent.cognitive.spatial.SPpractice_Activity;
-import edu.usc.projecttalent.cognitive.switching.SecSW_Activity;
 
 public class FinishActivity extends AppCompatActivity {
 
@@ -42,9 +42,6 @@ public class FinishActivity extends AppCompatActivity {
                     case R.string.switch_sv:
                         nextClass = SPpractice_Activity.class;
                         break;
-                    case R.string.switch_bt:
-                        nextClass = SecSW_Activity.class;
-                        break;
                     default:
                         Survey survey = Survey.getSurvey();
                         survey.endSurvey();
@@ -62,4 +59,14 @@ public class FinishActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {}
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                setResult(Activity.RESULT_OK, data);
+                super.finish();
+            }
+        }
+    }
 }

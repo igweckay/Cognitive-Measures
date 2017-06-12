@@ -20,7 +20,6 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".FinishActivity"
-            android:label="@string/title_activity_finish"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".numbers.SecNS_Activity"
@@ -41,7 +40,6 @@
         <activity android:name=".spatial.SPIntro_Activity" />
         <activity android:name=".spatial.SPpractice_Activity" />
         <activity android:name=".spatial.SPSampleActivity"/>
-        <activity android:name=".switching.SecSW_Activity"/>
 
     </application>
 

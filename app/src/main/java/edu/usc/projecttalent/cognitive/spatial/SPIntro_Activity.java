@@ -20,7 +20,7 @@ public class SPIntro_Activity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	Intent intent = new Intent(SPIntro_Activity.this, SPSampleActivity.class);
-            	startActivity(intent);
+            	startActivityForResult(intent, 1);
             }
         });
 	}

@@ -401,5 +401,6 @@
     <string name="switch_ns">Switch to number section.</string>
     <string name="switch_ar">Switch to abstract reasoning.</string>
     <string name="switch_sv">Switch to spatial visualization.</string>
+    <string name="sp_section_title">Spatial Visualization</string>
     <!--Context switch -->
 </resources>

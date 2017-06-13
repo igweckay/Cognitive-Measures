@@ -41,7 +41,7 @@ public class SP31_Activity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         mContext = this;
-        mSection = new Section(getString(R.string.ar_section_title));  //make new section.
+        mSection = new Section(getString(R.string.sp_section_title));  //make new section.
         mScore = 0; //reset score at the beginning of block.
 
         //prepare timer.

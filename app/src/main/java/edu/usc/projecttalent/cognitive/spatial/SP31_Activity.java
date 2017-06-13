@@ -171,6 +171,7 @@ public class SP31_Activity extends Activity {
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
                 setResult(Activity.RESULT_OK, data);
+                unregisterReceiver(mReceiver);
                 super.finish();
             }
         }

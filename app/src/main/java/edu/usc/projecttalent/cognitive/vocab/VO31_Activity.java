@@ -155,6 +155,7 @@ public class VO31_Activity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         setResult(Activity.RESULT_OK, data);
+        unregisterReceiver(mReceiver);
         finish();
     }
 

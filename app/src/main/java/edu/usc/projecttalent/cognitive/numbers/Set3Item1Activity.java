@@ -239,6 +239,7 @@ public class Set3Item1Activity extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         setResult(Activity.RESULT_OK, data);
+        unregisterReceiver(mReceiver);
         finish();
 	}
 

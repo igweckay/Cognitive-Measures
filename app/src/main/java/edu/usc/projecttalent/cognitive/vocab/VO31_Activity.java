@@ -82,10 +82,13 @@ public class VO31_Activity extends AppCompatActivity {
                     int answer = binding.getItem().answer; //Retrieve correct answer.
                     RadioButton checked = (RadioButton) options.findViewById(options.getCheckedRadioButtonId());
                     int index = options.indexOfChild(checked); //Retrieve user answer.
-                    options.clearCheck(); //Clear radio button for next question.
-                    if (answer == index)
+                    options.clearCheck(); //Clear radio button for next question
+                    boolean correct = false;
+                    if (answer == index) {
                         mScore++; //if answer is correct, update score.
-                    mAnswer.endAnswer(index, answer); //Record answer and end time.
+                        correct = true;
+                    }
+                    mAnswer.endAnswer(index, correct); //Record answer and end time.
                     mBlock.addAnswer(mAnswer); //Add answer to block.
                     if (!mQueue.isEmpty()) { //Other questions from this block left.
                         mAnswer = new Answer();

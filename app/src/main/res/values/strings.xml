@@ -370,7 +370,7 @@
     <string name="sp_1_instr">Look at the drawings below. The first drawing is shaped like the letter L. The rest of the drawings are like the first, except that they
     have been turned in different directions. </string>
     <string name="sp_next">Please click \"Next\" to continue.</string>
-    <string name="sp_1_sol"> If you think of the drawing at the left above as being made out of wire and lying on a table, the positions shown in each of the other four
+    <string name="sp_1_sol"> If you think of the drawing at the left below as being made out of wire and lying on a table, the positions shown in each of the other four
         drawings could be taken simply by turning the wire figure at the left around, without lifting it off the table. </string>
     <string name="sp_2_instr">Now look at the next row of drawings. The first drawing is shaped like the letter P. But even if the rest of the drawings were turned
         around, they would still be backwards; you would have to lift the figure at the left off the table and flip it over to make any of the other figures. </string>

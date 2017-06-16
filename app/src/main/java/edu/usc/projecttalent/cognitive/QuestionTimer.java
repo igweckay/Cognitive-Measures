@@ -74,7 +74,6 @@ public class QuestionTimer extends CountDownTimer {
                 .setNeutralButton(R.string.ok, null)
                 .create();
         mQuitDialog = new AlertDialog.Builder(mContext)
-                .setTitle(R.string.timeup)
                 .setMessage(R.string.quit_resume)
                 .setNegativeButton(R.string.quit, new DialogInterface.OnClickListener() {
                     @Override

@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 
 import edu.usc.projecttalent.cognitive.model.Survey;
+import edu.usc.projecttalent.cognitive.reasoning.AR31_Activity;
+import edu.usc.projecttalent.cognitive.spatial.SP31_Activity;
+import edu.usc.projecttalent.cognitive.spatial.SPpractice_Activity;
 import edu.usc.projecttalent.cognitive.vocab.VocabIntro;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, VocabIntro.class);
+                Intent intent = new Intent(mContext, SP31_Activity.class);
                 startActivityForResult(intent, 1);
             }
         });

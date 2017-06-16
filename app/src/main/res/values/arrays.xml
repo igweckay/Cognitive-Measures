@@ -239,7 +239,7 @@
         <item>@drawable/sp_15_3</item>
         <item>@drawable/sp_15_4</item>
         <item>@drawable/sp_15_5</item>
-        <item>2</item>
+        <item>3</item>
     </array>
     <array name="sp_11">
         <item>@drawable/sp_2_main</item>
@@ -329,7 +329,7 @@
         <item>@drawable/sp_17_3</item>
         <item>@drawable/sp_17_4</item>
         <item>@drawable/sp_17_5</item>
-        <item>3</item>
+        <item>4</item>
     </array>
     <array name="sp_52">
         <item>@drawable/sp_20_main</item>

@@ -72,7 +72,7 @@ public class SP31_Activity extends Activity {
             (options.getChildAt(i)).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    v.setPadding(1, 1, 1, 1);
+                    v.setPadding(2, 2, 2, 2);
                     v.setBackgroundColor(getResources().getColor(R.color.black));
                     if (oldView != null)
                         oldView.setBackground(null);
@@ -89,10 +89,12 @@ public class SP31_Activity extends Activity {
                    sendBroadcast(new Intent(QuestionTimer.NOANSWER));
                } else {
                    ARExample question = binding.getItem();
+                   boolean correct = false;
                    if (options.indexOfChild(oldView) == question.ansOption) {
                        mScore++; //correct answer.
+                       correct = true;
                    }
-                   mAnswer.endAnswer(oldView == null ? -99 : options.indexOfChild(oldView), question.ansOption);
+                   mAnswer.endAnswer(oldView == null ? -99 : options.indexOfChild(oldView), correct);
                    mBlock.addAnswer(mAnswer);
                    if (oldView != null)
                        oldView.setBackground(null);

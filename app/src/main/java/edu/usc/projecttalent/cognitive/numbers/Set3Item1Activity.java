@@ -122,6 +122,7 @@ public class Set3Item1Activity extends Activity {
                         }
                         answer.setText("");
                         int ans = curQuestion.options[curQuestion.ansPosition];
+                        boolean correct = false;
                         if (userAns == ans) {
                             mScore++; //correct answer.
                         } else if (curQuestion.ansOptions != null) {
@@ -130,11 +131,12 @@ public class Set3Item1Activity extends Activity {
                                 ans = answers[i];
                                 if (userAns == ans) { //if there are multiple answers to the same question.
                                     mScore++;
+                                    correct = true;
                                     break;
                                 }
                             }
                         }
-                        mAnswer.endAnswer(userAns, ans); //end answer.
+                        mAnswer.endAnswer(userAns, correct); //end answer.
                         mBlock.addAnswer(mAnswer); //add answer to block.
                     } else {
                         //This section is for Sec 5 Q 3.
@@ -147,10 +149,12 @@ public class Set3Item1Activity extends Activity {
                             userAns2 = Integer.parseInt(answer2.getText().toString());
                         } catch (Exception e) {
                         }
+                        boolean correct = false;
                         if ((userAns1 == 72 && userAns2 == 76) || (userAns1 == 78 && userAns2 == 82)) {
+                            correct = true;
                             mScore++;
                         }
-                        mAnswer.endAnswer(userAns1, 72); //TODO: // FIXME: 6/3/2017
+                        mAnswer.endAnswer(userAns1, correct); //TODO: // FIXME: 6/3/2017
                         mBlock.addAnswer(mAnswer);
                     }
 

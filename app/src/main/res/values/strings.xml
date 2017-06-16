@@ -10,7 +10,7 @@
         \t&#8226; If a task includes multiple-choice questions, select only one answer.\n
         \t&#8226; There is only one right answer for each question.\n\n
         Press the NEXT button to begin the first task.</string>
-    <string name="finish_message">Please click "Finish" to proceed into next section.</string>
+    <string name="finish_message">Please click \"Finish\" to proceed into next section.</string>
 
     <string name="begin">Begin</string>
     <string name="button_str_back">Back</string>

@@ -27,8 +27,8 @@
     <style name="next" parent="AppTheme">
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">65dp</item>
-        <item name="android:layout_gravity">end</item>
-        <item name="android:background">#1E669B</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:background">@color/green</item>
         <item name="android:radius">0dp</item>
         <item name="android:text">@string/next</item>
         <item name="android:textColor">#FFFFFF</item>

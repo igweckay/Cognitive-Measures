@@ -37,6 +37,8 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginRight="40dp"
+                android:padding="2dp"
+                android:background="@color/green"
                 app:imageUrl="@{item.options.getResourceId(0,0)}" />
 
             <ImageView

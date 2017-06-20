@@ -23,7 +23,6 @@
             android:id="@id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="@{item.answerText}"
             android:textSize="30sp" />
 

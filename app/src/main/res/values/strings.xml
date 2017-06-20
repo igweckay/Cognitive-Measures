@@ -195,12 +195,16 @@
 
     <!-- Number Series -->
     <string name="ns_section_title">Number Series</string>
-    <string name="ns_instr"> Please enter the number that belongs in each empty box. </string>
+    <string name="nsq">Please enter the number that belongs in the empty box. </string>
+    <plurals name="ns_instr">
+        <item quantity="one">Please enter the number that belongs in the empty box.  </item>
+        <item quantity="other">Please enter the number that belongs in each empty box.</item>
+    </plurals>
     <string name="title_activity_sec_nsex2_a_">Example 2 Answer</string>
     <string name="ns_intro">You will now see six more questions like the ones you just did.\n\n
 		Instructions:\n
 		&#8226; Please enter the number that belongs in each empty box.\n
-		&#8226; An empty box could be at the end of a series or it could be in the middle.\n
+		&#8226; An empty box could be at the end of a series or it could be in the middle or at the beginning.\n
 		&#8226; You may be asked a question with more than one empty box in the sequence.\n
 		&#8226; The numbers might increase, like 2, 4, 6, or decrease, like 6, 4, 2.\n
 		&#8226; Some of the items may be easy but others may be hard. Just do the best you can.\n
@@ -209,16 +213,14 @@
 		&#8226; You can go on to the next item at any time by clicking \'Next\'.\n\n
 		If you are ready to begin, please click \'Next\'.
 	</string>
-    <string name="nsq">Please enter the number that belongs in each empty box.</string>
     <string name="clear">Undo</string>
     <string name="clicknext">Please click \'Next\' to continue.</string>
     <string name="ns_example1">
         {
           \"id\": 1,
           \"question\": \"Instructions: In this task, on each screen you will be presented with several numbers that make up a series. There will be one or more empty boxes
-        somewhere in the series. Sometimes the empty boxes will be at the end of the series, and sometimes they will be in the middle. Press the number buttons to enter the
-        number that goes in each empty box.\n\n
-		For example:\",
+        somewhere in the series. Sometimes the empty boxes will be at the end of the series, sometimes they will be in the middle, and sometimes they will be at the
+        beginning. \",
          \"options\": [1, 2, 3, 4],
          \"ansPosition\": 2,
           \"answerText\": \"The answer we were looking for is 3, so the completed sequence is:\"
@@ -371,17 +373,17 @@
     have been turned in different directions. </string>
     <string name="sp_next">Please click \"Next\" to continue.</string>
     <string name="sp_1_sol"> If you think of the drawing at the left below as being made out of wire and lying on a table, the positions shown in each of the other four
-        drawings could be taken simply by turning the wire figure at the left around, without lifting it off the table. </string>
+        drawings could be taken simply by turning the wire figure at the left around, without lifting it off the table. \n\n Please click \"Next\" to continue.</string>
     <string name="sp_2_instr">Now look at the next row of drawings. The first drawing is shaped like the letter P. But even if the rest of the drawings were turned
-        around, they would still be backwards; you would have to lift the figure at the left off the table and flip it over to make any of the other figures. </string>
-    <string name="sp_intro"> In this test each problem has one drawing at the left and five similar drawings to the right of it but only one of the five drawings on the
+        (rotated), they would still be backwards; you would have to lift the figure at the left off the table and flip it over to make any of the other figures. </string>
+    <string name="sp_intro"> In this task each question has one drawing at the left and five similar drawings to the right of it but only one of the five drawings on the
         right exactly matches the drawing at the left if you turn it around. The rest of the drawings are backwards even when they are turned around.</string>
-    <string name="sp_3_instr">Now look at the sample problem below.\nWhich one of the choices, when turned around, exactly matches the diagram at the left?</string>
-    <string name="sp_3_sol">You should have picked choice D. All of the other choices have been "lifted off the table and flipped over" as well as turned around,
-        and thus are backwards. For the sample problem, the answer D has been selected.</string>
-    <string name="sp_begin">For each problem in this test, choose the one drawing which, when turned around or rotated, is exactly like the basic drawing at the left.\n\n
+    <string name="sp_3_instr">Now look at the sample question below.\nWhich one of the choices, when turned around, exactly matches the diagram at the left?</string>
+    <string name="sp_3_sol">You should have picked choice D. All of the other choices have been \"lifted off the table and flipped over\" as well as turned around,
+        and thus are backwards. For the sample question, the answer D has been selected.</string>
+    <string name="sp_begin">For each question in this task, choose the one drawing which, when turned around or rotated, is exactly like the basic drawing at the left.\n\n
         If you are ready to begin, please click \"Next\".</string>
-    <string name="sp_question">Choose the one drawing which, when turned around or rotated, is exactly like the basic drawing at the left.</string>
+    <string name="sp_question">Choose the one drawing which, when turned (rotated), exactly matches the drawing at the left.</string>
     <!-- 2D visualization -->
 
     <!-- Warning messages -->

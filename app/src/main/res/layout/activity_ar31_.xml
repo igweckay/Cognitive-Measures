@@ -35,37 +35,30 @@
 
         <LinearLayout
             android:id="@+id/options"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="64dp">
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginRight="30dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(1,0)}"/>
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginRight="30dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(2,0)}"/>
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginRight="30dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(3,0)}"/>
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginRight="30dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(4,0)}"/>
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(5,0)}"/>
         </LinearLayout>
 

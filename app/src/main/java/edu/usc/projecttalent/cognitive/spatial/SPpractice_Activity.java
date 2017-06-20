@@ -37,8 +37,7 @@ public class SPpractice_Activity extends Activity {
         mContext = this;
         TypedArray options = res.obtainTypedArray(R.array.sp_ex_1);
 
-        mQueue.add(new ARExample(getString(R.string.sp_1_instr), options, getString(R.string.sp_next), false));
-        mQueue.add(new ARExample(getString(R.string.sp_1_sol), options, getString(R.string.sp_next), false));
+        mQueue.add(new ARExample(getString(R.string.sp_1_instr), options, getString(R.string.sp_1_sol), false));
 
         options = res.obtainTypedArray(R.array.sp_ex_2);
         mQueue.add(new ARExample(getString(R.string.sp_2_instr), options, getString(R.string.sp_next), false));

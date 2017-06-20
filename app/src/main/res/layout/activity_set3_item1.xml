@@ -23,8 +23,7 @@
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:gravity="center"
-            android:text="@string/nsq"
+            android:text="@{item.instr}"
             android:textSize="30sp" />
 
         <LinearLayout

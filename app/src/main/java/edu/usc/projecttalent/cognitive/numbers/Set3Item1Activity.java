@@ -64,7 +64,11 @@ public class Set3Item1Activity extends Activity {
         mQueue.addAll(mList);
 
         final ActivitySet3Item1Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_set3_item1);
-        binding.setItem(mQueue.remove());
+        NSQuestion item = mQueue.remove();
+        if(item.ansPositions == null)
+            item.setInstr(getResources().getQuantityString(R.plurals.ns_instr, 1)); //to select the one item instruction.
+        binding.setItem(item);
+
         mAnswer = new Answer();
 
         final LinearLayout series = (LinearLayout) findViewById(R.id.series);
@@ -161,7 +165,9 @@ public class Set3Item1Activity extends Activity {
 
                     if (!mQueue.isEmpty()) { //more questions in the same block.
                         mAnswer = new Answer();
-                        binding.setItem(mQueue.remove()); //add new question.
+                        NSQuestion item = mQueue.remove();
+                        item.setInstr(getResources().getQuantityString(R.plurals.ns_instr, item.ansPositions == null? 1:2)); //to select the one item instruction.
+                        binding.setItem(item); //add new question.
                         QuestionTimer.startTimer(mContext);
                         mFtWarn = true;
                         curQuestion = binding.getItem();
@@ -185,7 +191,9 @@ public class Set3Item1Activity extends Activity {
                             mList = new Gson().fromJson(getString(block), question); //get new questions.
                             mQueue.addAll(mList);
                             mScore = 0; //reset the score for the new block.
-                            binding.setItem(mQueue.remove());
+                            NSQuestion item = mQueue.remove();
+                            item.setInstr(getResources().getQuantityString(R.plurals.ns_instr, item.ansPositions == null? 1:2)); //to select the one item instruction.
+                            binding.setItem(item);
                             QuestionTimer.startTimer(mContext);
                             mFtWarn = true;
                             series.removeView(answer); //update position of answer box.

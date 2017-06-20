@@ -19,7 +19,7 @@ public class SPIntro_Activity extends Activity {
 		Button button = (Button) findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            	Intent intent = new Intent(SPIntro_Activity.this, SP31_Activity.class);
+            	Intent intent = new Intent(SPIntro_Activity.this, SPSampleActivity.class);
             	startActivityForResult(intent, 1);
             }
         });

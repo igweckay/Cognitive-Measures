@@ -9,4 +9,9 @@ public class NSQuestion {
     public int ansPosition;
     public int[] ansOptions;
     public int[] ansPositions;
+    public String instr;
+
+    public void setInstr(String instr) {
+        this.instr = instr;
+    }
 }

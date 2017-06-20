@@ -42,41 +42,31 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="40dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(1,0)}"
                 android:background="@{item.answer &amp;&amp; item.ansOption == 1? @drawable/black:null}"
                 android:padding="@{item.answer &amp;&amp; item.ansOption == 1? 2: 0}" />
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="40dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(2,0)}"
                 android:background="@{item.answer &amp;&amp; item.ansOption == 2? @drawable/black:null}"
                 android:padding="@{item.answer &amp;&amp; item.ansOption == 2? 2: 0}" />
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="40dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(3,0)}"
                 android:background="@{item.answer &amp;&amp; item.ansOption == 3? @drawable/black:null}"
                 android:padding="@{item.answer &amp;&amp; item.ansOption == 3? 2: 0}" />
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="40dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(4,0)}"
                 android:background="@{item.answer &amp;&amp; item.ansOption == 4? @drawable/black:null}"
                 android:padding="@{item.answer &amp;&amp; item.ansOption == 4? 2: 0}" />
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="40dp"
+                style="@style/figure"
                 app:imageUrl="@{item.options.getResourceId(5,0)}"
                 android:background="@{item.answer &amp;&amp; item.ansOption == 5? @drawable/black:null}"
                 android:padding="@{item.answer &amp;&amp; item.ansOption == 5? 2: 0}" />

@@ -5,20 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import edu.usc.projecttalent.cognitive.model.Survey;
-import edu.usc.projecttalent.cognitive.reasoning.AR31_Activity;
-import edu.usc.projecttalent.cognitive.spatial.SP31_Activity;
-import edu.usc.projecttalent.cognitive.spatial.SPpractice_Activity;
 import edu.usc.projecttalent.cognitive.vocab.VocabIntro;
 
 public class MainActivity extends AppCompatActivity {
 
     Context mContext;
-    public static final String TAG = "Cognitive-Measure";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

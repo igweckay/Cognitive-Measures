@@ -160,7 +160,7 @@ public class SP31_Activity extends Activity {
 
     private void finishSection() {
         mSection.endSection(); //end this section.
-        Survey.getSurvey().addSection(mSection); //add vocab section to survey.
+        Survey.getSurvey().addSection(mSection); //add V2D section to survey.
         Intent intent = new Intent(mContext, FinishActivity.class);
         startActivityForResult(intent, 1);
     }

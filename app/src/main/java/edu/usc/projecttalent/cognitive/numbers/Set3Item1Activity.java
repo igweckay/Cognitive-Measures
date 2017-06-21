@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import edu.usc.projecttalent.cognitive.FinishActivity;
 import edu.usc.projecttalent.cognitive.QuestionTimer;
 import edu.usc.projecttalent.cognitive.R;
 import edu.usc.projecttalent.cognitive.databinding.ActivitySet3Item1Binding;
@@ -28,6 +27,7 @@ import edu.usc.projecttalent.cognitive.model.Answer;
 import edu.usc.projecttalent.cognitive.model.Block;
 import edu.usc.projecttalent.cognitive.model.Section;
 import edu.usc.projecttalent.cognitive.model.Survey;
+import edu.usc.projecttalent.cognitive.reasoning.SecAR_Activity;
 
 public class Set3Item1Activity extends Activity {
     int mScore;
@@ -239,10 +239,8 @@ public class Set3Item1Activity extends Activity {
 
     private void finishSection() {
         mSection.endSection(); //end this section.
-        Survey.getSurvey().addSection(mSection); //add vocab section to survey.
-        Intent intent = new Intent(mContext, FinishActivity.class);
-        intent.putExtra(FinishActivity.SECTION, R.string.switch_ar);
-        startActivityForResult(intent, 1);
+        Survey.getSurvey().addSection(mSection); //add number section to survey.
+        startActivityForResult(new Intent(mContext, SecAR_Activity.class), 1);
     }
 
 	@Override

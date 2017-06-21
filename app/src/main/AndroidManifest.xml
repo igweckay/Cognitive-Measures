@@ -3,7 +3,6 @@
     package="edu.usc.projecttalent.cognitive">
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -14,33 +13,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".vocab.VO31_Activity"
-            android:label="@string/vocabulary"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".FinishActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".numbers.SecNS_Activity"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".numbers.SecNSEx1AActivity"
-            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".vocab.VocabIntro" />
+        <activity android:name=".vocab.VO31_Activity" />
+        <activity android:name=".FinishActivity" />
+        <activity android:name=".numbers.SecNS_Activity" />
+        <activity android:name=".numbers.SecNSEx1AActivity" />
         <activity android:name=".numbers.SecNSIntro_Activity" />
         <activity android:name=".numbers.Set3Item1Activity" />
         <activity android:name=".reasoning.SecAR_Activity" />
         <activity android:name=".reasoning.ARpractice1_Activity" />
         <activity android:name=".reasoning.ARpractice2_Activity" />
         <activity android:name=".reasoning.ARIntro_Activity" />
-        <activity android:name=".reasoning.AR31_Activity" />
-        <activity android:name=".vocab.VocabIntro" />
         <activity android:name=".reasoning.ARInstructions" />
-        <activity android:name=".spatial.SP31_Activity" />
-        <activity android:name=".spatial.SPIntro_Activity" />
+        <activity android:name=".reasoning.AR31_Activity" />
         <activity android:name=".spatial.SPpractice_Activity" />
-        <activity android:name=".spatial.SPSampleActivity"/>
-
+        <activity android:name=".spatial.SPSampleActivity" />
+        <activity android:name=".spatial.SPIntro_Activity" />
+        <activity android:name=".spatial.SP31_Activity" />
     </application>
 
 </manifest>

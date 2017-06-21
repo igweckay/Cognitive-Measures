@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import edu.usc.projecttalent.cognitive.FinishActivity;
 import edu.usc.projecttalent.cognitive.QuestionTimer;
 import edu.usc.projecttalent.cognitive.R;
 import edu.usc.projecttalent.cognitive.databinding.ActivityVocabBinding;
@@ -29,6 +28,7 @@ import edu.usc.projecttalent.cognitive.model.Answer;
 import edu.usc.projecttalent.cognitive.model.Block;
 import edu.usc.projecttalent.cognitive.model.Section;
 import edu.usc.projecttalent.cognitive.model.Survey;
+import edu.usc.projecttalent.cognitive.numbers.SecNS_Activity;
 
 public class VO31_Activity extends AppCompatActivity {
     Context mContext;
@@ -138,9 +138,7 @@ public class VO31_Activity extends AppCompatActivity {
     private void finishSection() {
         mSection.endSection(); //end this section.
         Survey.getSurvey().addSection(mSection); //add vocab section to survey.
-        Intent intent = new Intent(mContext, FinishActivity.class);
-        intent.putExtra(FinishActivity.SECTION, R.string.switch_ns);
-        startActivityForResult(intent, 1);
+        startActivityForResult(new Intent(mContext, SecNS_Activity.class), 1);
     }
 
     BroadcastReceiver mReceiver = new BroadcastReceiver() {
